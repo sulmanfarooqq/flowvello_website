@@ -159,6 +159,124 @@ $(document).ready(function() {
    wow.init();
 
 
+   // FLOW VELLO SEO STRUCTURED DATA
+   // Added programmatically so the existing homepage markup and visual design remain untouched.
+   if (!document.querySelector('script[data-flowvello-schema]')) {
+      var schema = {
+         "@context": "https://schema.org",
+         "@graph": [
+            {
+               "@type": "Organization",
+               "@id": "https://flowvello.com/#organization",
+               "name": "Flow Vello",
+               "url": "https://flowvello.com/",
+               "logo": "https://flowvello.com/img/softoweb.png",
+               "description": "Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses."
+            },
+            {
+               "@type": "WebSite",
+               "@id": "https://flowvello.com/#website",
+               "url": "https://flowvello.com/",
+               "name": "Flow Vello",
+               "publisher": { "@id": "https://flowvello.com/#organization" },
+               "inLanguage": "en"
+            },
+            {
+               "@type": "WebPage",
+               "@id": "https://flowvello.com/#webpage",
+               "url": "https://flowvello.com/",
+               "name": "Flow Vello | AI Automation, Agents & Software",
+               "description": "Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.",
+               "isPartOf": { "@id": "https://flowvello.com/#website" },
+               "about": { "@id": "https://flowvello.com/#organization" },
+               "inLanguage": "en"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#workflow-automation",
+               "name": "Workflow Automation",
+               "serviceType": "Workflow Automation",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#ai-agents",
+               "name": "Custom AI Agents",
+               "serviceType": "AI Agent Development",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#whatsapp-automation",
+               "name": "WhatsApp & Messaging Automation",
+               "serviceType": "WhatsApp Automation",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#customer-support-ai",
+               "name": "AI Customer Support",
+               "serviceType": "AI Customer Support Automation",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#sales-automation",
+               "name": "Sales Automation",
+               "serviceType": "Sales Automation",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            },
+            {
+               "@type": "Service",
+               "@id": "https://flowvello.com/#executive-dashboards",
+               "name": "Executive Dashboards",
+               "serviceType": "Business Intelligence Dashboards",
+               "provider": { "@id": "https://flowvello.com/#organization" },
+               "areaServed": "Worldwide"
+            }
+         ]
+      };
+
+      var schemaScript = document.createElement('script');
+      schemaScript.type = 'application/ld+json';
+      schemaScript.setAttribute('data-flowvello-schema', 'true');
+      schemaScript.text = JSON.stringify(schema);
+      document.head.appendChild(schemaScript);
+   }
+
+   // Keep canonical and social metadata consistent with the production homepage URL.
+   if (!document.querySelector('link[rel="canonical"]')) {
+      var canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      canonical.href = 'https://flowvello.com/';
+      document.head.appendChild(canonical);
+   }
+
+   var socialMeta = {
+      'og:type': 'website',
+      'og:url': 'https://flowvello.com/',
+      'og:title': 'Flow Vello | AI Automation, Agents & Software',
+      'og:description': 'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.',
+      'twitter:card': 'summary_large_image',
+      'twitter:title': 'Flow Vello | AI Automation, Agents & Software',
+      'twitter:description': 'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.'
+   };
+   Object.keys(socialMeta).forEach(function(key) {
+      var attr = key.indexOf('twitter:') === 0 ? 'name' : 'property';
+      if (!document.querySelector('meta[' + attr + '="' + key + '"]')) {
+         var meta = document.createElement('meta');
+         meta.setAttribute(attr, key);
+         meta.content = socialMeta[key];
+         document.head.appendChild(meta);
+      }
+   });
+
+
    $('.popup-with-zoom-anim').magnificPopup({
       type: 'inline',
 
