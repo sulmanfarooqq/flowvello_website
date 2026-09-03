@@ -1,0 +1,18 @@
+---
+description: Flow Vello project-wide engineering and design rules
+globs: **/*
+alwaysApply: true
+---
+
+# Flow Vello Project Rules
+
+- Treat `AGENTS.md` as the primary project contract.
+- Preserve the established Flow Vello visual system; do not introduce a disconnected UI style.
+- Build static-first HTML pages with reusable CSS/JS patterns.
+- Keep navigation, footer, buttons, typography, spacing, animation, and responsive behavior consistent.
+- Use semantic HTML, accessible controls, one H1 per page, descriptive alt text, and keyboard support.
+- Every public page needs unique title, description, canonical, Open Graph metadata, and appropriate JSON-LD.
+- Never fabricate social proof, client work, statistics, testimonials, certifications, or business details.
+- Prefer existing dependencies and patterns before adding a new dependency.
+- Do not expose secrets or hard-code credentials.
+- Before finishing, inspect the affected page at desktop/mobile widths, verify links/assets, and check for console errors.
