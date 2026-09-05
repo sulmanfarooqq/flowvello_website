@@ -2005,6 +2005,107 @@ i {
   max-width: 500px;
 }
 
+/* --- SERVICES CAROUSEL --- */
+.fv-services-presentation {
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.services-carousel .owl-stage-outer {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.service-slide-card {
+  position: relative;
+  height: 450px;
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #222429;
+}
+.service-slide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.card-grad-1 { background: linear-gradient(135deg, #1d1e22 0%, #292b33 100%); }
+.card-grad-2 { background: linear-gradient(135deg, #252830 0%, #1d1e22 100%); }
+.card-grad-3 { background: linear-gradient(135deg, #1f2229 0%, #252830 100%); }
+.card-grad-4 { background: linear-gradient(135deg, #2b2223 0%, #1d1e22 100%); }
+.card-grad-5 { background: linear-gradient(135deg, #1d1e22 0%, #2d2627 100%); }
+.card-grad-6 { background: linear-gradient(135deg, #22252b 0%, #1d1e22 100%); }
+
+.service-slide-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(34,36,41,0.9) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.service-slide-card .card-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.service-number {
+  font-family: monospace;
+  color: rgba(255,255,255,0.4);
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.service-icon {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: auto;
+}
+.service-text h3 {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.service-text p {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+/* Owl Next/Prev Buttons styled like the demo */
+.services-carousel .owl-nav {
+  position: absolute;
+  top: -95px;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+.services-carousel .owl-nav button.owl-prev,
+.services-carousel .owl-nav button.owl-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(29,30,34,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(29,30,34,0.1) !important;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  color: #1d1e22 !important;
+}
+.services-carousel .owl-nav button.owl-prev:hover,
+.services-carousel .owl-nav button.owl-next:hover {
+  background: rgba(29,30,34,0.1);
+}
+
 /* Mobile responsive for split section */
 @media (max-width: 991px) {
   .fv-split-content {

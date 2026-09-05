@@ -36,6 +36,9 @@ $(document).ready(function() {
    var owl3 = $('#specialFeature .owl-carousel');
    owl3.owlCarousel({ animateOut:'fadeOut', loop:true, nav:false, margin:30, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
 
+   var servicesCarousel = $('#servicesCarousel');
+   servicesCarousel.owlCarousel({ loop:true, nav:true, navText:['<i class="fal fa-arrow-left"></i>','<i class="fal fa-arrow-right"></i>'], dots:false, margin:20, autoplay:true, autoplayTimeout:4000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
+
    var wow = new WOW({ boxClass:'wow', animateClass:'animated', offset:0, mobile:true, live:true, scrollContainer:null, resetAnimation:true });
    wow.init();
 
