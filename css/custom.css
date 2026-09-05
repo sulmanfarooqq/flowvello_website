@@ -1382,6 +1382,186 @@ i {
   text-decoration: none;
 }
 
+/* --- PRESENTATION SECTION --- */
+.presentation-section {
+  background-color: #222429;
+  padding: 100px 0;
+}
+.presentation-section h2 {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+.presentation-subtitle {
+  color: #9ca3a9;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  margin: 0 auto 60px;
+}
+.presentation-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.presentation-card {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px);
+}
+.presentation-card.centered-card {
+  width: calc(65% - 15px);
+  margin-top: 15px;
+}
+.presentation-card .card-number {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  flex-shrink: 0;
+  font-family: 'Rubik', sans-serif;
+}
+.presentation-card .card-number::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.presentation-card .card-content {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 24px; 
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  flex-grow: 1;
+  background: transparent;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+}
+.presentation-footer {
+  color: #9ca3a9;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  margin-top: 60px;
+}
+@media (max-width: 991px) {
+  .presentation-card,
+  .presentation-card.centered-card {
+    width: 100%;
+  }
+}
+
+/* --- INDUSTRIES GRID SECTION --- */
+.fv-industries-grid {
+  background-color: #fafafa;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.niches-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #e5e5e3;
+  border: 1px solid #e5e5e3;
+  gap: 1px;
+}
+@media (min-width: 768px) {
+  .niches-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 992px) {
+  .niches-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.niche-card {
+  background-color: #fafafa;
+  position: relative;
+  padding: 40px 30px;
+  z-index: 1;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.niche-card:hover {
+  text-decoration: none;
+}
+.niche-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.02), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+.niche-card:hover::before {
+  opacity: 1;
+}
+.niche-title-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+.niche-accent {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 0px;
+  background-color: #fb383b;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.3s ease;
+}
+.niche-card:hover .niche-accent {
+  height: 24px;
+}
+.niche-title {
+  color: #1d1e22;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.niche-card:hover .niche-title {
+  transform: translateX(8px);
+}
+.niche-icon {
+  font-size: 24px;
+  color: #6f7075;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+.niche-card:hover .niche-icon {
+  color: #1d1e22;
+}
+.niche-desc {
+  color: #6f7075;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
 /* --- LOGO MARQUEE --- */
 .fv-logo-marquee {
   background-color: #fff;
@@ -1433,6 +1613,7 @@ i {
   opacity: 0;
   pointer-events: none;
   z-index: 0;
+  list-style: none;
 }
 .nav-scrolled .nav-hover-pill {
   background: rgba(255, 255, 255, 0.15);
@@ -1445,6 +1626,7 @@ i {
   transition: all 0.3s ease-out;
   pointer-events: none;
   z-index: 1;
+  list-style: none;
 }
 #navigration .nav-item {
   position: relative;
