@@ -2503,3 +2503,106 @@ i {
   box-shadow: 0 10px 25px rgba(0,0,0,0.04) !important;
   border-color: rgba(251, 56, 59, 0.15) !important;
 }
+
+/* --- DUAL ELEMENT BUTTON (REACT-INSPIRED) --- */
+.fv-dual-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+.fv-dual-btn:hover {
+  text-decoration: none;
+}
+.fv-btn-pill {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #fb383b;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.fv-btn-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #fb383b;
+  color: #ffffff;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.fv-dual-btn:hover .fv-btn-pill,
+.fv-dual-btn:hover .fv-btn-circle {
+  background-color: #ffffff;
+  color: #fb383b;
+}
+.fv-btn-circle i {
+  position: absolute;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+}
+/* The main arrow sitting in center */
+.fv-btn-circle i.arrow-main {
+  transform: translate(0, 0) rotate(-45deg);
+}
+/* The secondary arrow sitting bottom-left */
+.fv-btn-circle i.arrow-hover {
+  transform: translate(-35px, 35px) rotate(-45deg);
+}
+/* On hover, main arrow goes top-right, secondary goes center */
+.fv-dual-btn:hover i.arrow-main {
+  transform: translate(35px, -35px) rotate(-45deg);
+}
+.fv-dual-btn:hover i.arrow-hover {
+  transform: translate(0, 0) rotate(-45deg);
+}
+
+/* Standalone Nav Circle Arrow */
+.fv-nav-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fb383b;
+  color: #ffffff;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.fv-nav-circle:hover {
+  background-color: #ffffff;
+  color: #fb383b;
+}
+.fv-nav-circle i {
+  position: absolute;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+.fv-nav-circle i.arrow-main {
+  transform: translate(0, 0) rotate(-45deg);
+}
+.fv-nav-circle i.arrow-hover {
+  transform: translate(-30px, 30px) rotate(-45deg);
+}
+.fv-nav-circle:hover i.arrow-main {
+  transform: translate(30px, -30px) rotate(-45deg);
+}
+.fv-nav-circle:hover i.arrow-hover {
+  transform: translate(0, 0) rotate(-45deg);
+}
