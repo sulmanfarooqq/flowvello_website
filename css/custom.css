@@ -1421,6 +1421,38 @@ i {
   text-decoration: none;
 }
 
+/* Vercel-style Tab Nav Indicators */
+.nav-hover-pill {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.nav-scrolled .nav-hover-pill {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav-active-line {
+  position: absolute;
+  height: 2px;
+  background: #fb383b;
+  bottom: 0;
+  transition: all 0.3s ease-out;
+  pointer-events: none;
+  z-index: 1;
+}
+#navigration .nav-item {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .nav-hover-pill, .nav-active-line {
+    display: none !important;
+  }
+}
+
 /* --- PREMIUM HERO SECTION --- */
 #premiumHeroSection {
   position: relative;
