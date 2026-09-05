@@ -286,7 +286,7 @@ i {
 
 #homeSection {
   position: relative;
-  margin-bottom: 100px; }
+  margin-bottom: 0px; }
   #homeSection .slider-box {
     background: url(../img/home-bg.jpg);
     background-size: cover;
@@ -1380,6 +1380,48 @@ i {
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
   text-decoration: none;
+}
+
+/* --- LOGO MARQUEE --- */
+.fv-logo-marquee {
+  background-color: #fff;
+  padding: 15px 0;
+}
+.marquee-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-marquee 40s linear infinite;
+}
+.marquee-track:hover {
+  animation-duration: 80s;
+}
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding-right: 80px;
+}
+.marquee-content img {
+  height: 28px;
+  object-fit: contain;
+  filter: opacity(70%);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+.marquee-content img:hover {
+  filter: opacity(100%);
+}
+@keyframes scroll-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* Vercel-style Tab Nav Indicators */
