@@ -2037,6 +2037,23 @@ i {
 .card-grad-5 { background: linear-gradient(135deg, #1d1e22 0%, #2d2627 100%); }
 .card-grad-6 { background: linear-gradient(135deg, #22252b 0%, #1d1e22 100%); }
 
+.card-watermark {
+  position: absolute;
+  bottom: 0px;
+  right: -20px;
+  font-size: 260px;
+  color: #fff;
+  opacity: 0.02;
+  transform: rotate(-15deg);
+  transition: all 0.5s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+.service-slide-card:hover .card-watermark {
+  opacity: 0.04;
+  transform: rotate(-5deg) scale(1.05);
+}
+
 .service-slide-card::before {
   content: '';
   position: absolute;
@@ -2058,6 +2075,211 @@ i {
   font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 30px;
+}
+
+/* --- FEATURE GRID SECTION --- */
+.fv-why-grid {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.dot-pattern-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.5;
+  z-index: 0;
+}
+.fv-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+}
+.fv-badge:hover {
+  background-color: #374151;
+}
+
+/* --- HOW WE WORK (DARK) --- */
+.fv-process-dark {
+  background: linear-gradient(135deg, #111827 0%, #1d1e22 100%);
+  position: relative;
+  overflow: hidden;
+}
+.fv-process-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: 0;
+}
+.fv-process-dark .container {
+  position: relative;
+  z-index: 1;
+}
+.process-number {
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fb383b;
+  margin-right: 20px;
+  line-height: 1.2;
+}
+.process-content h3 {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.process-content p {
+  color: #9ca3a9;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- MODERN CTA SECTION --- */
+.cta-inner-card {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fv-badge-dark {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+}
+.cta-heading {
+  color: #111827;
+  font-family: 'Rubik', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.cta-paragraph {
+  color: #6b7280;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cta-btn-outline {
+  border: 1px solid #d1d5db;
+  color: #111827;
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.cta-btn-outline:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+.cta-btn-solid {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #111827;
+  transition: all 0.2s;
+}
+.cta-btn-solid:hover {
+  background-color: #374151;
+  color: #ffffff;
+  border-color: #374151;
+}
+@media (max-width: 768px) {
+  .cta-heading { font-size: 36px; }
+  .cta-inner-card { padding: 40px 20px; }
+}
+
+/* --- MODERN FAQ SECTION --- */
+.fv-faq-modern-accordion .fv-faq-modern-item {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  border-radius: 0 !important;
+  padding: 24px 0 !important;
+  margin-bottom: 0 !important;
+  box-shadow: none !important;
+}
+.fv-faq-modern-accordion .fv-faq-modern-item:last-child {
+  border-bottom: none !important;
+}
+.fv-faq-modern-header h3 {
+  color: #111827 !important;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  transition: opacity 0.2s ease !important;
+}
+.fv-faq-modern-header {
+  cursor: pointer;
+}
+.fv-faq-modern-header:hover h3 {
+  opacity: 0.7 !important;
+}
+.fv-faq-modern-header .fal {
+  color: #111827 !important;
+  font-size: 16px !important;
+  transition: transform 0.3s ease !important;
+}
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header h3,
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+  transform: rotate(180deg) !important;
+}
+.fv-faq-modern-content p {
+  color: #6b7280 !important;
+  font-size: 16px !important;
+  padding-top: 12px !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
 }
 .service-icon {
   color: #fff;
