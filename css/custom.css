@@ -333,47 +333,46 @@ i {
   #homeSection .owl-nav {
     display: block;
     position: absolute;
-    top: 90%;
-    right: 10%;
-    transform: translate(-10%, -90%);
-    transition: .4s; }
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    transition: .4s;
+    pointer-events: none; }
     #homeSection .owl-nav button {
       width: 50px;
-      height: 50px;
+      height: 100px;
       display: block;
-      background: none;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 100px;
-      transition: .4s; }
+      background: none !important;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .4s;
+      pointer-events: auto; }
     #homeSection .owl-nav button:hover {
-      background: #fb383b;
-      color: #fff; }
+      opacity: 0.7; }
     #homeSection .owl-nav .owl-prev {
-      margin-bottom: 15px; }
+      left: 20px; }
       #homeSection .owl-nav .owl-prev span {
-        opacity: 0; }
+        display: none; }
     #homeSection .owl-nav .owl-next {
-      float: right; }
+      right: 20px; }
       #homeSection .owl-nav .owl-next span {
-        opacity: 0; }
+        display: none; }
     #homeSection .owl-nav .owl-prev::before,
     #homeSection .owl-nav .owl-next::before {
-      font-size: 16px;
+      font-size: 50px;
+      font-weight: 300;
       text-align: center;
-      color: rgba(255, 255, 255, 0.5);
+      color: #fff;
       content: '\f053';
-      font-family: 'Font Awesome 5 pro';
+      font-family: 'Font Awesome 5 pro', 'FontAwesome', sans-serif;
       transition: .4s; }
     #homeSection .owl-nav .owl-next::before {
       content: '\f054';
-      padding: 22px; }
-    #homeSection .owl-nav .owl-prev:focus {
-      outline: 0px dotted; }
+      padding: 0; }
+    #homeSection .owl-nav .owl-prev:focus,
     #homeSection .owl-nav .owl-next:focus {
-      outline: 0px dotted; }
-    #homeSection .owl-nav .owl-prev:hover:before,
-    #homeSection .owl-nav .owl-next:hover:before {
-      color: #fff; }
+      outline: none; }
 
 #featureSection {
   margin-bottom: 100px; }
