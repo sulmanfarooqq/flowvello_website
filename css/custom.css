@@ -1020,116 +1020,77 @@ i {
   border: 1px solid #fff; }
 
 #footerSection {
-  background: #222429;
+  background: #fff;
   position: relative;
-  padding-top: 160px; }
-  #footerSection .footer-box .logo {
-    font-size: 38px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none; }
-  #footerSection .footer-box .about {
-    color: #9ca3a9;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 30px; }
-  #footerSection .footer-box .social-links a {
-    background: #000;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border-radius: 100px;
-    text-align: center;
-    margin-right: 10px;
-    transition: .4s; }
-    #footerSection .footer-box .social-links a .fab {
-      color: #9ca3a9;
-      padding-top: 12px; }
-  #footerSection .footer-box .social-links a:hover {
-    background: #fb383b; }
-    #footerSection .footer-box .social-links a:hover .fab {
-      color: #000; }
-  #footerSection .footer-box .title {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 30px; }
-  #footerSection .footer-box a {
-    display: block;
-    color: #9ca3a9;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    transition: .4s; }
-  #footerSection .footer-box a:hover {
-    color: #fff; }
-  #footerSection .box2 ul li {
-    list-style: none;
-    margin-bottom: 10px; }
-    #footerSection .box2 ul li a {
-      color: #9ca3a9;
-      font-family: 'Rubik', sans-serif;
-      font-size: 16px;
-      transition: .4s; }
-    #footerSection .box2 ul li a:hover {
-      color: #fff; }
-  #footerSection .box3 .icon-box {
-    display: flex;
-    align-items: top;
-    margin-bottom: 20px; }
-    #footerSection .box3 .icon-box .icon {
-      width: 30px; }
-      #footerSection .box3 .icon-box .icon .fal {
-        color: #fb383b; }
-    #footerSection .box3 .icon-box .txt p {
-      margin-bottom: 0;
-      color: #fff; }
-    #footerSection .box3 .icon-box .txt span {
-      color: #9ca3a9;
-      font-family: 'Rubik', sans-serif;
-      font-size: 16px; }
-  #footerSection .box4 span {
-    color: #9ca3a9;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px; }
-  #footerSection .box4 form {
-    position: relative;
-    max-width: 250px; }
-    #footerSection .box4 form .form-group .form-control {
-      font-family: 'Rubik', sans-serif;
-      background: #000;
-      border: 1px solid #000;
-      font-size: 15px;
-      padding: 20px;
-      border-radius: 8px; }
-    #footerSection .box4 form .form-group .form-control:focus {
-      box-shadow: none;
-      border: 1px solid #fb383b; }
-    #footerSection .box4 form .form-group input {
-      height: 62px; }
-    #footerSection .box4 form .btn {
-      background: #fb383b;
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      height: 45px;
-      width: 45px;
-      border-radius: 100px;
-      transition: .4s; }
-      #footerSection .box4 form .btn .fal {
-        padding-top: 7px;
-        color: #000; }
-    #footerSection .box4 form .btn:hover {
-      background: #fff; }
-      #footerSection .box4 form .btn:hover .fal {
-        color: #fb383b; }
-  #footerSection .copy-right {
-    margin-top: 80px;
-    border-top: 1px solid #ffffff1a;
-    padding: 30px 0;
-    text-align: center; }
-    #footerSection .copy-right span {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+#footerSection .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1e22;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+#footerSection .about {
+  color: #6f7075;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+#footerSection .social-links a {
+  display: inline-block;
+  color: #6f7075;
+  font-size: 18px;
+  margin-right: 18px;
+  transition: color .3s ease;
+}
+#footerSection .social-links a:hover {
+  color: #1d1e22;
+}
+#footerSection .footer-box .title {
+  color: #1d1e22;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: 'Rubik', sans-serif;
+}
+#footerSection .footer-box a {
+  display: block;
+  color: #6f7075;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+#footerSection .footer-box a:hover {
+  color: #1d1e22;
+}
+#footerSection .footer-bottom {
+  border-top: 1px solid #e5e5e3;
+  margin-top: 60px !important;
+}
+#footerSection .footer-bottom p {
+  color: #6f7075;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 0;
+}
+#footerSection .footer-bottom a {
+  color: #6f7075;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+#footerSection .footer-bottom a:hover {
+  color: #1d1e22;
+}
+#footerSection .copy-right span {
       color: #9ca3a9;
       font-family: 'Rubik', sans-serif;
       font-size: 16px; }
