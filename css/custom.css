@@ -2312,6 +2312,59 @@ i {
     padding: 30px 20px;
   }
 }
+
+/* --- MODERN LOGO CLOUD --- */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+.logo-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+}
+.logo-grid-item.bg-light { background-color: #f9fafb; }
+.logo-grid-item.bg-white { background-color: #ffffff; }
+.logo-grid-item.border-right { border-right: 1px solid #e5e7eb; }
+.logo-grid-item.border-bottom { border-bottom: 1px solid #e5e7eb; }
+.logo-grid-item img {
+  height: 24px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.8);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.logo-grid-item:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+.crosshair {
+  position: absolute;
+  font-size: 10px;
+  color: #9ca3af;
+  font-weight: 300;
+  z-index: 10;
+}
+.crosshair.bottom-right {
+  bottom: -5.5px;
+  right: -5px;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-grid-item.border-right {
+    border-right: none;
+  }
+  /* simple overrides for 2 columns */
+  .logo-grid-item:nth-child(odd) { border-right: 1px solid #e5e7eb; }
+}
 .service-icon {
   color: #fff;
   font-size: 40px;
