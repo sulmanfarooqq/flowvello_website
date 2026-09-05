@@ -2281,6 +2281,37 @@ i {
   margin: 0 !important;
   line-height: 1.6 !important;
 }
+
+/* --- BENTO CAPABILITIES GRID --- */
+.fv-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #1f2937;
+  border-left: 1px solid #1f2937;
+}
+.fv-bento-item {
+  border-right: 1px solid #1f2937;
+  border-bottom: 1px solid #1f2937;
+  padding: 40px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.fv-bento-item:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+@media (max-width: 991px) {
+  .fv-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .fv-bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .fv-bento-item {
+    padding: 30px 20px;
+  }
+}
 .service-icon {
   color: #fff;
   font-size: 40px;
