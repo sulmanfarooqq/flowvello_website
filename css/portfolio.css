@@ -1,0 +1,93 @@
+
+
+/* Extracted from global.css */
+
+#portfolioSection {
+    margin-bottom: 100px
+    }
+
+#portfolioSection .indicator span {
+    color: #666;
+    font-size: 22px;
+    transition: 0.4s;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px
+    }
+
+#portfolioSection .indicator span:last-child {
+    margin-right: 0
+    }
+
+#portfolioSection .indicator span:hover {
+    color: #fb383b
+    }
+
+#portfolioSection .indicator span.active {
+    color: #fb383b
+    }
+
+#portfolioSection .indicator span::after {
+    content: "";
+    background: #fb383b;
+    display: block;
+    width: 0;
+    height: 2px;
+    opacity: 0;
+    top: 30px;
+    transition: 0.4s
+    }
+
+#portfolioSection .indicator span.active::after, #portfolioSection .indicator span:hover::after {
+    width: 100%;
+    opacity: 1
+    }
+
+#portfolioSection #portfolio {
+    margin-top: 35px
+    }
+
+#portfolioSection .portfolio-box {
+    position: relative;
+    margin: 15px 0;
+    overflow: hidden
+    }
+
+#portfolioSection .portfolio-box .hover-txt {
+    background: #1d1e22;
+    padding: 30px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    transition: 0.4s
+    }
+
+#portfolioSection .portfolio-box .hover-txt .category {
+    color: #fff;
+    font-size: 18px;
+    position: relative
+    }
+
+#portfolioSection .portfolio-box .hover-txt .category:before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #fb383b;
+    position: absolute;
+    border-radius: 3px;
+    bottom: 9px;
+    right: -70px
+    }
+
+#portfolioSection .portfolio-box .hover-txt p {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 22px
+    }
+
+#portfolioSection .portfolio-box:hover .hover-txt {
+    transform: translatey(-115%)
+    }

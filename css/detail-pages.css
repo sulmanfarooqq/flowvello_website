@@ -1,0 +1,74 @@
+/* ==========================================================================
+   DETAIL PAGE STYLES (e.g. Workflow Automation, WhatsApp Messaging)
+   ========================================================================== */
+
+/* Detail Page Hero */
+.fv-detail-hero {
+    position: relative;
+    padding: 180px 0 120px;
+    background: #111827;
+    overflow: hidden;
+}
+.fv-detail-hero .bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    z-index: 0;
+}
+.fv-detail-hero .overlay-grad {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(17,24,39,1) 0%, rgba(17,24,39,0.3) 100%);
+    z-index: 1;
+}
+.fv-detail-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Detail Page Content */
+.fv-detail-content {
+    padding: 100px 0;
+    background: #ffffff;
+}
+.fv-detail-content h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+    color: #1d1e22;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+.fv-detail-content .problem-box {
+    background: #f8f8f6;
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 4px solid #fb383b;
+    height: 100%;
+}
+.fv-detail-content .problem-box p {
+    font-size: 17px;
+    color: #4a4b50;
+    line-height: 1.7;
+    margin: 0;
+}
+.fv-detail-content .solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.fv-detail-content .solution-list li {
+    font-size: 18px;
+    color: #1d1e22;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.fv-detail-content .solution-list li i {
+    color: #fb383b;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-top: 3px;
+}

@@ -1,0 +1,100 @@
+
+
+/* Extracted from global.css */
+
+#testimonialSection {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    overflow: hidden
+    }
+
+#testimonialSection .testimonial-box {
+    border-radius: 10px;
+    padding: 40px 50px;
+    transition: 0.4s
+    }
+
+#testimonialSection .testimonial-box .top-part {
+    display: flex;
+    align-items: center
+    }
+
+#testimonialSection .testimonial-box .top-part .client {
+    margin-right: 15px
+    }
+
+#testimonialSection .testimonial-box .top-part .client img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px
+    }
+
+#testimonialSection .testimonial-box .top-part .quote {
+    margin-left: auto;
+    position: relative;
+    align-self: start
+    }
+
+#testimonialSection .testimonial-box .top-part .quote img {
+    width: 40px
+    }
+
+#testimonialSection .testimonial-box .top-part .quote .img02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0
+    }
+
+#testimonialSection .testimonial-box .feedback {
+    color: #666;
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 0;
+    transition: 0.4s
+    }
+
+#testimonialSection .testimonial-box:hover {
+    background: #fb383b
+    }
+
+#testimonialSection .testimonial-box:hover .quote .img02 {
+    opacity: 1
+    }
+
+#testimonialSection .testimonial-box:hover .feedback {
+    color: #333
+    }
+
+#testimonialSection .owl-stage-outer {
+    overflow: visible
+    }
+
+#testimonialSection .owl-dots {
+    position: absolute;
+    display: inline-block;
+    top: -90px;
+    right: 0
+    }
+
+#testimonialSection .owl-dots .owl-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background: none;
+    border: 1px solid #fb383b;
+    border-radius: 20px;
+    transition: 0.4s;
+    margin: 0 5px
+    }
+
+#testimonialSection .owl-dots .owl-dot:focus {
+    outline: 0 dotted !important;
+    outline: 0 auto -webkit-focus-ring-color !important
+    }
+
+#testimonialSection .owl-dots .owl-dot.active {
+    background: #fb383b
+    }

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   SERVICES HUB PAGE STYLES
+   ========================================================================== */
+
+.fv-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+@media (max-width: 991px) {
+    .fv-premium-grid { grid-template-columns: 1fr; }
+}
+
+.fv-premium-card {
+    background: #1d1e22;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.fv-premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.fv-premium-card .img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.fv-premium-card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.fv-premium-card:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+
+.fv-premium-card .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.fv-premium-card .content h4 {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.fv-premium-card .content p {
+    color: #a1a1a6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.fv-premium-card .card-footer-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.fv-premium-card .card-footer-action span {
+    color: #fb383b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.fv-premium-card .card-footer-action .arrow-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fb383b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.fv-premium-card:hover .card-footer-action .arrow-circle {
+    transform: translateX(5px);
+    background: #ffffff;
+    color: #fb383b;
+}
