@@ -4,37 +4,75 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Get in touch with Flow Vello. Share your automation needs and we'll follow up with a tailored strategy proposal for AI agents, workflows, dashboards, or custom software.">
    <link rel="shortcut icon" href="img/softoweb.png">
-   <!-- GOOGLE FONTS CDN LINK -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <!-- CSS LINK -->
    <link rel="stylesheet" href="css/bootstrap.css">
-   <!-- AOS ANIAMATION PLUGIN -->
    <link rel="stylesheet" href="css/animate.css">
-   <!-- OWL CAROUSEL PLUGIN -->
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-   <!-- MAGNIFIC POPUP PLUGIN -->
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/custom.css">
-   <title>SoftoWeb</title>
+   <link rel="stylesheet" href="css/chatbot.css">
+   <title>Contact Us | Flow Vello — Let's Connect</title>
+   <style>
+      :root { --fv-red:#fb383b; --fv-dark:#1d1e22; --fv-muted:#6f7075; }
+      html { scroll-behavior:smooth; }
+      .fv-section { padding:105px 0; }
+      .fv-eyebrow { display:inline-block; margin-bottom:14px; font-size:13px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
+      .fv-lead { max-width:680px; color:var(--fv-muted); line-height:1.85; }
+      .fv-centered { text-align:center; margin-left:auto; margin-right:auto; }
+      .fv-page-hero { padding:160px 0 80px; background:var(--fv-dark); color:#fff; position:relative; overflow:hidden; }
+      .fv-page-hero h1 { font-family:'Rubik',sans-serif; font-size:56px; font-weight:600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:20px; }
+      .fv-page-hero p { font-family:'Rubik',sans-serif; font-size:18px; line-height:1.7; color:#bdbec2; max-width:600px; }
+      .fv-contact-section { padding:100px 0; background:#fff; }
+      .fv-contact-info h3 { font-family:'Rubik',sans-serif; font-size:28px; font-weight:600; color:#111827; margin-bottom:20px; }
+      .fv-contact-info p { font-family:'Rubik',sans-serif; font-size:16px; line-height:1.7; color:var(--fv-muted); margin-bottom:30px; }
+      .fv-contact-card { padding:28px 24px; background:#f7f7f5; border:1px solid #e5e5e3; height:100%; transition:.3s; }
+      .fv-contact-card:hover { border-color:var(--fv-red); transform:translateY(-4px); box-shadow:0 12px 30px rgba(29,30,34,.06); }
+      .fv-contact-card .icon { width:48px; height:48px; border-radius:50%; background:var(--fv-dark); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:16px; }
+      .fv-contact-card h4 { font-family:'Rubik',sans-serif; font-size:15px; font-weight:700; color:#111827; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; }
+      .fv-contact-card span { font-family:'Rubik',sans-serif; font-size:15px; color:var(--fv-muted); line-height:1.6; }
+      .fv-contact-card a { color:var(--fv-muted); text-decoration:none; transition:color .3s; }
+      .fv-contact-card a:hover { color:var(--fv-red); }
+      .fv-contact-form-wrap { background:#f7f7f5; border:1px solid #e5e5e3; padding:45px 40px; }
+      .fv-contact-form-wrap h3 { font-family:'Rubik',sans-serif; font-size:24px; font-weight:600; color:#111827; margin-bottom:25px; }
+      .fv-contact-form-wrap label { font-family:'Rubik',sans-serif; font-size:14px; font-weight:600; color:#111827; margin-bottom:6px; }
+      .fv-contact-form-wrap .form-control { font-family:'Rubik',sans-serif; font-size:15px; padding:14px 16px; border:1px solid #dddeda; border-radius:4px; background:#fff; transition:border-color .3s; }
+      .fv-contact-form-wrap .form-control:focus { border-color:var(--fv-red); box-shadow:none; outline:none; }
+      .fv-contact-form-wrap textarea.form-control { min-height:140px; resize:vertical; }
+      .fv-contact-form-wrap .fv-checkbox-group { display:flex; flex-wrap:wrap; gap:10px 20px; margin-top:4px; }
+      .fv-contact-form-wrap .fv-checkbox-label { font-family:'Rubik',sans-serif; font-size:14px; color:#444; display:flex; align-items:center; gap:8px; cursor:pointer; }
+      .fv-contact-form-wrap .fv-checkbox-label input[type="checkbox"] { width:16px; height:16px; accent-color:var(--fv-red); }
+      .fv-form-submit { display:inline-block; padding:14px 36px; background:var(--fv-red); color:#fff; border:none; border-radius:4px; font-family:'Rubik',sans-serif; font-size:15px; font-weight:600; letter-spacing:0.5px; cursor:pointer; transition:background .3s; }
+      .fv-form-submit:hover { background:#e02e31; }
+      .fv-map-section { padding:0; }
+      .fv-map-section iframe { width:100%; height:400px; border:0; display:block; }
+      .fv-contact-cta { padding:95px 0; background:var(--fv-dark); color:#fff; text-align:center; }
+      .fv-contact-cta h2 { color:#fff; font-size:46px; font-family:'Rubik',sans-serif; margin-bottom:15px; }
+      .fv-contact-cta p { max-width:650px; margin:0 auto 28px; color:#bdbec2; line-height:1.8; font-family:'Rubik',sans-serif; font-size:18px; }
+      .fv-contact-cta .btn { background:var(--fv-red); color:#fff; border-color:var(--fv-red); }
+      .fv-form-success { display:none; padding:30px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; text-align:center; }
+      .fv-form-success h4 { font-family:'Rubik',sans-serif; color:#166534; font-size:20px; margin-bottom:8px; }
+      .fv-form-success p { font-family:'Rubik',sans-serif; color:#15803d; font-size:15px; margin:0; }
+      @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-page-hero h1 { font-size:40px; } .fv-contact-form-wrap { padding:35px 25px; } }
+      @media(max-width:767px) { .fv-page-hero { padding:130px 0 60px; } .fv-contact-cta h2 { font-size:34px; } }
+   </style>
 </head>
 <body>
 
-
-
-<!-- ======================================== NAVIGRATION ======================================== -->
+   <!-- NAVIGATION -->
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
-         <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
          <a class="logo" href="index.html">Flow Vello</a>
          <div class="sidenav">
             <div class="header">
                <a class="logo d-lg-none" href="index.html">Flow Vello</a>
-               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt="Close menu"></a>
             </div>
-            <ul class="mb-0">
+            <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
+               <li class="nav-hover-pill" aria-hidden="true"></li>
                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
@@ -50,229 +88,204 @@
                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+               <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
          </div>
-         <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button>
-         <div id="hamburger" class="d-lg-none">
-            <img src="img/icon/menu.png" class="img01" alt="">
-         </div>
+         <a href="contact.html" class="fv-nav-circle d-none d-md-flex" aria-label="Let's Connect">
+            <i class="fal fa-arrow-right arrow-main"></i>
+            <i class="fal fa-arrow-right arrow-hover"></i>
+         </a>
+         <div id="hamburger" class="d-lg-none"><img src="img/icon/menu.png" class="img01" alt="Open menu"></div>
       </div>
    </nav>
 
-
-
-   <!-- ======================================== PAGE HEADER ======================================== -->
-   <section id="pageHeader">
-      <div class="overlay">
-         <div class="container">
-            <div class="row">
-               <div class="col">
-                  <div class="txt text-center">
-                     <div class="sec-header">
-                        <h2>CONTACT US<span>.</span></h2>
-                        <p><a href="index.html">HOME</a> <span>/</span> CONTACT US</p>
-                     </div>
-                  </div>
-               </div>
+   <!-- PAGE HERO -->
+   <section class="fv-page-hero">
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1.5px,transparent 1.5px);background-size:24px 24px;z-index:0;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+         <div class="row">
+            <div class="col-lg-8">
+               <span class="fv-eyebrow" style="color:rgba(255,255,255,.6);">CONTACT</span>
+               <h1>Let's connect<span style="color:var(--fv-red);">.</span></h1>
+               <p>Share a bit of context and we'll follow up with a tailored strategy proposal — whether you need AI agents, workflow automation, dashboards, or custom software.</p>
             </div>
          </div>
       </div>
    </section>
 
-
-
-
-
-   <!-- ======================================== CONTACT SECTION ======================================== -->
-   <section id="contactSection">
+   <!-- CONTACT SECTION -->
+   <section class="fv-contact-section">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-               <div class="part1">
-                  <div class="sec-header">
-                     <h2>WE ARE ALWAYS HERE TO HELP YOU<span>.</span></h2>
-                     <p>There are many variatns of passages the majority have suffered alteration in some foor randomised words believable.</p>
-                  </div>
-                  <div class="icon-box wow fadeInLeftBig" data-wow-duration="1.5s">
-                     <div class="icon">
-                        <i class="fal fa-map-marker-alt"></i>
-                     </div>
-                     <div class="txt">
-                        <p>VISIT US</p>
-                        <span>66 Broklyn Street, New York. USA</span>
-                     </div>
-                  </div>
-                  <div class="icon-box wow fadeInLeftBig" data-wow-duration="1.5s">
-                     <div class="icon">
-                        <i class="fal fa-envelope"></i>
-                     </div>
-                     <div class="txt">
-                        <p>EMAIL ADDRESS</p>
-                        <span>softoweb1@gmail.com</span>
-                     </div>
-                  </div>
-                  <div class="icon-box mb-0 wow fadeInLeftBig" data-wow-duration="1.5s">
-                     <div class="icon">
-                        <i class="fal fa-phone-alt"></i>
-                     </div>
-                     <div class="txt">
-                        <p>CALL NOW</p>
-                        <span>01934565397</span>
-                     </div>
-                  </div>
+         <div class="row mb-5">
+            <div class="col-lg-4 mb-4 mb-lg-0 wow fadeInUp" data-wow-delay="0.1s">
+               <div class="fv-contact-card">
+                  <div class="icon"><i class="fal fa-envelope"></i></div>
+                  <h4>Email Us</h4>
+                  <span><a href="mailto:contact@flowvello.com">contact@flowvello.com</a></span>
                </div>
             </div>
-            <div class="col-lg-6">
-               <form class="wow fadeInUpBig" data-wow-duration="1.5s">
-                  <div class="form-row">
-                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                     </div>
-                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                     </div>
-                     <div class="form-group col-md-6">
-                        <input type="number" class="form-control" placeholder="Phone Number">
-                     </div>
-                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Subject">
-                     </div>
-                     <div class="form-group col-12">
-                        <textarea class="form-control" rows="8" cols="80" placeholder="Write Message"></textarea>
-                     </div>
-                  </div>
-                  <button type="submit" class="btn layer-btn">SEND MESSAGE</button>
-               </form>
+            <div class="col-lg-4 mb-4 mb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
+               <div class="fv-contact-card">
+                  <div class="icon"><i class="fal fa-map-marker-alt"></i></div>
+                  <h4>Location</h4>
+                  <span>Islamabad, Pakistan<br>Serving businesses globally</span>
+               </div>
+            </div>
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+               <div class="fv-contact-card">
+                  <div class="icon"><i class="fal fa-clock"></i></div>
+                  <h4>Response Time</h4>
+                  <span>We typically respond within one business day</span>
+               </div>
             </div>
          </div>
-      </div>
-   </section>
 
-
-
-   <section id="googleMap">
-      <div class="container">
          <div class="row">
-            <div class="col">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.00977795363!2d90.34928585186965!3d23.78077774443207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1615455043438!5m2!1sen!2sbd" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-
-   <!-- ======================================== FOOTER SECTION ======================================== -->
-   <section id="footerSection">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-               <div class="footer-box">
-                  <a href="#" class="logo">SOFTOWEB</a>
-                  <p class="about">Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing elit.</p>
-                  <div class="social-links">
-                     <a href="#"><i class="fab fa-facebook"></i></a>
-                     <a href="#"><i class="fab fa-twitter"></i></a>
-                     <a href="#"><i class="fab fa-instagram"></i></a>
-                     <a href="#" class="mr-0"><i class="fab fa-github"></i></a>
+            <div class="col-lg-5 mb-5 mb-lg-0">
+               <div class="fv-contact-info wow fadeInLeft" data-wow-delay="0.1s">
+                  <span class="fv-eyebrow">GET IN TOUCH</span>
+                  <h3 class="mb-3">Tell us about your project</h3>
+                  <p>Whether you need to automate repetitive workflows, deploy AI agents, build custom dashboards, or develop new software — we're here to help you figure out the right approach.</p>
+                  <p class="mb-4">Fill out the form and we'll get back to you with a clear plan, timeline, and transparent pricing — no hidden fees, no jargon.</p>
+                  
+                  <div style="padding:24px; background:var(--fv-dark); color:#fff; border-radius:8px;">
+                     <h4 style="font-family:'Rubik',sans-serif; font-size:16px; font-weight:600; margin-bottom:12px; color:#fff;">What happens next?</h4>
+                     <ul style="padding:0; list-style:none; margin:0;">
+                        <li style="font-family:'Rubik',sans-serif; font-size:14px; color:#bdbec2; padding:8px 0; padding-left:20px; position:relative;"><i class="fal fa-check" style="position:absolute; left:0; top:12px; color:var(--fv-red); font-size:12px;"></i>We review your project details</li>
+                        <li style="font-family:'Rubik',sans-serif; font-size:14px; color:#bdbec2; padding:8px 0; padding-left:20px; position:relative;"><i class="fal fa-check" style="position:absolute; left:0; top:12px; color:var(--fv-red); font-size:12px;"></i>Schedule a free strategy call</li>
+                        <li style="font-family:'Rubik',sans-serif; font-size:14px; color:#bdbec2; padding:8px 0; padding-left:20px; position:relative;"><i class="fal fa-check" style="position:absolute; left:0; top:12px; color:var(--fv-red); font-size:12px;"></i>Receive a tailored proposal</li>
+                     </ul>
                   </div>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-               <div class="footer-box box2">
-                  <p class="title">EXPLORE</p>
-                  <ul>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Privacy</a></li>
-                     <li><a href="#">Policy</a></li>
-                     <li><a href="#">Terms Of Use</a></li>
-                     <li class="mb-0"><a href="#">Help</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-               <div class="footer-box box3">
-                  <p class="title">CONTACT</p>
-                  <div class="icon-box">
-                     <div class="icon">
-                        <i class="fal fa-map-marker-alt"></i>
+
+            <div class="col-lg-7">
+               <div class="fv-contact-form-wrap wow fadeInRight" data-wow-delay="0.2s">
+                  <h3>Send us a message</h3>
+                  <form id="contactForm">
+                     <div class="row">
+                        <div class="col-md-6 mb-3">
+                           <label for="contactName">Full Name *</label>
+                           <input type="text" class="form-control" id="contactName" placeholder="John Smith" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                           <label for="contactEmail">Email Address *</label>
+                           <input type="email" class="form-control" id="contactEmail" placeholder="john@company.com" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                           <label for="contactPhone">Phone Number</label>
+                           <input type="tel" class="form-control" id="contactPhone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                           <label for="contactCompany">Company</label>
+                           <input type="text" class="form-control" id="contactCompany" placeholder="Your company name">
+                        </div>
+                        <div class="col-12 mb-3">
+                           <label>Services Interested In</label>
+                           <div class="fv-checkbox-group">
+                              <label class="fv-checkbox-label"><input type="checkbox" name="services" value="Workflow Automation"> Workflow Automation</label>
+                              <label class="fv-checkbox-label"><input type="checkbox" name="services" value="AI Agents"> AI Agents</label>
+                              <label class="fv-checkbox-label"><input type="checkbox" name="services" value="Executive Dashboards"> Executive Dashboards</label>
+                              <label class="fv-checkbox-label"><input type="checkbox" name="services" value="Digital Operations"> Digital Operations</label>
+                              <label class="fv-checkbox-label"><input type="checkbox" name="services" value="Software Development"> Software Development</label>
+                           </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                           <label for="contactMessage">Tell us about your project or challenge *</label>
+                           <textarea class="form-control" id="contactMessage" placeholder="Describe what you're looking to automate or build, your current tools, and any specific goals..." required></textarea>
+                        </div>
+                        <div class="col-12">
+                           <button type="submit" class="fv-form-submit">SEND MESSAGE</button>
+                        </div>
                      </div>
-                     <div class="txt">
-                        <span>66 Broklyn Street, New York. USA</span>
-                     </div>
-                  </div>
-                  <div class="icon-box">
-                     <div class="icon">
-                        <i class="fal fa-envelope"></i>
-                     </div>
-                     <div class="txt">
-                        <span>softoweb1@gmail.com</span>
-                     </div>
-                  </div>
-                  <div class="icon-box mb-0">
-                     <div class="icon">
-                        <i class="fal fa-phone-alt"></i>
-                     </div>
-                     <div class="txt">
-                        <span>01934565397</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <div class="footer-box box4">
-                  <p class="title">NEWSLETTER</p>
-                  <form>
-                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                     </div>
-                     <button type="submit" class="btn" name="button"><i class="fal fa-envelope"></i></button>
                   </form>
-                  <span>Sign up for our latest news & articles. We won’t give you spam mails.</span>
-               </div>
-            </div>
-         </div>
-         <div class="copy-right">
-            <div class="row">
-               <div class="col">
-                  <span>Copyright © 2021 SoftoWeb. All rights reserved.</span>
+                  <div class="fv-form-success" id="formSuccess">
+                     <h4>Message sent successfully!</h4>
+                     <p>Thank you for reaching out. We'll review your project details and get back to you within one business day.</p>
+                  </div>
                </div>
             </div>
          </div>
       </div>
    </section>
 
+   <!-- MAP -->
+   <section class="fv-map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.00977795363!2d90.34928585186965!3d23.78077774443207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1615455043438!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" title="Flow Vello location map"></iframe>
+   </section>
 
-   <!-- ======================================== SCROLL TO TOP ICON ======================================== -->
-   <a href="#" class="scroll-up">
-      <i class="fal fa-chevron-up"></i>
-   </a>
+   <!-- CLOSING CTA -->
+   <section class="fv-contact-cta">
+      <div class="container">
+         <h2 class="fw-bold">Prefer to chat directly?</h2>
+         <p>Send us an email at <a href="mailto:contact@flowvello.com" style="color:#fff; text-decoration:underline;">contact@flowvello.com</a> and we'll schedule a time to discuss your project in detail.</p>
+         <a href="mailto:contact@flowvello.com" class="btn px-5 py-3" style="font-family:'Rubik',sans-serif; font-size:15px; font-weight:600; border-radius:4px; letter-spacing:0.5px;">EMAIL US NOW</a>
+      </div>
+   </section>
 
+   <!-- FOOTER -->
+   <footer id="footerSection"><div class="container"><div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+         <a class="logo d-flex align-items-center" href="index.html">
+            <img src="img/softoweb.png" alt="" style="width:28px; margin-right:12px;"> Flow Vello
+         </a>
+         <p class="about">Automate, build and scale with custom AI, automation and software systems designed around your business.</p>
+         <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+      </div>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Company</p><a href="about.html">About</a><a href="case-studies.html">Case Studies</a><a href="faq.html">FAQ</a></div></div>
+      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="service.html">Workflow Automation</a><a href="service.html">WhatsApp & Messaging</a><a href="service.html">AI Customer Support</a><a href="service.html">Custom AI Agents</a><a href="service.html">Sales Automation</a><a href="service.html">Executive Dashboards</a></div></div>
+      <div class="col-lg-3"><div class="footer-box"><p class="title">Resources</p><a href="mailto:contact@flowvello.com">Email Us</a><a href="contact.html">Request a Strategy Call</a><a href="#">Islamabad, Pakistan</a><a href="#">Serving globally</a></div></div>
+   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="terms.html" class="mr-4">Terms and Conditions</a><a href="privacy.html">Privacy Policy</a></div></div></div></footer>
+
+   <!-- SCROLL TO TOP -->
+   <a href="#" class="scroll-up"><i class="fal fa-chevron-up"></i></a>
 
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/font-awesome-pro.js"></script>
-   <!-- SCROLL ANIAMATION Plugin -->
    <script src="js/wow.min.js"></script>
-   <!-- MIXIT UP Plugin -->
    <script src="js/mixitup.min.js"></script>
-   <!-- MAGNIFIC POPUP Plugin -->
    <script src="js/jquery.magnific-popup.min.js"></script>
-   <!-- CounterUp Plugin -->
    <script src="js/jquery.counterup.min.js"></script>
    <script src="js/jquery.waypoints.min.js"></script>
-   <!-- OWL CAROUSEL Plugin -->
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/chatbot.js"></script>
    <script>
-
-
-
-
-
-
+   $(document).ready(function() {
+      $('#contactForm').on('submit', function(e) {
+         e.preventDefault();
+         var name = $('#contactName').val().trim();
+         var email = $('#contactEmail').val().trim();
+         var message = $('#contactMessage').val().trim();
+         if (!name || !email || !message) {
+            alert('Please fill in all required fields.');
+            return;
+         }
+         var services = [];
+         $('input[name="services"]:checked').each(function() {
+            services.push($(this).val());
+         });
+         var subject = encodeURIComponent('Flow Vello Inquiry from ' + name);
+         var body = encodeURIComponent(
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Phone: ' + ($('#contactPhone').val() || 'Not provided') + '\n' +
+            'Company: ' + ($('#contactCompany').val() || 'Not provided') + '\n' +
+            'Services: ' + (services.length ? services.join(', ') : 'Not specified') + '\n\n' +
+            'Message:\n' + message
+         );
+         window.location.href = 'mailto:contact@flowvello.com?subject=' + subject + '&body=' + body;
+         $('#contactForm').hide();
+         $('#formSuccess').show();
+      });
+   });
    </script>
 </body>
 </html>

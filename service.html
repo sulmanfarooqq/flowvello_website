@@ -18,23 +18,24 @@
    <!-- MAGNIFIC POPUP PLUGIN -->
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/custom.css">
-   <title>SoftoWeb</title>
+   <link rel="stylesheet" href="css/chatbot.css">
+   <title>Services | Flow Vello</title>
 </head>
 <body>
 
 
 
-   <!-- ======================================== NAVIGRATION ======================================== -->
+   <!-- NAVIGATION -->
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
-         <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
          <a class="logo" href="index.html">Flow Vello</a>
          <div class="sidenav">
             <div class="header">
                <a class="logo d-lg-none" href="index.html">Flow Vello</a>
-               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt="Close menu"></a>
             </div>
-            <ul class="mb-0">
+            <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
+               <li class="nav-hover-pill" aria-hidden="true"></li>
                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
@@ -53,10 +54,11 @@
                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
          </div>
-         <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button>
-         <div id="hamburger" class="d-lg-none">
-            <img src="img/icon/menu.png" class="img01" alt="">
-         </div>
+         <a href="contact.html" class="fv-nav-circle d-none d-md-flex" aria-label="Let's Connect">
+            <i class="fal fa-arrow-right arrow-main"></i>
+            <i class="fal fa-arrow-right arrow-hover"></i>
+         </a>
+         <div id="hamburger" class="d-lg-none"><img src="img/icon/menu.png" class="img01" alt="Open menu"></div>
       </div>
    </nav>
 
@@ -247,84 +249,24 @@
 
 
    <!-- ======================================== FOOTER SECTION ======================================== -->
-   <section id="footerSection">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-               <div class="footer-box">
-                  <a href="#" class="logo">SOFTOWEB</a>
-                  <p class="about">Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing elit.</p>
-                  <div class="social-links">
-                     <a href="#"><i class="fab fa-facebook"></i></a>
-                     <a href="#"><i class="fab fa-twitter"></i></a>
-                     <a href="#"><i class="fab fa-instagram"></i></a>
-                     <a href="#" class="mr-0"><i class="fab fa-github"></i></a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-               <div class="footer-box box2">
-                  <p class="title">EXPLORE</p>
-                  <ul>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Privacy</a></li>
-                     <li><a href="#">Policy</a></li>
-                     <li><a href="#">Terms Of Use</a></li>
-                     <li class="mb-0"><a href="#">Help</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-               <div class="footer-box box3">
-                  <p class="title">CONTACT</p>
-                  <div class="icon-box">
-                     <div class="icon">
-                        <i class="fal fa-map-marker-alt"></i>
-                     </div>
-                     <div class="txt">
-                        <span>66 Broklyn Street, New York. USA</span>
-                     </div>
-                  </div>
-                  <div class="icon-box">
-                     <div class="icon">
-                        <i class="fal fa-envelope"></i>
-                     </div>
-                     <div class="txt">
-                        <span>softoweb1@gmail.com</span>
-                     </div>
-                  </div>
-                  <div class="icon-box mb-0">
-                     <div class="icon">
-                        <i class="fal fa-phone-alt"></i>
-                     </div>
-                     <div class="txt">
-                        <span>01934565397</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <div class="footer-box box4">
-                  <p class="title">NEWSLETTER</p>
-                  <form>
-                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                     </div>
-                     <button type="submit" class="btn" name="button"><i class="fal fa-envelope"></i></button>
-                  </form>
-                  <span>Sign up for our latest news & articles. We won’t give you spam mails.</span>
-               </div>
-            </div>
-         </div>
-         <div class="copy-right">
-            <div class="row">
-               <div class="col">
-                  <span>Copyright © 2021 SoftoWeb. All rights reserved.</span>
-               </div>
-            </div>
+   <!-- FOOTER -->
+   <footer id="footerSection"><div class="container"><div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+         <a class="logo d-flex align-items-center" href="index.html">
+            <img src="img/softoweb.png" alt="" style="width:28px; margin-right:12px;"> Flow Vello
+         </a>
+         <p class="about">Automate, build and scale with custom AI, automation and software systems designed around your business.</p>
+         <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
          </div>
       </div>
-   </section>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Company</p><a href="about.html">About</a><a href="case-studies.html">Case Studies</a><a href="faq.html">FAQ</a></div></div>
+      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="service.html">Workflow Automation</a><a href="service.html">WhatsApp & Messaging</a><a href="service.html">AI Customer Support</a><a href="service.html">Custom AI Agents</a><a href="service.html">Sales Automation</a><a href="service.html">Executive Dashboards</a></div></div>
+      <div class="col-lg-3"><div class="footer-box"><p class="title">Resources</p><a href="mailto:contact@flowvello.com">Email Us</a><a href="contact.html">Request a Strategy Call</a><a href="#">Islamabad, Pakistan</a><a href="#">Serving globally</a></div></div>
+   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="terms.html" class="mr-4">Terms and Conditions</a><a href="privacy.html">Privacy Policy</a></div></div></div></footer>
 
 
    <!-- ======================================== SCROLL TO TOP ICON ======================================== -->
@@ -349,6 +291,7 @@
    <!-- OWL CAROUSEL Plugin -->
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/chatbot.js"></script>
    <script>
 
    </script>

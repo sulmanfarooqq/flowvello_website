@@ -98,54 +98,38 @@ $(document).ready(function() {
       var item = $(this).parent('.fv-faq-item');
       item.toggleClass('active').siblings().removeClass('active');
    });
-   // Vercel-style nav tabs
+
+   // Vercel-style nav hover pill
    var navList = $('#main-nav-list');
    var hoverPill = $('.nav-hover-pill');
-   var activeLine = $('.nav-active-line');
    var navItems = $('#main-nav-list .nav-item');
-   
-   function updateIndicator(element, indicator, isHover) {
-      if (!element.length || !indicator.length) return;
+
+   function updatePill(element, pill) {
+      if (!element.length || !pill.length) return;
       var left = element.position().left;
       var width = element.outerWidth();
-      indicator.css({
+      var top = element.position().top;
+      var height = element.outerHeight();
+      pill.css({
          'left': left + 'px',
-         'width': width + 'px'
+         'width': width + 'px',
+         'top': top + 'px',
+         'height': height + 'px',
+         'opacity': '1'
       });
-      if (isHover) {
-         var top = element.position().top;
-         var height = element.outerHeight();
-         indicator.css({
-            'top': top + 'px',
-            'height': height + 'px',
-            'opacity': '1'
-         });
-      }
    }
 
-   // Initialize active line
-   var activeItem = navItems.filter('.active').length ? navItems.filter('.active') : navItems.first();
-   setTimeout(function() {
-      updateIndicator(activeItem, activeLine, false);
-   }, 100);
-
    navItems.on('mouseenter', function() {
-      updateIndicator($(this), hoverPill, true);
+      updatePill($(this), hoverPill);
    });
 
    navList.on('mouseleave', function() {
       hoverPill.css('opacity', '0');
    });
 
-   navItems.on('click', function() {
-      navItems.removeClass('active');
-      $(this).addClass('active');
-      activeItem = $(this);
-      updateIndicator(activeItem, activeLine, false);
-   });
-
    $(window).on('resize', function() {
-      updateIndicator(activeItem, activeLine, false);
+      var activeItem = navItems.filter('.active').length ? navItems.filter('.active') : navItems.first();
+      updatePill(activeItem, hoverPill);
    });
 
 });

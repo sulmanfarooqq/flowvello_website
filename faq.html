@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Find answers to common questions about Flow Vello's automation, AI agents, custom software, pricing, and support.">
+   <link rel="shortcut icon" href="img/softoweb.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="css/chatbot.css">
+   <title>FAQ | Flow Vello — Frequently Asked Questions</title>
+   <style>
+      :root { --fv-red:#fb383b; --fv-dark:#1d1e22; --fv-muted:#6f7075; }
+      html { scroll-behavior:smooth; }
+      .fv-section { padding:105px 0; }
+      .fv-eyebrow { display:inline-block; margin-bottom:14px; font-size:13px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
+      .fv-lead { max-width:680px; color:var(--fv-muted); line-height:1.85; }
+      .fv-centered { text-align:center; margin-left:auto; margin-right:auto; }
+      .fv-page-hero { padding:160px 0 80px; background:var(--fv-dark); color:#fff; position:relative; overflow:hidden; }
+      .fv-page-hero h1 { font-family:'Rubik',sans-serif; font-size:56px; font-weight:600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:20px; }
+      .fv-page-hero p { font-family:'Rubik',sans-serif; font-size:18px; line-height:1.7; color:#bdbec2; max-width:600px; }
+      .fv-faq-page { padding:100px 0; background:#fff; }
+      .fv-faq-group-title { font-family:'Rubik',sans-serif; font-size:22px; font-weight:600; color:#111827; margin-bottom:20px; padding-bottom:12px; border-bottom:2px solid var(--fv-red); display:inline-block; }
+      .fv-faq-item { border-top:1px solid #dcdcd9; padding:23px 0; cursor:pointer; }
+      .fv-faq-item:last-child { border-bottom:1px solid #dcdcd9; }
+      .fv-faq-header { display:flex; align-items:center; justify-content:space-between; }
+      .fv-faq-header h3 { font-size:18px; line-height:1.3; margin:0; color:#1d1e22; transition:color .3s; font-weight:500; font-family:'Rubik',sans-serif; }
+      .fv-faq-header .fal { font-size:18px; color:#1d1e22; transition:transform .4s ease; }
+      .fv-faq-content { max-height:0; opacity:0; overflow:hidden; transition:all .4s ease; transform:translateY(-10px); }
+      .fv-faq-content p { color:#666; line-height:1.7; margin:0; font-size:15px; padding-top:15px; font-family:'Rubik',sans-serif; }
+      .fv-faq-item.active .fv-faq-content { max-height:300px; opacity:1; transform:translateY(0); }
+      .fv-faq-item.active .fv-faq-header h3, .fv-faq-item.active .fv-faq-header .fal { color:var(--fv-red); }
+      .fv-faq-item.active .fv-faq-header .fal { transform:rotate(180deg); }
+      .fv-faq-contact { padding:80px 0; background:#f7f7f5; text-align:center; }
+      .fv-faq-contact h2 { font-family:'Rubik',sans-serif; font-size:36px; font-weight:600; color:#111827; letter-spacing:-0.5px; margin-bottom:16px; }
+      .fv-faq-contact p { font-family:'Rubik',sans-serif; font-size:17px; line-height:1.7; color:var(--fv-muted); max-width:550px; margin:0 auto 30px; }
+      .fv-faq-cta { padding:95px 0; background:var(--fv-red); color:#fff; text-align:center; }
+      .fv-faq-cta h2 { color:#fff; font-size:46px; font-family:'Rubik',sans-serif; margin-bottom:15px; }
+      .fv-faq-cta p { max-width:650px; margin:0 auto 28px; color:#fff; opacity:.9; line-height:1.8; font-family:'Rubik',sans-serif; font-size:18px; }
+      .fv-faq-cta .btn { background:#fff; color:var(--fv-dark); border-color:#fff; }
+      @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-page-hero h1 { font-size:40px; } }
+      @media(max-width:767px) { .fv-page-hero { padding:130px 0 60px; } .fv-faq-cta h2 { font-size:34px; } }
+   </style>
+</head>
+<body>
+
+   <!-- NAVIGATION -->
+   <nav id="navigration" class="navbar fixed-top p-0">
+      <div class="container">
+         <a class="logo" href="index.html">Flow Vello</a>
+         <div class="sidenav">
+            <div class="header">
+               <a class="logo d-lg-none" href="index.html">Flow Vello</a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt="Close menu"></a>
+            </div>
+            <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
+               <li class="nav-hover-pill" aria-hidden="true"></li>
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
+                  <div id="servicesDropdown" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="service.html"><span>Workflow Automation</span></a>
+                     <a class="dropdown-item" href="service.html"><span>WhatsApp & Messaging</span></a>
+                     <a class="dropdown-item" href="service.html"><span>AI Customer Support</span></a>
+                     <a class="dropdown-item" href="service.html"><span>Custom AI Agents</span></a>
+                     <a class="dropdown-item" href="service.html"><span>Sales Automation</span></a>
+                     <a class="dropdown-item" href="service.html"><span>Executive Dashboards</span></a>
+                  </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+               <li class="nav-item active"><a class="nav-link" href="faq.html">FAQ</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+         <a href="contact.html" class="fv-nav-circle d-none d-md-flex" aria-label="Let's Connect">
+            <i class="fal fa-arrow-right arrow-main"></i>
+            <i class="fal fa-arrow-right arrow-hover"></i>
+         </a>
+         <div id="hamburger" class="d-lg-none"><img src="img/icon/menu.png" class="img01" alt="Open menu"></div>
+      </div>
+   </nav>
+
+   <!-- PAGE HERO -->
+   <section class="fv-page-hero">
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1.5px,transparent 1.5px);background-size:24px 24px;z-index:0;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+         <div class="row">
+            <div class="col-lg-8">
+               <span class="fv-eyebrow" style="color:rgba(255,255,255,.6);">FAQ</span>
+               <h1>Frequently asked questions<span style="color:var(--fv-red);">.</span></h1>
+               <p>Find answers to common questions about our automation, AI agents, custom software, and how we work.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- FAQ SECTION -->
+   <section class="fv-faq-page">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+               <!-- General -->
+               <div class="mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="fv-faq-group-title">General</div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>What does Flow Vello actually automate?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>We automate repetitive business workflows, customer conversations, lead handling, support tasks, data movement and reporting processes. Every automation is built around your existing tools and team structure — not a generic template.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>Can you work with our existing tools?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Yes. We design integrations around the tools already used by the business where practical, instead of replacing everything unnecessarily. We connect CRMs, messaging platforms, databases, ERPs and thousands of other business endpoints.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>What industries do you serve?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>We work across ecommerce, real estate, SaaS, service businesses, healthcare, logistics, finance, and more. The technology changes by industry — the goal stays the same: fewer manual steps, faster response, and better visibility.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Projects & Process -->
+               <div class="mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="fv-faq-group-title">Projects & Process</div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>How long does an automation project take?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Simple workflow projects can be delivered quickly; multi-system AI agents and dashboards require more discovery, testing and integration work. Exact timing is scoped before build so there are no surprises.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>How does your process work?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>We follow a six-stage process: Discovery, Strategy, Proposal, Build, QA & Launch, and Support. Each stage keeps scope, expectations and technical decisions visible from the first conversation to post-launch.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>Do you provide post-launch support?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Yes. Support and optimization can continue after launch so the system remains reliable as workflows, tools and business requirements change.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- AI & Automation -->
+               <div class="mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="fv-faq-group-title">AI & Automation</div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>Will AI replace our support or sales team?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>No. We automate the repetitive layer and keep humans in the loop for exceptions, sensitive cases and decisions that require judgment. AI handles the routine so your team can focus on high-value work.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>How secure is the AI you build?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Enterprise-grade security is part of every system. Your proprietary data stays yours — we build with strict access controls, data privacy, and policy-aware response logic baked in from the start.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>Can AI agents handle complex multi-step workflows?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Yes. Our custom AI agents are task-focused — they use your business information and execute defined workflows, not just chat. They can qualify leads, route tickets, update CRMs, trigger notifications and escalate when needed.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Pricing -->
+               <div class="wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="fv-faq-group-title">Pricing</div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>How much does automation cost?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Pricing depends on the scope, complexity, number of integrations and ongoing support requirements. Simple workflow automations cost significantly less than full AI agent systems with dashboards. We scope everything transparently before any commitment.</p>
+                     </div>
+                  </div>
+
+                  <div class="fv-faq-item">
+                     <div class="fv-faq-header">
+                        <h3>Do you offer ongoing retainers?</h3>
+                        <i class="fal fa-chevron-down"></i>
+                     </div>
+                     <div class="fv-faq-content">
+                        <p>Yes. Many clients prefer a monthly retainer for continuous optimization, monitoring, and new feature development. We can discuss what makes sense after understanding your needs.</p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CONTACT CTA -->
+   <section class="fv-faq-contact">
+      <div class="container">
+         <h2>Still have questions?</h2>
+         <p>Can't find what you're looking for? Reach out and we'll get back to you with a clear answer.</p>
+         <a href="contact.html" class="btn px-5 py-3" style="font-family:'Rubik',sans-serif; font-size:15px; font-weight:600; border-radius:4px; background:var(--fv-red); color:#fff; border-color:var(--fv-red); letter-spacing:0.5px;">CONTACT US</a>
+      </div>
+   </section>
+
+   <!-- CLOSING CTA -->
+   <section class="fv-faq-cta">
+      <div class="container">
+         <h2 class="fw-bold">Ready to automate and scale?</h2>
+         <p>Tell us what is slowing your team down. We will help you identify where automation, AI or custom software can create the biggest operational improvement.</p>
+         <a href="contact.html" class="btn px-5 py-3" style="font-family:'Rubik',sans-serif; font-size:15px; font-weight:600; border-radius:4px; letter-spacing:0.5px;">REQUEST A FREE STRATEGY CALL</a>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer id="footerSection"><div class="container"><div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+         <a class="logo d-flex align-items-center" href="index.html">
+            <img src="img/softoweb.png" alt="" style="width:28px; margin-right:12px;"> Flow Vello
+         </a>
+         <p class="about">Automate, build and scale with custom AI, automation and software systems designed around your business.</p>
+         <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+      </div>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Company</p><a href="about.html">About</a><a href="case-studies.html">Case Studies</a><a href="faq.html">FAQ</a></div></div>
+      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="service.html">Workflow Automation</a><a href="service.html">WhatsApp & Messaging</a><a href="service.html">AI Customer Support</a><a href="service.html">Custom AI Agents</a><a href="service.html">Sales Automation</a><a href="service.html">Executive Dashboards</a></div></div>
+      <div class="col-lg-3"><div class="footer-box"><p class="title">Resources</p><a href="mailto:contact@flowvello.com">Email Us</a><a href="contact.html">Request a Strategy Call</a><a href="#">Islamabad, Pakistan</a><a href="#">Serving globally</a></div></div>
+   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="terms.html" class="mr-4">Terms and Conditions</a><a href="privacy.html">Privacy Policy</a></div></div></div></footer>
+
+   <!-- SCROLL TO TOP -->
+   <a href="#" class="scroll-up"><i class="fal fa-chevron-up"></i></a>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/font-awesome-pro.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/mixitup.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="js/chatbot.js"></script>
+</body>
+</html>
