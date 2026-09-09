@@ -55,3 +55,19 @@
     transform: translatey(80px);
     z-index: 1
     }
+/* CONTACT PAGE MOBILE FIXES */
+@media (max-width: 991px) {
+    .fv-contact-scheduling .row {
+        height: auto !important;
+        flex-direction: column;
+    }
+    .fv-contact-scheduling .col-lg-5 {
+        border-right: none !important;
+        border-bottom: 1px solid #e5e7eb;
+        height: auto !important;
+        max-height: 500px;
+    }
+    .fv-contact-scheduling .col-lg-7 {
+        height: 700px !important; /* Give Calendly room on mobile */
+    }
+}
