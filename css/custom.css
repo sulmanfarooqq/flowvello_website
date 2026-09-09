@@ -2994,3 +2994,18 @@ i {
 
 
 
+
+/* FIX SERVICES CAROUSEL ARROWS OVERLAP */
+.fv-services-presentation .text-left {
+    padding-right: 120px !important; /* Prevent text from reaching the arrows */
+}
+
+.services-carousel .owl-nav {
+    top: -105px !important; /* Lift slightly to center perfectly with the 64px font */
+}
+
+@media (max-width: 767px) {
+    .services-carousel .owl-nav {
+        top: -85px !important; /* Adjust for smaller mobile font */
+    }
+}
