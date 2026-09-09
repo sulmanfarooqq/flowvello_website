@@ -2991,9 +2991,6 @@ i {
     right: 10px !important; /* Push it to the far right edge */
 }
 
-#homeSection .owl-nav .owl-prev::before, 
-#homeSection .owl-nav .owl-next::before {
-    font-size: 60px !important;
-    font-weight: 200 !important; /* Very thin arrow */
-    color: #e50b70 !important; /* Pink/Magenta */
-}
+
+
+
