@@ -156,37 +156,6 @@ $(document).ready(function() {
       }
    });
 
-   // Vercel-style nav hover pill
-   var navList = $('#main-nav-list');
-   var hoverPill = $('.nav-hover-pill');
-   var navItems = $('#main-nav-list .nav-item');
-
-   function updatePill(element, pill) {
-      if (!element.length || !pill.length) return;
-      var left = element.position().left;
-      var width = element.outerWidth();
-      var top = element.position().top;
-      var height = element.outerHeight();
-      pill.css({
-         'left': left + 'px',
-         'width': width + 'px',
-         'top': top + 'px',
-         'height': height + 'px',
-         'opacity': '1'
-      });
-   }
-
-   navItems.on('mouseenter', function() {
-      updatePill($(this), hoverPill);
-   });
-
-   navList.on('mouseleave', function() {
-      hoverPill.css('opacity', '0');
-   });
-
-   $(window).on('resize', function() {
-      var activeItem = navItems.filter('.active').length ? navItems.filter('.active') : navItems.first();
-      updatePill(activeItem, hoverPill);
-   });
+   // Removed pill animation block for shadcn ui
 
 });

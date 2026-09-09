@@ -253,18 +253,13 @@ i {
     font-size: 20px
     }
 
-#navigration .dropdown .dropdown-menus .dropdown-item:hover:before {
-    width: 10px
-    }
+
 
 #navigration .dropdown .dropdown-menus .dropdown-item:hover {
     background: #f5f5f5
     }
 
-#navigration .dropdown .dropdown-menus .dropdown-item:hover span {
-    margin-left: 15px;
-    color: #fb383b
-    }
+
 
 #navigration .collapse:not(.show) {
     display: block;
@@ -803,9 +798,7 @@ i {
     background: #f8f8f6 !important
     }
 
-#navigration .dropdown .dropdown-menus .dropdown-item:hover span {
-    color: #fb383b !important
-    }
+
 
 #navigration .premium-nav-btn {
     background: #fb383b;
