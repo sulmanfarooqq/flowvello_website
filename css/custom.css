@@ -287,8 +287,7 @@ i {
   position: relative;
   margin-bottom: 0px; }
   #homeSection .slider-box {
-    background: url(../img/home-bg.jpg);
-    background-size: cover;
+    background-color: #0b0f19;
     background-position: center top;
     height: 100vh; }
     #homeSection .slider-box .overlay {
@@ -2681,7 +2680,7 @@ i {
       .fv-small-note { font-size:12px; color:var(--fv-muted); margin-top:15px; }
       @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-service-intro { padding-right:0; margin-bottom:35px; } }
       @media(max-width:767px) { .fv-cta h2 { font-size:34px; } .fv-partner, .fv-industries { padding:60px 0; } }
-.fv-page-hero { padding:200px 0 120px; background:url('../img/hero-bg.webp') center center / cover no-repeat; color:#fff; position:relative; overflow:hidden; text-align:center; }
+.fv-page-hero { padding:200px 0 120px; background-color:#0b0f19; color:#fff; position:relative; overflow:hidden; text-align:center; }
 .fv-page-hero h1 { font-family:'Rubik',sans-serif; font-size:56px; font-weight:600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:20px; color:#ffffff !important; }
 .fv-page-hero p { font-family:'Rubik',sans-serif; font-size:18px; line-height:1.7; color:#ffffff !important; opacity:0.9; max-width:680px; margin:0 auto; }
 @media(max-width:991px) { .fv-page-hero { padding:150px 0 90px; } }

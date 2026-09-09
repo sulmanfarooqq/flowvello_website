@@ -1,5 +1,43 @@
 $(document).ready(function() {
 
+   // --- SITE-WIDE LAZY LOADING ---
+   // 1. Add loading="lazy" to all content images that don't have it
+   $('img:not([loading])').attr('loading', 'lazy');
+
+   // 2. Lazy load and fade-in background images for landing/hero sections
+   function preloadBgFadeIn(selector, bgUrl, extraStyles) {
+      var $el = $(selector);
+      if (!$el.length) return;
+
+      var img = new Image();
+      img.onload = function() {
+         var $bgLayer = $('<div class="fv-lazy-bg"></div>');
+         var styles = $.extend({
+            'position': 'absolute',
+            'top': 0, 'left': 0, 'width': '100%', 'height': '100%',
+            'background': 'url(' + bgUrl + ') center center / cover no-repeat',
+            'z-index': 0,
+            'opacity': 0,
+            'transition': 'opacity 1s ease-in-out'
+         }, extraStyles || {});
+         
+         $bgLayer.css(styles);
+         
+         // Make sure children are above the background layer
+         $el.children().css({ 'position': 'relative', 'z-index': 1 });
+         
+         $el.prepend($bgLayer);
+         
+         // Trigger reflow and fade in
+         $bgLayer[0].offsetHeight;
+         $bgLayer.css('opacity', 1);
+      };
+      img.src = bgUrl;
+   }
+
+   preloadBgFadeIn('.fv-page-hero', 'img/hero-bg.webp');
+   preloadBgFadeIn('#homeSection .slider-box', 'img/home-bg.jpg', { 'background-position': 'center top' });
+
    $("#hamburger").click(function() { $(".sidenav").toggleClass("active-nav"); });
    $("#showsidenav").click(function() { $(".sidenav").toggleClass("active-nav"); });
 
