@@ -313,11 +313,11 @@ i {
     width: 100%;
     top: 0;
     right: 0;
-    background: url(../img/layer.png);
+    background: url(../img/layer.webp);
     background-repeat: no-repeat;
     background-position: right top; }
   #homeSection .slider-box2 {
-    background: url(../img/home-bg01.jpg);
+    background: url(../img/home-bg01.webp);
     background-size: cover;
     background-position: center center; }
   #homeSection .owl-carousel {
@@ -912,7 +912,7 @@ i {
       background: #fb383b; }
 
 #workSection {
-  background: url(../img/work-bg.jpg);
+  background: url(../img/work-bg.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1096,12 +1096,12 @@ i {
   width: 100%;
   top: 0;
   right: 0;
-  background: url(../img/footer.png);
+  background: url(../img/footer.webp);
   background-repeat: no-repeat;
   background-position: center; }
 
 #pageHeader {
-  background: url(../img/home-bg.jpg);
+  background: url(../img/home-bg.webp);
   background-size: cover;
   background-position: center top;
   margin-bottom: 100px; }

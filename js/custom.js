@@ -36,7 +36,7 @@ $(document).ready(function() {
    }
 
    preloadBgFadeIn('.fv-page-hero', 'img/hero-bg.webp');
-   preloadBgFadeIn('#homeSection .slider-box', 'img/home-bg.jpg', { 'background-position': 'center top' });
+   preloadBgFadeIn('#homeSection .slider-box', 'img/home-bg.webp', { 'background-position': 'center top' });
 
    $("#hamburger").click(function() { $(".sidenav").toggleClass("active-nav"); });
    $("#showsidenav").click(function() { $(".sidenav").toggleClass("active-nav"); });
@@ -121,7 +121,7 @@ $(document).ready(function() {
    // SEO structured data for the homepage.
    if (!document.querySelector('script[data-flowvello-schema]')) {
       var schema = {"@context":"https://schema.org","@graph":[
-         {"@type":"Organization","@id":"https://flowvello.com/#organization","name":"Flow Vello","url":"https://flowvello.com/","logo":"https://flowvello.com/img/softoweb.png","description":"Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses."},
+         {"@type":"Organization","@id":"https://flowvello.com/#organization","name":"Flow Vello","url":"https://flowvello.com/","logo":"https://flowvello.com/img/softoweb.webp","description":"Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses."},
          {"@type":"WebSite","@id":"https://flowvello.com/#website","url":"https://flowvello.com/","name":"Flow Vello","publisher":{"@id":"https://flowvello.com/#organization"},"inLanguage":"en"},
          {"@type":"WebPage","@id":"https://flowvello.com/#webpage","url":"https://flowvello.com/","name":"Flow Vello | AI Automation, Agents & Software","description":"Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.","isPartOf":{"@id":"https://flowvello.com/#website"},"about":{"@id":"https://flowvello.com/#organization"},"inLanguage":"en"},
          {"@type":"Service","name":"Workflow Automation","serviceType":"Workflow Automation","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},

@@ -21,7 +21,7 @@ const outFiles = {
 // Since the CSS is formatted with } on the same line or next line, we can just track if we are inside a rule.
 // But actually, in the view_file, CSS rules look like:
 // #homeSection .slider-box {
-//     background: url(../img/home-bg.jpg); ... }
+//     background: url(../img/home-bg.webp); ... }
 //
 // So each rule is clearly prefixed. We don't even need to track blocks perfectly if we just look at the prefix.
 // If the line starts with or contains #homeSection, it's home.css. But what about properties inside the block?
