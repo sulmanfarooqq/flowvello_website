@@ -2681,9 +2681,9 @@ i {
       .fv-small-note { font-size:12px; color:var(--fv-muted); margin-top:15px; }
       @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-service-intro { padding-right:0; margin-bottom:35px; } }
       @media(max-width:767px) { .fv-cta h2 { font-size:34px; } .fv-partner, .fv-industries { padding:60px 0; } }
-.fv-page-hero { padding:200px 0 120px; background:var(--fv-dark); color:#fff; position:relative; overflow:hidden; text-align:center; }
-.fv-page-hero h1 { font-family:'Rubik',sans-serif; font-size:56px; font-weight:600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:20px; }
-.fv-page-hero p { font-family:'Rubik',sans-serif; font-size:18px; line-height:1.7; color:#bdbec2; max-width:680px; margin:0 auto; }
+.fv-page-hero { padding:200px 0 120px; background:url('../img/hero-bg.webp') center center / cover no-repeat; color:#fff; position:relative; overflow:hidden; text-align:center; }
+.fv-page-hero h1 { font-family:'Rubik',sans-serif; font-size:56px; font-weight:600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:20px; color:#ffffff !important; }
+.fv-page-hero p { font-family:'Rubik',sans-serif; font-size:18px; line-height:1.7; color:#ffffff !important; opacity:0.9; max-width:680px; margin:0 auto; }
 @media(max-width:991px) { .fv-page-hero { padding:150px 0 90px; } }
 @media(max-width:575px) { .fv-page-hero { padding:130px 0 70px; } .fv-page-hero h1 { font-size:38px; } }
 .fv-case-section { padding:100px 0; background:#fff; }
