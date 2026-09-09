@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <meta name="description" content="Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.">
+   <meta name="description" content="Turn repetitive business processes into reliable automated workflows with Flow Vello.">
    <link rel="shortcut icon" href="../img/softoweb.png">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,67 +13,15 @@
    <link rel="stylesheet" href="../css/owl.carousel.min.css">
    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
    <link rel="stylesheet" href="../css/magnific-popup.css">
-         <link rel="stylesheet" href="../css/custom.css">
-   <link rel="stylesheet" href="../css/detail-pages.css">
+   <link rel="stylesheet" href="../css/custom.css">
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="stylesheet" href="../css/service.css">
    <link rel="stylesheet" href="../css/chatbot.css">
    <title>Workflow Automation | Flow Vello</title>
-   <style>
-      :root { --fv-red:#fb383b; --fv-dark:#1d1e22; --fv-muted:#6f7075; }
-      html { scroll-behavior:smooth; }
-      .fv-section { padding:105px 0; }
-      .fv-eyebrow { display:inline-block; margin-bottom:14px; font-size:13px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
-      .fv-lead { max-width:680px; color:var(--fv-muted); line-height:1.85; }
-      .fv-centered { text-align:center; margin-left:auto; margin-right:auto; }
-      .fv-partner { padding:58px 0; background:#f8f8f6; border-top:1px solid #ececea; border-bottom:1px solid #ececea; }
-      .fv-partner-title { margin:0 0 30px; font-size:15px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
-      .fv-value { height:100%; padding:25px 22px; border-left:2px solid var(--fv-red); background:#fff; }
-      .fv-value h4 { margin:0; font-size:19px; line-height:1.35; }
-      .fv-value p { margin:12px 0 0; color:var(--fv-muted); line-height:1.7; font-size:14px; }
-      .fv-industries { background:var(--fv-dark); color:#fff; padding:80px 0; }
-      .fv-industry { padding:28px 24px; height:100%; border:1px solid rgba(255,255,255,.12); transition:.25s ease; }
-      .fv-industry:hover { border-color:var(--fv-red); transform:translateY(-4px); }
-      .fv-industry span { color:var(--fv-red); font-size:12px; font-weight:700; letter-spacing:2px; }
-      .fv-industry h3 { color:#fff; margin:10px 0; font-size:23px; }
-      .fv-industry p { margin:0; color:#bdbec2; line-height:1.7; font-size:14px; }
-      .fv-service-intro { padding-right:30px; }
-      .fv-service-card { position:relative; height:100%; min-height:245px; padding:28px; border:1px solid #e5e5e3; background:#fff; transition:.25s ease; }
-      .fv-service-card:hover { background:var(--fv-dark); border-color:var(--fv-dark); transform:translateY(-5px); }
-      .fv-service-number { color:var(--fv-red); font-size:13px; font-weight:700; letter-spacing:2px; }
-      .fv-service-card h3 { margin:18px 0 12px; font-size:22px; }
-      .fv-service-card p { margin:0; color:var(--fv-muted); line-height:1.7; font-size:14px; }
-      .fv-service-card:hover h3 { color:#fff; }
-      .fv-service-card:hover p { color:#c6c7ca; }
-      .fv-service-card a { display:inline-block; margin-top:20px; color:var(--fv-red); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; }
-      .fv-trust { padding:35px 0; background:#fafaf8; border-top:1px solid #ececea; border-bottom:1px solid #ececea; }
-      .fv-trust-label { margin:0 0 18px; font-size:12px; font-weight:700; letter-spacing:2px; color:var(--fv-muted); text-transform:uppercase; }
-      .fv-trust-list { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
-      .fv-chip { padding:11px 16px; border:1px solid #dddeda; background:#fff; font-size:13px; font-weight:600; }
-      .fv-why { background:#f7f7f5; }
-      .fv-why-card { padding:28px 0; border-top:1px solid #dddeda; }
-      .fv-why-card:last-child { border-bottom:1px solid #dddeda; }
-      .fv-why-card strong { display:block; font-size:18px; margin-bottom:7px; }
-      .fv-why-card span { color:var(--fv-muted); line-height:1.65; font-size:14px; }
-      .fv-process { background:#fff; }
-      .fv-step { height:100%; padding:28px 24px; border:1px solid #e5e5e3; }
-      .fv-step .step-no { font-size:12px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
-      .fv-step h3 { font-size:19px; margin:15px 0 10px; }
-      .fv-step p { color:var(--fv-muted); line-height:1.7; font-size:14px; margin:0; }
-      .fv-faq { background:#f7f7f5; }
-      .fv-faq-item { border-top:1px solid #dcdcd9; padding:23px 0; }
-      .fv-faq-item:last-child { border-bottom:1px solid #dcdcd9; }
-      .fv-faq-item h3 { font-size:18px; margin:0 0 8px; }
-      .fv-faq-item p { color:var(--fv-muted); line-height:1.7; margin:0; font-size:14px; }
-      .fv-cta { padding:95px 0; background:var(--fv-red); color:#fff; text-align:center; }
-      .fv-cta h2 { color:#fff; font-size:46px; margin-bottom:15px; }
-      .fv-cta p { max-width:650px; margin:0 auto 28px; color:#fff; opacity:.9; line-height:1.8; }
-      .fv-cta .btn { background:#fff; color:var(--fv-dark); border-color:#fff; }
-      .fv-small-note { font-size:12px; color:var(--fv-muted); margin-top:15px; }
-      @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-service-intro { padding-right:0; margin-bottom:35px; } }
-      @media(max-width:767px) { .fv-cta h2 { font-size:34px; } .fv-partner, .fv-industries { padding:60px 0; } }
-   </style>
 </head>
 <body>
-<!-- NAVIGATION -->
+
+   <!-- NAVIGATION -->
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
          <a class="logo" href="../index.html">Flow Vello</a>
@@ -110,51 +58,175 @@
       </div>
    </nav>
 
-        <!-- SERVICE DETAIL HERO -->
-        <section class="fv-section" style="padding-top: 150px; background: #f8f8f6; min-height: 50vh; display: flex; align-items: center;">
-           <div class="container text-center">
-              <h1 style="font-family: 'Rubik', sans-serif; font-size: 48px; font-weight: 600; color: #1d1e22; margin-bottom: 20px;">Streamline Operations with Workflow Automation</h1>
-              <p style="font-family: 'Rubik', sans-serif; font-size: 18px; color: #6f7075; max-width: 700px; margin: 0 auto 40px;">Manual processes are costing you time, money, and momentum. We build automation solutions that cut through operational noise.</p>
-              <a href="../contact.html" class="fv-dual-btn">
-                 <span class="fv-btn-pill">BOOK A FREE STRATEGY CALL</span>
-                 <div class="fv-btn-circle">
-                    <i class="fal fa-arrow-right arrow-main"></i>
-                    <i class="fal fa-arrow-right arrow-hover"></i>
-                 </div>
-              </a>
-           </div>
-        </section>
-        
-        <!-- CONTENT DETAILS -->
-        <section class="py-5 bg-white">
-           <div class="container">
-              <div class="row justify-content-center">
-                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-4">How it works</h2>
-                    <p style="color: #6f7075; line-height: 1.8;"><strong>[PLACEHOLDER]</strong> Specific operational problem this solves.</p>
-                    <p style="color: #6f7075; line-height: 1.8;"><strong>[PLACEHOLDER]</strong> What we build, which tool/platform we use (e.g., Monday.com, HubSpot, Make.com), and how it works.</p>
-                 </div>
-              </div>
-           </div>
-        </section>
-        
-<!-- CLOSING CTA (SPLIT) -->
+   <!-- LANDING -->
+   <section class="fv-page-hero">
+      <div class="container text-center">
+         <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">SERVICE</span>
+         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Workflow Automation</h1>
+         <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Turn repetitive business processes into reliable automated workflows.</p>
+      </div>
+   </section>
+
+   <!-- WHAT IT SOLVES -->
+   <section class="fv-section text-center bg-white py-5">
+      <div class="container py-5">
+         <div class="wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px; margin:0 auto;">
+            <p style="font-family:'Rubik',sans-serif; font-size:22px; line-height:1.7; color:#111827;">
+               Manual processes are costing you time, money, and momentum. We build automation solutions that cut through operational noise, so your company runs leaner and scales faster — across Operations, HR, Sales, Marketing, and Finance workflows.
+            </p>
+         </div>
+      </div>
+   </section>
+
+   <!-- COMMON BUSINESS PROBLEMS (PRESENTATION GRID) -->
+   <section class="fv-section presentation-section">
+      <div class="container text-center">
+         <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px; color:rgba(255,255,255,0.6);">THE PROBLEM</span>
+         <h2 class="wow fadeInUp" style="margin-bottom: 50px;">Why businesses choose us.</h2>
+         
+         <div class="presentation-grid">
+            <div class="presentation-card wow fadeInUp" data-wow-delay="0.1s">
+               <div class="card-number"><i class="fal fa-times"></i></div>
+               <div class="card-content">
+                  <strong style="display:block; margin-bottom:4px;">Scattered Data</strong>
+                  Teams spend hours manually copying information across systems.
+               </div>
+            </div>
+            <div class="presentation-card wow fadeInUp" data-wow-delay="0.2s">
+               <div class="card-number"><i class="fal fa-times"></i></div>
+               <div class="card-content">
+                  <strong style="display:block; margin-bottom:4px;">Lost Leads</strong>
+                  Manual follow-ups result in missed opportunities and dropped conversations.
+               </div>
+            </div>
+            <div class="presentation-card wow fadeInUp" data-wow-delay="0.3s">
+               <div class="card-number"><i class="fal fa-times"></i></div>
+               <div class="card-content">
+                  <strong style="display:block; margin-bottom:4px;">Process Silos</strong>
+                  Sales, Operations, and Finance use different tools that don't communicate.
+               </div>
+            </div>
+            <div class="presentation-card wow fadeInUp" data-wow-delay="0.4s">
+               <div class="card-number"><i class="fal fa-times"></i></div>
+               <div class="card-content">
+                  <strong style="display:block; margin-bottom:4px;">Legacy Systems</strong>
+                  Outdated tools slowing down the team and creating administrative bottlenecks.
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- KEY CAPABILITIES -->
+   <section class="fv-why-grid py-5" style="background-color:#f9fafb;">
+      <div class="container py-5" style="position: relative; z-index: 1;">
+         <div class="row">
+            <div class="col-12 text-center mb-5 pb-4">
+               <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px;">CAPABILITIES</span>
+               <h2 class="wow fadeInUp" style="color:#111827; font-family:'Rubik', sans-serif; font-size:52px; font-weight:600; line-height:1.15; letter-spacing:-1.5px; max-width:850px; margin:0 auto;">What we build.</h2>
+            </div>
+         </div>
+         
+         <div class="row pt-2">
+            <div class="col-md-6 col-lg-4 mb-5">
+               <div class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.1s">
+                  <i class="fal fa-check mt-1 mr-4" style="color: #fb383b; font-size: 18px;"></i>
+                  <div>
+                     <h5 style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 17px; font-weight: 500; margin-bottom: 8px;">Multi-step Triggers</h5>
+                     <p class="text-muted mb-0" style="font-family: 'Rubik', sans-serif; font-size: 15px; line-height: 1.6;">Automations that execute complex, multi-branch workflows based on specific rules.</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-5">
+               <div class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.2s">
+                  <i class="fal fa-check mt-1 mr-4" style="color: #fb383b; font-size: 18px;"></i>
+                  <div>
+                     <h5 style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 17px; font-weight: 500; margin-bottom: 8px;">CRM & ERP Syncing</h5>
+                     <p class="text-muted mb-0" style="font-family: 'Rubik', sans-serif; font-size: 15px; line-height: 1.6;">Ensure Hubspot, Pipedrive, monday.com and legacy systems are perfectly aligned.</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-5">
+               <div class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.3s">
+                  <i class="fal fa-check mt-1 mr-4" style="color: #fb383b; font-size: 18px;"></i>
+                  <div>
+                     <h5 style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 17px; font-weight: 500; margin-bottom: 8px;">Document Generation</h5>
+                     <p class="text-muted mb-0" style="font-family: 'Rubik', sans-serif; font-size: 15px; line-height: 1.6;">Automatically compile proposals, contracts, and reports using real-time CRM data.</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-5 offset-lg-2">
+               <div class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.4s">
+                  <i class="fal fa-check mt-1 mr-4" style="color: #fb383b; font-size: 18px;"></i>
+                  <div>
+                     <h5 style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 17px; font-weight: 500; margin-bottom: 8px;">Human Handoffs</h5>
+                     <p class="text-muted mb-0" style="font-family: 'Rubik', sans-serif; font-size: 15px; line-height: 1.6;">Alert the right team member via Slack or Teams when manual intervention is required.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+               <div class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.5s">
+                  <i class="fal fa-check mt-1 mr-4" style="color: #fb383b; font-size: 18px;"></i>
+                  <div>
+                     <h5 style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 17px; font-weight: 500; margin-bottom: 8px;">API Connectivity</h5>
+                     <p class="text-muted mb-0" style="font-family: 'Rubik', sans-serif; font-size: 15px; line-height: 1.6;">Custom API webhooks for systems that don't have native automation support.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- PROCESS -->
+   <section class="fv-process-dark py-5" style="background-color: #111827;">
+      <div class="container py-5">
+         <div class="row mb-5 pb-2">
+            <div class="col-12 text-center">
+               <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px; color:rgba(255,255,255,0.6);">HOW IT WORKS</span>
+               <h2 class="wow fadeInUp" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 52px; font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin: 0 auto 30px;">Our Approach.</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 mb-5 text-center px-4">
+               <div class="wow fadeInUp" data-wow-delay="0.1s">
+                  <h3 style="color:#fff; font-size:24px; font-family:'Rubik',sans-serif; margin-bottom:15px;">1. Map</h3>
+                  <p style="color:#bdbec2; line-height:1.6;">We map out the existing manual process step-by-step.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-5 text-center px-4">
+               <div class="wow fadeInUp" data-wow-delay="0.2s">
+                  <h3 style="color:#fff; font-size:24px; font-family:'Rubik',sans-serif; margin-bottom:15px;">2. Architect</h3>
+                  <p style="color:#bdbec2; line-height:1.6;">We design the data flow and select the right integration tools.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-5 text-center px-4">
+               <div class="wow fadeInUp" data-wow-delay="0.3s">
+                  <h3 style="color:#fff; font-size:24px; font-family:'Rubik',sans-serif; margin-bottom:15px;">3. Deploy</h3>
+                  <p style="color:#bdbec2; line-height:1.6;">We build, test, and securely deploy the automated workflow.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CLOSING CTA (SPLIT) -->
    <section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
-      <!-- Lazy Loaded WebP Background Image -->
       <img src="../img/cta_bg_2.webp" alt="Abstract Background" loading="lazy" class="wow fadeIn" data-wow-duration="1.5s" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-      <!-- Dark overlay for text readability -->
       <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(17,24,39,0.95) 0%, rgba(17,24,39,0.7) 100%); z-index:0;"></div>
       
       <div class="container" style="position:relative; z-index:1; padding-top: 100px; padding-bottom: 100px;">
          <div class="row align-items-center">
             
-            <!-- Left Side: Text and Button -->
             <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
                <h2 class="fw-bold mb-4" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 56px; line-height: 1.1; letter-spacing: -1px;">
-                  Ready to automate and scale?
+                  What's slowing your business down?
                </h2>
                <p style="color: #d1d5db; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6; max-width: 500px; margin-bottom: 40px;">
-                  Tell us what is slowing your team down. We will help you identify where automation, AI or custom software can create the biggest operational improvement.
+                  Tell us where your team is losing time, dealing with repetitive work or struggling with disconnected systems. We'll identify where automation, AI or custom software can create the biggest operational improvement.
                </p>
                <a href="../contact.html" class="fv-dual-btn">
                   <span class="fv-btn-pill">REQUEST A FREE STRATEGY CALL</span>
@@ -165,7 +237,6 @@
                </a>
             </div>
 
-            <!-- Right Side: Checkmark List -->
             <div class="col-lg-5 offset-lg-1 wow fadeInRight" data-wow-delay="0.2s">
                <ul class="cta-check-list list-unstyled m-0">
                   <li class="d-flex align-items-center mb-4 pb-2">
@@ -210,13 +281,11 @@
          </div>
       </div>
       <div class="col-6 col-lg-2 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Company</p><a href="../about.html">About</a><a href="../case-studies.html">Case Studies</a><a href="../faq.html">FAQ</a></div></div>
-      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="index.html">Workflow Automation</a><a href="index.html">WhatsApp & Messaging</a><a href="index.html">AI Customer Support</a><a href="index.html">Custom AI Agents</a><a href="index.html">Sales Automation</a><a href="index.html">Executive Dashboards</a></div></div>
+      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="workflow-automation.html">Workflow Automation</a><a href="whatsapp-messaging.html">WhatsApp & Messaging</a><a href="ai-customer-support.html">AI Customer Support</a><a href="custom-ai-agents.html">Custom AI Agents</a><a href="sales-automation.html">Sales Automation</a><a href="executive-dashboards.html">Executive Dashboards</a></div></div>
       <div class="col-lg-3"><div class="footer-box"><p class="title">Resources</p><a href="mailto:contact@flowvello.com">Email Us</a><a href="../contact.html">Request a Strategy Call</a><a href="#">Islamabad, Pakistan</a><a href="#">Serving globally</a></div></div>
-   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="terms.html" class="mr-4">Terms and Conditions</a><a href="privacy.html">Privacy Policy</a></div></div></div></footer>
+   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="../terms.html" class="mr-4">Terms and Conditions</a><a href="../privacy.html">Privacy Policy</a></div></div></div></footer>
 
-   <!-- custom.js initializes MixItUp on #portfolio; keep a hidden compatibility target while the homepage no longer publishes fake case studies. -->
-   <div id="portfolio" aria-hidden="true" style="display:none;"></div>
-
+   <a href="#" class="scroll-up"><i class="fal fa-chevron-up"></i></a>
    <script src="../js/jquery.min.js"></script>
    <script src="../js/bootstrap.min.js"></script>
    <script src="../js/popper.min.js"></script>

@@ -1,0 +1,76 @@
+/* case-studies.css */
+
+.case-studies-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 30px;
+}
+
+@media(min-width: 992px) {
+   .case-studies-grid {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+.case-study-card {
+   padding: 40px;
+   background: #1f2937;
+   border-radius: 12px;
+   transition: transform 0.3s ease;
+}
+
+.case-study-card:hover {
+   transform: translateY(-5px);
+}
+
+.cs-tag {
+   display: inline-block;
+   padding: 6px 12px;
+   background: rgba(251, 56, 59, 0.1);
+   color: #fb383b;
+   border-radius: 4px;
+   font-size: 13px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+}
+
+.cs-title {
+   color: #ffffff;
+   font-family: 'Rubik', sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.cs-desc {
+   color: #9ca3af;
+   font-family: 'Rubik', sans-serif;
+   font-size: 16px;
+   line-height: 1.7;
+   margin-bottom: 30px;
+}
+
+.cs-metrics {
+   display: flex;
+   gap: 40px;
+   border-top: 1px solid rgba(255,255,255,0.1);
+   padding-top: 25px;
+}
+
+.metric .m-val {
+   display: block;
+   color: #ffffff;
+   font-family: 'Teko', sans-serif;
+   font-size: 48px;
+   line-height: 1;
+   margin-bottom: 5px;
+}
+
+.metric .m-label {
+   display: block;
+   color: #6b7280;
+   font-size: 14px;
+   font-family: 'Rubik', sans-serif;
+}

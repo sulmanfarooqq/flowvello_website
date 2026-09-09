@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
@@ -16,60 +16,6 @@
          <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/chatbot.css">
    <title>Flow Vello | AI Automation, Agents & Software</title>
-   <style>
-      :root { --fv-red:#fb383b; --fv-dark:#1d1e22; --fv-muted:#6f7075; }
-      html { scroll-behavior:smooth; }
-      .fv-section { padding:105px 0; }
-      .fv-eyebrow { display:inline-block; margin-bottom:14px; font-size:13px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
-      .fv-lead { max-width:680px; color:var(--fv-muted); line-height:1.85; }
-      .fv-centered { text-align:center; margin-left:auto; margin-right:auto; }
-      .fv-partner { padding:58px 0; background:#f8f8f6; border-top:1px solid #ececea; border-bottom:1px solid #ececea; }
-      .fv-partner-title { margin:0 0 30px; font-size:15px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
-      .fv-value { height:100%; padding:25px 22px; border-left:2px solid var(--fv-red); background:#fff; }
-      .fv-value h4 { margin:0; font-size:19px; line-height:1.35; }
-      .fv-value p { margin:12px 0 0; color:var(--fv-muted); line-height:1.7; font-size:14px; }
-      .fv-industries { background:var(--fv-dark); color:#fff; padding:80px 0; }
-      .fv-industry { padding:28px 24px; height:100%; border:1px solid rgba(255,255,255,.12); transition:.25s ease; }
-      .fv-industry:hover { border-color:var(--fv-red); transform:translateY(-4px); }
-      .fv-industry span { color:var(--fv-red); font-size:12px; font-weight:700; letter-spacing:2px; }
-      .fv-industry h3 { color:#fff; margin:10px 0; font-size:23px; }
-      .fv-industry p { margin:0; color:#bdbec2; line-height:1.7; font-size:14px; }
-      .fv-service-intro { padding-right:30px; }
-      .fv-service-card { position:relative; height:100%; min-height:245px; padding:28px; border:1px solid #e5e5e3; background:#fff; transition:.25s ease; }
-      .fv-service-card:hover { background:var(--fv-dark); border-color:var(--fv-dark); transform:translateY(-5px); }
-      .fv-service-number { color:var(--fv-red); font-size:13px; font-weight:700; letter-spacing:2px; }
-      .fv-service-card h3 { margin:18px 0 12px; font-size:22px; }
-      .fv-service-card p { margin:0; color:var(--fv-muted); line-height:1.7; font-size:14px; }
-      .fv-service-card:hover h3 { color:#fff; }
-      .fv-service-card:hover p { color:#c6c7ca; }
-      .fv-service-card a { display:inline-block; margin-top:20px; color:var(--fv-red); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; }
-      .fv-trust { padding:35px 0; background:#fafaf8; border-top:1px solid #ececea; border-bottom:1px solid #ececea; }
-      .fv-trust-label { margin:0 0 18px; font-size:12px; font-weight:700; letter-spacing:2px; color:var(--fv-muted); text-transform:uppercase; }
-      .fv-trust-list { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
-      .fv-chip { padding:11px 16px; border:1px solid #dddeda; background:#fff; font-size:13px; font-weight:600; }
-      .fv-why { background:#f7f7f5; }
-      .fv-why-card { padding:28px 0; border-top:1px solid #dddeda; }
-      .fv-why-card:last-child { border-bottom:1px solid #dddeda; }
-      .fv-why-card strong { display:block; font-size:18px; margin-bottom:7px; }
-      .fv-why-card span { color:var(--fv-muted); line-height:1.65; font-size:14px; }
-      .fv-process { background:#fff; }
-      .fv-step { height:100%; padding:28px 24px; border:1px solid #e5e5e3; }
-      .fv-step .step-no { font-size:12px; font-weight:700; letter-spacing:2px; color:var(--fv-red); }
-      .fv-step h3 { font-size:19px; margin:15px 0 10px; }
-      .fv-step p { color:var(--fv-muted); line-height:1.7; font-size:14px; margin:0; }
-      .fv-faq { background:#f7f7f5; }
-      .fv-faq-item { border-top:1px solid #dcdcd9; padding:23px 0; }
-      .fv-faq-item:last-child { border-bottom:1px solid #dcdcd9; }
-      .fv-faq-item h3 { font-size:18px; margin:0 0 8px; }
-      .fv-faq-item p { color:var(--fv-muted); line-height:1.7; margin:0; font-size:14px; }
-      .fv-cta { padding:95px 0; background:var(--fv-red); color:#fff; text-align:center; }
-      .fv-cta h2 { color:#fff; font-size:46px; margin-bottom:15px; }
-      .fv-cta p { max-width:650px; margin:0 auto 28px; color:#fff; opacity:.9; line-height:1.8; }
-      .fv-cta .btn { background:#fff; color:var(--fv-dark); border-color:#fff; }
-      .fv-small-note { font-size:12px; color:var(--fv-muted); margin-top:15px; }
-      @media(max-width:991px) { .fv-section { padding:75px 0; } .fv-service-intro { padding-right:0; margin-bottom:35px; } }
-      @media(max-width:767px) { .fv-cta h2 { font-size:34px; } .fv-partner, .fv-industries { padding:60px 0; } }
-   </style>
 </head>
 <body>
 
@@ -117,7 +63,7 @@
             <div class="overlay" style="background: rgba(17, 24, 39, 0.7);">
                <div class="container h-100">
                   <div class="row h-100 align-items-center">
-                     <div class="col-lg-8">
+                     <div class="col-lg-10 mx-auto text-center">
                         <div class="txt-box" style="height: auto; text-align: left;">
                            <div class="txt-area" style="position: relative; transform: none; top: auto;">
                               <h1 style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 64px; font-weight: 500; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 24px; text-transform: none;">IT consulting and<br>AI transformation<br>built for tomorrow</h1>
@@ -141,7 +87,7 @@
             <div class="overlay" style="background: rgba(17, 24, 39, 0.7);">
                <div class="container h-100">
                   <div class="row h-100 align-items-center">
-                     <div class="col-lg-8">
+                     <div class="col-lg-10 mx-auto text-center">
                         <div class="txt-box" style="height: auto; text-align: left;">
                            <div class="txt-area" style="position: relative; transform: none; top: auto;">
                               <h1 style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 64px; font-weight: 500; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 24px; text-transform: none;">Automate business<br>processes to scale<br>faster & smarter</h1>
@@ -166,7 +112,7 @@
    <!-- LOGO CLOUD (MODERN GRID) -->
    <section class="fv-logo-cloud-modern pt-5 pb-0" style="background-color: #ffffff;">
       <div class="container pt-4 pb-2">
-         <h2 class="mb-5 text-center" style="font-family: 'Rubik', sans-serif; font-size: 24px; font-weight: 500; color: #6b7280; letter-spacing: -0.5px;">
+         <h2 class="mb-5 text-center wow fadeInUp" style="font-family: \'Rubik\', sans-serif; font-size: 52px; font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin-left: auto; margin-right: auto; color: #111827;">
             Integrating with <strong style="color: #111827; font-weight: 600;">modern tech stacks</strong> for robust <strong style="color: #111827; font-weight: 600;">AI automation</strong>.
          </h2>
          
@@ -243,7 +189,7 @@
    <section class="fv-section presentation-section" id="who-we-help">
       <div class="container text-center">
          <h2>Who We Help & Why</h2>
-         <p class="presentation-subtitle">Flow Vello partners with startups, scale-ups and growth-focused businesses to help them:</p>
+         <p class="presentation-subtitle wow fadeInUp" style="max-width: 700px; margin: 0 auto 50px;">Flow Vello partners with startups, scale-ups and growth-focused businesses to help them:</p>
          
          <div class="presentation-grid">
             <div class="presentation-card wow fadeInUp" data-wow-delay="0.1s">
@@ -277,7 +223,7 @@
       <div class="container pb-5">
          <div class="text-center mb-5 pt-5">
             <span class="fv-eyebrow" style="color:#6f7075; letter-spacing: 2px;">WHO WE SERVE</span>
-            <h2 style="color:#1d1e22; font-family:'Teko', sans-serif; font-size:48px;">AUTOMATION FOR REAL BUSINESS OPERATIONS<span style="color:#fb383b;">.</span></h2>
+            <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px;">INDUSTRIES</span><h2 class="wow fadeInUp" style="color:#111827; font-family:\'Teko\', sans-serif; font-size:64px; line-height:1.1; letter-spacing:1px; max-width:900px; margin:0 auto 40px; text-transform:uppercase;">AUTOMATION FOR REAL BUSINESS OPERATIONS<span style="color:#fb383b;">.</span></h2>
             <p class="fv-lead fv-centered" style="color:#6f7075; max-width: 700px; margin:0 auto;">The technology changes by industry. The goal stays the same: fewer manual steps, faster response and better visibility.</p>
          </div>
          
@@ -453,9 +399,7 @@
       <div class="container py-5 mt-4">
          
          <div class="mx-auto text-center mb-5 pb-4" style="max-width: 700px;">
-            <h2 class="fw-bold mb-4" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 42px; line-height: 1.2; letter-spacing: -0.5px;">
-               Capabilities we build around
-            </h2>
+            <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px; color:rgba(255,255,255,0.6);">CAPABILITIES</span><h2 class="wow fadeInUp" style="color: #ffffff; font-family: \'Rubik\', sans-serif; font-size: 52px; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin: 0 auto 50px;">Capabilities we build around</h2>
             <p style="color: #9ca3af; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6;">
                Technology is selected around your existing stack and operational requirements. We architect the entire data flow to help your business innovate securely.
             </p>
@@ -540,9 +484,7 @@
             <div class="col-12">
                <div class="d-flex flex-column align-items-start mb-5 pb-4">
                   <div class="fv-badge mb-4">WHY FLOW VELLO</div>
-                  <h2 class="fw-bold" style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 42px; line-height: 1.2; max-width: 800px; font-weight: 600; letter-spacing: -0.5px;">
-                     NO TEMPLATES. NO BUSYWORK. <br>JUST THE RIGHT SYSTEM<span style="color: #fb383b;">.</span>
-                  </h2>
+                  <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px;">WHY FLOW VELLO</span><h2 class="wow fadeInUp" style="color:#111827; font-family:\'Rubik\', sans-serif; font-size:52px; font-weight:600; line-height:1.15; letter-spacing:-1.5px; max-width:850px; margin:0 auto 50px;">NO TEMPLATES. NO BUSYWORK. <br>JUST THE RIGHT SYSTEM<span style="color: #fb383b;">.</span></h2>
                   <p class="text-muted" style="font-family: 'Rubik', sans-serif; font-size: 18px; max-width: 650px; line-height: 1.6; margin-top: 20px;">
                      A polished automation demo is not the same thing as a production system. We focus on the operational problem first, then choose the technology.
                   </p>
@@ -625,7 +567,7 @@
       <div class="container py-5">
          <div class="row mb-5 pb-2">
             <div class="col-12 text-center">
-               <h2 class="fw-bold mb-4" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 48px; letter-spacing: -1px;">How We Work</h2>
+               <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px; color:rgba(255,255,255,0.6);">OUR PROCESS</span><h2 class="wow fadeInUp" style="color: #ffffff; font-family: \'Rubik\', sans-serif; font-size: 52px; font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin: 0 auto 30px;">From bottleneck to better system.</h2>
                <p style="color: #bdbec2; font-family: 'Rubik', sans-serif; font-size: 18px; max-width: 800px; margin: 0 auto; line-height: 1.6;">
                   A clear six-stage delivery process keeps scope, expectations and technical decisions visible from the first conversation to post-launch support.
                </p>
@@ -716,9 +658,7 @@
    <section class="py-5" id="faq" style="background-color: #ffffff;">
       <div class="container py-5 mt-4">
          <div class="mx-auto text-center mb-5 pb-3" style="max-width: 800px;">
-            <h2 class="mb-4" style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 42px; font-weight: 600; letter-spacing: -1px;">
-               Frequently asked questions
-            </h2>
+            <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px;">FAQ</span><h2 class="wow fadeInUp" style="color: #111827; font-family: \'Rubik\', sans-serif; font-size: 52px; font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin: 0 auto 50px;">Frequently asked questions</h2>
             <p style="color: #6b7280; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6;">
                Find answers to common questions about our products. Can't find what you're looking for? <br><a href="contact.html" style="color: #6b7280; text-decoration: underline; transition: color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#6b7280'">Contact our support team.</a>
             </p>
