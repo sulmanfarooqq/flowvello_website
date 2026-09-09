@@ -3009,3 +3009,59 @@ i {
         top: -85px !important; /* Adjust for smaller mobile font */
     }
 }
+
+/* FIX HERO TYPOGRAPHY AND ARROWS FOR MOBILE (SYSTEMS LTD STYLE) */
+@media (max-width: 767px) {
+    #homeSection .txt-area {
+        padding: 0 15px; /* Add breathing room so it doesn't touch the screen edge */
+    }
+    
+    #homeSection h1 {
+        font-size: 38px !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.5px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    #homeSection p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 30px !important;
+        max-width: 90% !important;
+    }
+}
+
+/* FIX HERO ARROWS GLOBALLY TO MATCH SYSTEMS LTD (THIN, MAGENTA, NON-OVERLAPPING) */
+#homeSection .owl-nav .owl-prev, 
+#homeSection .owl-nav .owl-next {
+    width: 50px !important;
+    height: 100px !important;
+    background: transparent !important;
+}
+
+#homeSection .owl-nav .owl-prev {
+    left: 0 !important;
+}
+
+#homeSection .owl-nav .owl-next {
+    right: 0 !important;
+}
+
+#homeSection .owl-nav .owl-prev::before, 
+#homeSection .owl-nav .owl-next::before {
+    font-size: 40px !important;
+    font-weight: 300 !important;
+    color: #e50b70 !important; /* Thin Magenta Arrows */
+    content: "" !important; /* Reset content */
+}
+
+/* Set exact font-awesome icon codes for thin arrows if they were broken */
+#homeSection .owl-nav .owl-prev::before {
+    content: '\f104' !important; /* fa-angle-left */
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome", sans-serif !important;
+}
+
+#homeSection .owl-nav .owl-next::before {
+    content: '\f105' !important; /* fa-angle-right */
+    font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome", sans-serif !important;
+}
