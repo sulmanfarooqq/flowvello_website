@@ -1,10 +1,6 @@
 /* service.css */
 /* Shared layout overrides for individual service pages */
 
-.fv-page-hero {
-   padding: 160px 0 100px; /* Slight adjustment for service pages */
-}
-
 .presentation-card i {
    font-size: 24px;
    color: #fb383b;
@@ -13,6 +9,6 @@
 
 @media(max-width: 991px) {
    .fv-page-hero {
-      padding: 130px 0 80px;
+      padding: 150px 0 90px;
    }
 }
