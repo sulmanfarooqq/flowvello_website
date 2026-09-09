@@ -142,12 +142,18 @@
 
 .niches-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1200px;
   margin: 0 auto;
   background-color: #e5e5e3;
   border: 1px solid #e5e5e3;
   gap: 1px;
+}
+@media (max-width: 991px) {
+  .niches-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575px) {
+  .niches-grid { grid-template-columns: 1fr; }
 }
 
 .niche-card {
@@ -283,6 +289,16 @@
 }
 
 /* --- BENTO CAPABILITIES GRID --- */
+.fv-capabilities-section h2 {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  max-width: 850px;
+  margin: 0 auto 50px;
+}
 .fv-bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -295,6 +311,19 @@
   padding: 40px;
   background-color: transparent;
   transition: background-color 0.3s ease;
+}
+.fv-bento-item h3 {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.fv-bento-item p {
+  color: #9ca3af;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 .fv-bento-item:hover {
   background-color: rgba(255, 255, 255, 0.02);

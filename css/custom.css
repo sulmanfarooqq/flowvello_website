@@ -1477,18 +1477,18 @@ i {
 }
 .niches-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1200px;
   margin: 0 auto;
   background-color: #e5e5e3;
   border: 1px solid #e5e5e3;
   gap: 1px;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .niches-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (min-width: 992px) {
-  .niches-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 575px) {
+  .niches-grid { grid-template-columns: 1fr; }
 }
 .niche-card {
   background-color: #fafafa;
@@ -2123,6 +2123,13 @@ i {
 .fv-process-dark .container {
   position: relative;
   z-index: 1;
+}
+.fv-process-dark h2 {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 .process-number {
   font-family: 'Rubik', sans-serif;
