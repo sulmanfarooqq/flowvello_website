@@ -1719,3 +1719,19 @@ i {
         grid-template-columns: 1fr
         }
     }
+
+/* PREVENT FOUC (Flash of Unstyled Content) FOR WOW.JS */
+.wow {
+    visibility: hidden;
+}
+
+/* GLOBAL PAGE FADE-IN TRANSITION */
+body {
+    animation: fadeInPage 0.5s ease-out forwards;
+    opacity: 0; /* Fallback before animation starts */
+}
+
+@keyframes fadeInPage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
