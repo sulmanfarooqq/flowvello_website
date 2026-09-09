@@ -2258,13 +2258,9 @@ i {
   font-size: 18px !important;
   font-weight: 500 !important;
   margin: 0 !important;
-  transition: opacity 0.2s ease !important;
 }
 .fv-faq-modern-header {
   cursor: pointer;
-}
-.fv-faq-modern-header:hover h3 {
-  opacity: 0.7 !important;
 }
 .fv-faq-modern-header .fal {
   color: #111827 !important;
@@ -2529,10 +2525,6 @@ i {
 }
 .fv-faq-item:last-child {
   border-bottom: 1px solid rgba(0,0,0,0.04) !important;
-}
-.fv-faq-item:hover {
-  box-shadow: 0 10px 25px rgba(0,0,0,0.04) !important;
-  border-color: rgba(251, 56, 59, 0.15) !important;
 }
 
 /* --- DUAL ELEMENT BUTTON (REACT-INSPIRED) --- */

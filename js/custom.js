@@ -22,25 +22,38 @@ $(document).ready(function() {
       $("#navigration").css({ background: $(this).scrollTop() > 10 ? "#222429" : "none" });
    });
 
-   $(".counter").counterUp({ delay: 10, time: 2000 });
+   if ($(".counter").length) {
+      $(".counter").counterUp({ delay: 10, time: 2000 });
+   }
 
-   var owl = $('#homeSection .owl-carousel');
-   owl.owlCarousel({ animateOut:'fadeOut', loop:true, nav:true, margin:0, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:false, responsive:{0:{items:1}} });
+   if ($('#homeSection .owl-carousel').length) {
+      var owl = $('#homeSection .owl-carousel');
+      owl.owlCarousel({ animateOut:'fadeOut', loop:true, nav:true, margin:0, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:false, responsive:{0:{items:1}} });
+   }
 
-   var mixer = mixitup('#portfolio');
-   $(".indicator > span").click(function() { $(".indicator > span").removeClass("active"); $(this).addClass("active"); });
+   if ($('#portfolio').length) {
+      var mixer = mixitup('#portfolio');
+      $(".indicator > span").click(function() { $(".indicator > span").removeClass("active"); $(this).addClass("active"); });
+   }
 
-   var owl2 = $('#testimonialSection .owl-carousel');
-   owl2.owlCarousel({ animateOut:'fadeOut', loop:true, nav:false, margin:30, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2}} });
+   if ($('#testimonialSection .owl-carousel').length) {
+      var owl2 = $('#testimonialSection .owl-carousel');
+      owl2.owlCarousel({ animateOut:'fadeOut', loop:true, nav:false, margin:30, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2}} });
+   }
 
-   var owl3 = $('#specialFeature .owl-carousel');
-   owl3.owlCarousel({ animateOut:'fadeOut', loop:true, nav:false, margin:30, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
+   if ($('#specialFeature .owl-carousel').length) {
+      var owl3 = $('#specialFeature .owl-carousel');
+      owl3.owlCarousel({ animateOut:'fadeOut', loop:true, nav:false, margin:30, autoplay:true, autoplayTimeout:3000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
+   }
 
-   var servicesCarousel = $('#servicesCarousel');
-   servicesCarousel.owlCarousel({ loop:true, nav:true, navText:['<i class="fal fa-arrow-left"></i>','<i class="fal fa-arrow-right"></i>'], dots:false, margin:20, autoplay:true, autoplayTimeout:4000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
+   if ($('#servicesCarousel').length) {
+      var servicesCarousel = $('#servicesCarousel');
+      servicesCarousel.owlCarousel({ loop:true, nav:true, navText:['<i class="fal fa-arrow-left"></i>','<i class="fal fa-arrow-right"></i>'], dots:false, margin:20, autoplay:true, autoplayTimeout:4000, autoplayHoverPause:true, responsive:{0:{items:1},768:{items:2},1024:{items:3}} });
+   }
 
    var wow = new WOW({ boxClass:'wow', animateClass:'animated', offset:0, mobile:true, live:true, scrollContainer:null, resetAnimation:true });
    wow.init();
+
 
    // Keep the new homepage sections visually consistent with the existing Flow Vello theme.
    var themeStyle = document.createElement('style');
@@ -94,9 +107,15 @@ $(document).ready(function() {
    $(window).scroll(function(){ if($(this).scrollTop()>100){$(".scroll-up").fadeIn();}else{$(".scroll-up").fadeOut();} });
    $(".scroll-up").click(function(){ $("html").animate({scrollTop:0},1000); return false; });
 
-   $('.fv-faq-header').click(function() {
-      var item = $(this).parent('.fv-faq-item');
-      item.toggleClass('active').siblings().removeClass('active');
+   $(document).on('click', '.fv-faq-header', function() {
+      var item = $(this).closest('.fv-faq-item');
+      var isActive = item.hasClass('active');
+      // Close all items across all accordion groups
+      $('.fv-faq-item').removeClass('active');
+      // If it wasn't active, open it
+      if (!isActive) {
+         item.addClass('active');
+      }
    });
 
    // Vercel-style nav hover pill

@@ -1590,10 +1590,6 @@ i {
     border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important
     }
 
-.fv-faq-item:hover {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04) !important;
-    border-color: rgba(251, 56, 59, 0.15) !important
-    }
 
 /* --- DUAL ELEMENT BUTTON (REACT-INSPIRED) --- */
 
