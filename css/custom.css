@@ -2951,3 +2951,26 @@ i {
         margin-bottom: 15px;
     }
 }
+
+/* FIX MOBILE RESPONSIVENESS FOR OUR PRINCIPLES (ABOUT PAGE) */
+@media (max-width: 767px) {
+    .presentation-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .presentation-card .card-number {
+        margin-bottom: 15px;
+        flex-shrink: 0;
+        margin-right: 0 !important;
+    }
+    .presentation-card .card-number::after {
+        display: none !important; /* Hide the connecting line on mobile */
+    }
+    .presentation-card .card-content {
+        text-align: center !important;
+        width: 100%;
+        padding: 20px 15px !important;
+    }
+}
