@@ -3065,3 +3065,80 @@ i {
     content: '\f105' !important; /* fa-angle-right */
     font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome", sans-serif !important;
 }
+
+/* --- MOBILE NAV OVERHAUL (SYSTEMS LTD INSPIRED) --- */
+@media (max-width: 991px) {
+    #navigration .sidenav {
+        width: 100% !important;
+        left: -100% !important;
+        background: #ffffff !important;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+    }
+    #navigration .sidenav.active-nav {
+        left: 0 !important;
+    }
+    #navigration .sidenav .header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 20px !important;
+        border-bottom: 1px solid #f3f4f6 !important;
+        width: 100%;
+    }
+    #navigration .sidenav .header .logo {
+        padding: 0 !important;
+        color: #111827 !important;
+        font-size: 24px !important;
+        text-align: left !important;
+    }
+    #navigration .sidenav .header #showsidenav {
+        filter: invert(1); /* If the X icon is white, this makes it black */
+    }
+    #navigration .sidenav #main-nav-list {
+        display: block !important;
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+    #navigration .sidenav .nav-item {
+        display: block !important;
+        width: 100%;
+    }
+    #navigration .sidenav .nav-item .nav-link {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 20px !important;
+        border-top: none !important;
+        border-bottom: 1px solid #f3f4f6 !important;
+        color: #374151 !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+    #navigration .sidenav .nav-item .nav-link .fal {
+        background: transparent !important;
+        color: #9ca3af !important;
+        font-size: 16px !important;
+        position: static !important;
+        height: auto !important;
+        width: auto !important;
+    }
+    
+    /* Modify the toggle icon to a chevron right */
+    #navigration .sidenav .nav-item .nav-link .fa-angle-down::before {
+        content: '\f105' !important; /* Change to fa-angle-right */
+    }
+
+    /* Mobile Footer Button */
+    .mobile-nav-footer {
+        padding: 20px;
+        background: #ffffff;
+        border-top: 1px solid #f3f4f6;
+        width: 100%;
+    }
+    .mobile-nav-footer .fv-dual-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
