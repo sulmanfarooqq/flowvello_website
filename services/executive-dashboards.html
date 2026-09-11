@@ -201,7 +201,7 @@
    </nav>
 
    <!-- LANDING -->
-   <section class="fv-page-hero">
+   <section class="fv-page-hero" style="background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.95)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #1f2937;">
       <div class="container text-center">
          <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">SERVICE</span>
          <h1 class="wow fadeInUp" data-wow-delay="0.2s">Executive Dashboards</h1>
@@ -210,114 +210,144 @@
    </section>
 
 
-<!-- INTERACTIVE PORTFOLIO GALLERY -->
-<section class="fv-section py-5" style="background-color: #f7f7f5;">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h2 style="font-family: 'Rubik', sans-serif; font-size: 42px; font-weight: 600; color: #111827;">Project <span style="color: #fb383b;">Showcase</span></h2>
-            <p style="color: #666; font-size: 18px; max-width: 600px; margin: 0 auto;">Visual representations of our deliverables and real-world project deployments.</p>
+<!-- SHADCN PORTFOLIO GALLERY -->
+<section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important; border-bottom: 1px solid #e5e7eb;">
+    <div class="container">
+        <div class="mb-5 d-flex flex-column align-items-start" style="gap: 12px;">
+            <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 600; font-family: 'Rubik', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+                Deliverables
+            </div>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
+                Project Showcase
+            </h2>
+            <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; margin: 0; max-width: 600px; line-height: 1.6;">
+                Visual representations of our enterprise deliverables and real-world project deployments.
+            </p>
         </div>
         
-        <div class="row" id="portfolioSection">
-            <!-- Portfolio Item 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="portfolio-box">
-                    <img src="../img/bg1.webp" class="img-fluid rounded" alt="Project Thumbnail" style="width: 100%; height: 300px; object-fit: cover; filter: brightness(0.8);">
-                    <div class="hover-txt">
-                        <span class="category">Client Project</span>
-                        <p>Deliverable Preview</p>
-                    </div>
-                </div>
+        <div style="display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #f8fafc;">
+                <img src="../img/bg1.webp" alt="Project 1" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
             </div>
-            <!-- Portfolio Item 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="portfolio-box">
-                    <img src="../img/bg2.webp" class="img-fluid rounded" alt="Project Thumbnail" style="width: 100%; height: 300px; object-fit: cover; filter: brightness(0.8);">
-                    <div class="hover-txt">
-                        <span class="category">Client Project</span>
-                        <p>Deliverable Preview</p>
-                    </div>
-                </div>
+            <div style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #f8fafc;">
+                <img src="../img/bg2.webp" alt="Project 2" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
             </div>
-            <!-- Portfolio Item 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="portfolio-box">
-                    <img src="../img/bg3.webp" class="img-fluid rounded" alt="Project Thumbnail" style="width: 100%; height: 300px; object-fit: cover; filter: brightness(0.8);">
-                    <div class="hover-txt">
-                        <span class="category">Client Project</span>
-                        <p>Deliverable Preview</p>
-                    </div>
-                </div>
+            <div style="border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #f8fafc;">
+                <img src="../img/bg3.webp" alt="Project 3" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
             </div>
         </div>
     </div>
 </section>
 
-<!-- FEATURES & DELIVERABLES GRID -->
-<section class="fv-services-presentation py-5" style="background-color: #111827;">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h2 style="font-family: 'Rubik', sans-serif; font-size: 42px; font-weight: 600; color: #ffffff;">Features & <span style="color: #fb383b;">Deliverables</span></h2>
-            <p style="color: rgba(255,255,255,0.7); font-size: 18px; max-width: 600px; margin: 0 auto;">Everything included when you order this specific service.</p>
+<!-- SHADCN DARK BENTO GRID (FEATURES) -->
+<section class="py-5" style="background-color: #0a0a0a; padding-top: 80px !important; padding-bottom: 80px !important;">
+    <div class="container" style="max-width: 1000px;">
+        <div class="text-center mb-5 pb-2 mx-auto" style="max-width: 700px;">
+            <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">INCLUDED IN SCOPE</span>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #ffffff; letter-spacing: -1px; margin-bottom: 20px; line-height: 1.15;">
+                Features & Deliverables
+            </h2>
+            <p style="color: #a1a1aa; font-size: 16px; font-family:'Rubik', sans-serif; margin: 0; line-height: 1.6;">
+                Everything engineered, tested, and deployed when you integrate this specific service into your infrastructure.
+            </p>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-slide-card card-grad-1 h-100" style="margin: 0; min-height: 250px;">
-                    <i class="fal fa-check-circle card-watermark"></i>
-                    <div class="card-content">
-                        <span class="service-number">( 01 )</span>
-                        <div class="service-icon"><i class="fal fa-check-circle"></i></div>
-                        <div class="service-text">
-                            <h3>CORE DELIVERABLE</h3>
-                            <p>Specific feature or asset provided upon project completion.</p>
-                        </div>
-                    </div>
-                </div>
+
+        <style>
+            .feature-dark-grid { display: grid; grid-template-columns: 1fr; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; }
+            .feature-dark-cell { padding: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); background-color: transparent; transition: background-color 0.2s ease; }
+            .feature-dark-cell:hover { background-color: rgba(255,255,255,0.02); }
+            @media (min-width: 768px) { .feature-dark-grid { grid-template-columns: repeat(2, 1fr); } .feature-dark-cell { border-right: 1px solid rgba(255,255,255,0.1); } .feature-dark-cell:nth-child(2n) { border-right: none; } .feature-dark-cell:nth-last-child(-n+2) { border-bottom: none; } }
+            @media (min-width: 1024px) { .feature-dark-grid { grid-template-columns: repeat(3, 1fr); } .feature-dark-cell:nth-child(2n) { border-right: 1px solid rgba(255,255,255,0.1); } .feature-dark-cell:nth-child(3n) { border-right: none; } .feature-dark-cell:nth-last-child(-n+3) { border-bottom: none; } }
+            .fd-icon { font-size: 18px; color: #ffffff; margin-right: 12px; }
+            .fd-title { font-family: 'Rubik', sans-serif; font-size: 16px; font-weight: 500; color: #ffffff; margin: 0; }
+            .fd-desc { font-family: 'Rubik', sans-serif; color: #a1a1aa; font-size: 14px; line-height: 1.6; margin: 12px 0 0 0; }
+        </style>
+
+        <div class="feature-dark-grid">
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-layer-group"></i></div><h3 class="fd-title">Custom Architecture</h3></div>
+                <p class="fd-desc">Tailored frameworks built precisely for your operational bottlenecks without generic template bloat.</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-slide-card card-grad-2 h-100" style="margin: 0; min-height: 250px;">
-                    <i class="fal fa-check-circle card-watermark"></i>
-                    <div class="card-content">
-                        <span class="service-number">( 02 )</span>
-                        <div class="service-icon"><i class="fal fa-check-circle"></i></div>
-                        <div class="service-text">
-                            <h3>CORE DELIVERABLE</h3>
-                            <p>Specific feature or asset provided upon project completion.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-code-branch"></i></div><h3 class="fd-title">API Synchronization</h3></div>
+                <p class="fd-desc">Seamlessly wired into your existing CRM, database, and marketing stack for fluid data transfer.</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-slide-card card-grad-3 h-100" style="margin: 0; min-height: 250px;">
-                    <i class="fal fa-check-circle card-watermark"></i>
-                    <div class="card-content">
-                        <span class="service-number">( 03 )</span>
-                        <div class="service-icon"><i class="fal fa-check-circle"></i></div>
-                        <div class="service-text">
-                            <h3>CORE DELIVERABLE</h3>
-                            <p>Specific feature or asset provided upon project completion.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-shield-check"></i></div><h3 class="fd-title">Enterprise Security</h3></div>
+                <p class="fd-desc">Rigorous data protection, strict auth protocols, and secure cloud deployment standards.</p>
+            </div>
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-bolt"></i></div><h3 class="fd-title">Speed Optimization</h3></div>
+                <p class="fd-desc">Stripped of unnecessary code to ensure sub-second response times and elite performance.</p>
+            </div>
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-users-cog"></i></div><h3 class="fd-title">Human Fallback</h3></div>
+                <p class="fd-desc">Intelligent escalation paths designed to hand off processes to your team before failure.</p>
+            </div>
+            <div class="feature-dark-cell">
+                <div class="d-flex align-items-center"><div class="fd-icon"><i class="fal fa-box-open"></i></div><h3 class="fd-title">Full Handover</h3></div>
+                <p class="fd-desc">You own the system. Complete documentation, codebase handover, and administrative access.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- DIRECT BOOKING LINK (CALENDAR) -->
-<section class="fv-section py-5" style="background-color: #ffffff;">
-    <div class="container py-5 text-center">
-        <h2 style="font-family: 'Rubik', sans-serif; font-size: 38px; font-weight: 600; color: #111827; margin-bottom: 15px;">Ready to Start? <span style="color: #fb383b;">Book a Consultation</span></h2>
-        <p style="color: #4b5563; font-size: 18px; max-width: 600px; margin: 0 auto 40px;">Select a time below to schedule your direct consultation meeting with our team.</p>
-        
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/contact-flowvello/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
-    </div>
-</section>
+<!-- CLOSING CTA (SPLIT) -->
+   <section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
+      <!-- Lazy Loaded WebP Background Image -->
+      <img src="../img/cta_bg_2.webp" alt="Abstract Background" loading="lazy" class="wow fadeIn" data-wow-duration="1.5s" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+      <!-- Dark overlay for text readability -->
+      <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(17,24,39,0.95) 0%, rgba(17,24,39,0.7) 100%); z-index:0;"></div>
+      
+      <div class="container" style="position:relative; z-index:1; padding-top: 100px; padding-bottom: 100px;">
+         <div class="row align-items-center">
+            
+            <!-- Left Side: Text and Button -->
+            <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+               <h2 class="fw-bold mb-4" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 56px; line-height: 1.1; letter-spacing: -1px;">
+                  Ready to automate and scale?
+               </h2>
+               <p style="color: #d1d5db; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6; max-width: 500px; margin-bottom: 40px;">
+                  Tell us what is slowing your team down. We will help you identify where development, automation, or creative marketing can drive the biggest ROI for your business.
+               </p>
+               <a href="../contact.html" class="fv-dual-btn">
+                                   <span class="fv-btn-pill">START YOUR PROJECT</span>
+                                   <div class="fv-btn-circle">
+                                      <i class="fal fa-arrow-right arrow-main"></i>
+                                      <i class="fal fa-arrow-right arrow-hover"></i>
+                                   </div>
+                                </a>
+            </div>
 
+            <!-- Right Side: Checkmark List -->
+            <div class="col-lg-5 offset-lg-1 wow fadeInRight" data-wow-delay="0.2s">
+               <ul class="cta-check-list list-unstyled m-0">
+                  <li class="d-flex align-items-center mb-4 pb-2">
+                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
+                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Custom AI Agents</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-4 pb-2">
+                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
+                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Business-first Architecture</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-4 pb-2">
+                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
+                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Seamless Integrations</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-4 pb-2">
+                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
+                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Enterprise-grade Security</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
+                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Ongoing Support</span>
+                  </li>
+               </ul>
+            </div>
+            
+         </div>
+      </div>
+   </section>
 
 <!-- FOOTER -->
    <footer id="footerSection"><div class="container"><div class="row">
