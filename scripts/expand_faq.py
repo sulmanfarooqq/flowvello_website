@@ -1,119 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <meta name="description" content="Frequently Asked Questions about Flow Vello's AI automation, software services, and pricing.">
-   <link rel="shortcut icon" href="img/softoweb.webp">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/animate.css">
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/custom.css">
-   <link rel="stylesheet" href="css/index.css">
-   <link rel="stylesheet" href="css/faq.css">
-   <link rel="stylesheet" href="css/chatbot.css">
-   <title>FAQ | Flow Vello</title>
-</head>
-<body>
+﻿# -*- coding: utf-8 -*-
+import re
 
-   <!-- NAVIGATION -->
-   <nav id="navigration" class="navbar fixed-top p-0">
-      <div class="container">
-         <a class="logo" href="index.html">Flow Vello</a>
-         <div class="sidenav">
-            <div class="header">
-               <a class="logo d-lg-none" href="index.html">Flow Vello</a>
-               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.webp" alt="Close menu"></a>
-            </div>
-             <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
-                                                         
+with open('c:/Users/my/Desktop/chatgpt/faq.html', 'r', encoding='utf-8', errors='replace') as f:
+    faq = f.read()
 
-<div id="servicesDropdown" class="dropdown-menus collapse mega-menu-container">
-    <div class="mega-menu-content">
-       <div class="mega-column">
-          <h3 class="mega-title">Our Departments</h3>
-          
-          <a class="dropdown-item mega-item" href="services.html">
-             <div class="mega-icon"><i class="fal fa-browser"></i></div>
-             <div class="mega-text">
-                <span>Development Department</span>
-                <p>Web, Apps & Custom Software</p>
-             </div>
-          </a>
-          
-          <a class="dropdown-item mega-item" href="services.html">
-             <div class="mega-icon"><i class="fal fa-robot"></i></div>
-             <div class="mega-text">
-                <span>Automation Department</span>
-                <p>AI Agents & System Workflows</p>
-             </div>
-          </a>
-          
-          <a class="dropdown-item mega-item" href="services.html">
-             <div class="mega-icon"><i class="fal fa-pen-nib"></i></div>
-             <div class="mega-text">
-                <span>Creative Development</span>
-                <p>UI/UX, Video & Branding</p>
-             </div>
-          </a>
-          
-          <a class="dropdown-item mega-item" href="services.html">
-             <div class="mega-icon"><i class="fal fa-bullhorn"></i></div>
-             <div class="mega-text">
-                <span>Sales & Marketing</span>
-                <p>Growth, Email & SEO Campaigns</p>
-             </div>
-          </a>
-
-       </div>
-    </div>
-</div>
-
-                  </li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-                <li class="nav-item active"><a class="nav-link" href="faq.html">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-             </ul>
-         </div>
-         <a href="contact.html" class="fv-nav-circle d-none d-md-flex" aria-label="Let's Connect">
-            <i class="fal fa-arrow-right arrow-main"></i>
-            <i class="fal fa-arrow-right arrow-hover"></i>
-         </a>
-         <div id="hamburger" class="d-lg-none"><img src="img/icon/menu.webp" class="img01" alt="Open menu"></div>
-      </div>
-   </nav>
-
-   <!-- LANDING -->
-   <section class="fv-page-hero">
-      <div class="container text-center">
-         <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">FAQ</span>
-         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Frequently Asked Questions.</h1>
-         <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Find answers to common questions about our products and processes.</p>
-      </div>
-   </section>
-
-   <!-- FAQ CONTENT -->
-   <section class="py-5" id="faq" style="background-color: #ffffff;">
-      <div class="container py-5 mt-4">
-
-         <!-- Section Header — identical structure to homepage FAQ -->
-         <div class="mx-auto text-center mb-5 pb-3" style="max-width: 800px;">
-            <span class="fv-eyebrow wow fadeInUp" style="display:inline-block; margin:0 auto 15px;">FAQ</span>
-            <h2 class="wow fadeInUp" style="color: #111827; font-family: 'Rubik', sans-serif; font-size: 52px; font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; max-width: 850px; margin: 0 auto 20px;">Everything you need to know.</h2>
-            <p style="color: #6b7280; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6;">
-               Can't find what you're looking for? <a href="contact.html" style="color: #6b7280; text-decoration: underline; transition: color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#6b7280'">Contact our team directly.</a>
-            </p>
-         </div>
-
+new_faqs = '''
          <!-- CATEGORY: Development -->
          <div class="mx-auto mb-3 wow fadeInUp" style="max-width: 800px;">
             <p style="font-family: 'Rubik', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fb383b; margin-bottom: 4px;">Development</p>
@@ -294,95 +185,13 @@
                </div>
             </div>
          </div>
+'''
 
-   </section>
-
-   <!-- CLOSING CTA (SPLIT) -->
-   <section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
-      <img src="img/cta_bg_2.webp" alt="Abstract Background" loading="lazy" class="wow fadeIn" data-wow-duration="1.5s" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-      <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(17,24,39,0.95) 0%, rgba(17,24,39,0.7) 100%); z-index:0;"></div>
-      
-      <div class="container" style="position:relative; z-index:1; padding-top: 100px; padding-bottom: 100px;">
-         <div class="row align-items-center">
-            
-            <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
-               <h2 class="fw-bold mb-4" style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 56px; line-height: 1.1; letter-spacing: -1px;">
-                  What's slowing your business down?
-               </h2>
-               <p style="color: #d1d5db; font-family: 'Rubik', sans-serif; font-size: 18px; line-height: 1.6; max-width: 500px; margin-bottom: 40px;">
-                  Tell us where your team is losing time, dealing with repetitive work or struggling with disconnected systems. We'll identify where automation, AI or custom software can create the biggest operational improvement.
-               </p>
-               <a href="contact.html" class="fv-dual-btn">
-                  <span class="fv-btn-pill">REQUEST A FREE STRATEGY CALL</span>
-                  <div class="fv-btn-circle">
-                     <i class="fal fa-arrow-right arrow-main"></i>
-                     <i class="fal fa-arrow-right arrow-hover"></i>
-                  </div>
-               </a>
-            </div>
-
-            <div class="col-lg-5 offset-lg-1 wow fadeInRight" data-wow-delay="0.2s">
-               <ul class="cta-check-list list-unstyled m-0">
-                  <li class="d-flex align-items-center mb-4 pb-2">
-                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
-                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Custom AI Agents</span>
-                  </li>
-                  <li class="d-flex align-items-center mb-4 pb-2">
-                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
-                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Business-first Architecture</span>
-                  </li>
-                  <li class="d-flex align-items-center mb-4 pb-2">
-                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
-                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Seamless Integrations</span>
-                  </li>
-                  <li class="d-flex align-items-center mb-4 pb-2">
-                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
-                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Enterprise-grade Security</span>
-                  </li>
-                  <li class="d-flex align-items-center">
-                     <i class="fal fa-check text-white mr-4" style="font-size: 22px;"></i>
-                     <span style="color: #ffffff; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 500;">Ongoing Support</span>
-                  </li>
-               </ul>
-            </div>
-            
-         </div>
-      </div>
-   </section>
-
-   <!-- FOOTER -->
-   <footer id="footerSection"><div class="container"><div class="row">
-      <div class="col-lg-4 mb-5 mb-lg-0">
-         <a class="logo d-flex align-items-center" href="index.html">
-            <img src="img/softoweb.webp" alt="" style="width:28px; margin-right:12px;"> Flow Vello
-         </a>
-         <p class="about">Automate, build and scale with custom AI, automation and software systems designed around your business.</p>
-         <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-         </div>
-      </div>
-      <div class="col-6 col-lg-2 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Company</p><a href="about.html">About</a><a href="case-studies.html">Case Studies</a><a href="faq.html">FAQ</a></div></div>
-      <div class="col-6 col-lg-3 mb-4 mb-lg-0"><div class="footer-box"><p class="title">Services</p><a href="services/workflow-automation.html">Workflow Automation</a><a href="services/whatsapp-messaging.html">WhatsApp & Messaging</a><a href="services/ai-customer-support.html">AI Customer Support</a><a href="services/custom-ai-agents.html">Custom AI Agents</a><a href="services/sales-automation.html">Sales Automation</a><a href="services/executive-dashboards.html">Executive Dashboards</a></div></div>
-      <div class="col-lg-3"><div class="footer-box"><p class="title">Resources</p><a href="mailto:contact@flowvello.com">Email Us</a><a href="contact.html">Request a Strategy Call</a><a href="#">Islamabad, Pakistan</a><a href="#">Serving globally</a></div></div>
-   </div><div class="row mt-5 pt-4 footer-bottom"><div class="col-md-6"><p>&copy; 2026 Flow Vello. All rights reserved.</p></div><div class="col-md-6 text-md-right"><a href="terms.html" class="mr-4">Terms and Conditions</a><a href="privacy.html">Privacy Policy</a></div></div></div></footer>
-
-   <a href="#" class="scroll-up"><i class="fal fa-chevron-up"></i></a>
-   <script src="js/jquery.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/font-awesome-pro.js"></script>
-   <script src="js/wow.min.js"></script>
-   <script src="js/mixitup.min.js"></script>
-   <script src="js/jquery.magnific-popup.min.js"></script>
-   <script src="js/jquery.counterup.min.js"></script>
-   <script src="js/jquery.waypoints.min.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script src="js/chatbot.js"></script>
-</body>
-</html>
-
-
+match = re.search(r'(?s)(Contact our team directly\.</a>\s*</p>\s*</div>)(.*?)(</section>\s*<!-- CLOSING CTA \(SPLIT\))', faq)
+if match:
+    new_html = faq[:match.end(1)] + '\n' + new_faqs + '\n   ' + faq[match.start(3):]
+    with open('c:/Users/my/Desktop/chatgpt/faq.html', 'w', encoding='utf-8') as f:
+        f.write(new_html)
+    print("Expanded FAQs successfully.")
+else:
+    print("Regex failed to find bounds.")
