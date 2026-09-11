@@ -212,369 +212,288 @@
    
 
 <!-- MASTER SERVICES DIRECTORY -->
-<section class="fv-services-presentation py-5" style="background-color: #111827;">
-    <div class="container py-5">
+
+<!-- MASTER SERVICES DIRECTORY (SHADCN GRID UI) -->
+<section class="fv-services-presentation" style="background-color: #ffffff; padding-bottom: 80px;">
+    
+    <style>
+       .shadcn-service-grid { display: grid; gap: 40px; grid-template-columns: 1fr; }
+       @media (min-width: 768px) { .shadcn-service-grid { grid-template-columns: repeat(2, 1fr); } }
+       @media (min-width: 1024px) { .shadcn-service-grid { grid-template-columns: repeat(3, 1fr); gap: 48px 32px; } }
+       .shadcn-service-card { display: flex; flex-direction: column; gap: 16px; text-decoration: none !important; transition: transform 0.2s ease; cursor: pointer; }
+       .shadcn-img-block { background-color: #f8fafc; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; font-size: 64px; color: #cbd5e1; transition: background-color 0.3s ease, color 0.3s ease; border: 1px solid #f1f5f9;}
+       .shadcn-service-card:hover .shadcn-img-block { background-color: #f1f5f9; color: #94a3b8; }
+       .shadcn-card-title { font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 500; color: #111827; margin: 0; letter-spacing: -0.5px; transition: color 0.2s ease; }
+       .shadcn-service-card:hover .shadcn-card-title { color: #fb383b; }
+       .shadcn-card-desc { font-family: 'Rubik', sans-serif; color: #6b7280; font-size: 16px; margin: 0; line-height: 1.6; }
+    </style>
+
+    <div class="w-full py-5 lg:py-5" style="border-bottom: 1px solid #f3f4f6; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container mx-auto">
         
-        <!-- Dept 1: Development -->
-        <div class="mb-5 pb-5">
-            <div class="sec-header text-left mb-5">
-               <h2 class="wow fadeInUp" style="color: #ffffff; font-size: 42px; font-weight: 600;">Development <span style="color: #fb383b;">Department</span></h2>
-               <p class="wow fadeInUp" data-wow-delay="0.1s" style="color: rgba(255,255,255,0.7); font-size: 18px; max-width: 600px;">Engineering custom, scalable technical solutions.</p>
+        <!-- Dept Header -->
+        <div class="mb-5 d-flex flex-column align-items-start wow fadeInUp" style="gap: 12px; margin-bottom: 50px !important;">
+            <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 600; font-family: 'Rubik', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+              Phase 01
             </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/web-applications.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-1 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-browser card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 01 )</span>
-                            <div class="service-icon"><i class="fal fa-browser"></i></div>
-                            <div class="service-text">
-                                <h3>WEB APPLICATIONS</h3>
-                                <p>Custom scalable web applications.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/web-based-games.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-2 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-gamepad card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 02 )</span>
-                            <div class="service-icon"><i class="fal fa-gamepad"></i></div>
-                            <div class="service-text">
-                                <h3>WEB-BASED GAMES</h3>
-                                <p>Interactive browser gaming experiences.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/wordpress-solutions.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-3 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fab fa-wordpress card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 03 )</span>
-                            <div class="service-icon"><i class="fab fa-wordpress"></i></div>
-                            <div class="service-text">
-                                <h3>WORDPRESS SOLUTIONS</h3>
-                                <p>Custom themes, plugins, and CMS buildouts.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/shopify-stores.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-4 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fab fa-shopify card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 04 )</span>
-                            <div class="service-icon"><i class="fab fa-shopify"></i></div>
-                            <div class="service-text">
-                                <h3>SHOPIFY STORES</h3>
-                                <p>E-commerce store design and optimization.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/wix-development.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-5 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fab fa-wix card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 05 )</span>
-                            <div class="service-icon"><i class="fab fa-wix"></i></div>
-                            <div class="service-text">
-                                <h3>WIX DEVELOPMENT</h3>
-                                <p>Fast, modern low-code web solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/desktop-applications.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-6 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-desktop card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 06 )</span>
-                            <div class="service-icon"><i class="fal fa-desktop"></i></div>
-                            <div class="service-text">
-                                <h3>DESKTOP APPLICATIONS</h3>
-                                <p>Cross-platform desktop software.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
+              Development
+            </h2>
+            <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; margin: 0; max-width: 600px; line-height: 1.6;">
+              Engineering custom, scalable technical solutions.
+            </p>
         </div>
+        
+        <div class="shadcn-service-grid">
 
-        <!-- Dept 2: Automation -->
-        <div class="mb-5 pb-5">
-            <div class="sec-header text-left mb-5">
-               <h2 class="wow fadeInUp" style="color: #ffffff; font-size: 42px; font-weight: 600;">Automation <span style="color: #fb383b;">Department</span></h2>
-               <p class="wow fadeInUp" data-wow-delay="0.1s" style="color: rgba(255,255,255,0.7); font-size: 18px; max-width: 600px;">Eliminating bottlenecks with intelligent systems.</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/ai-agents.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-1 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-robot card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 07 )</span>
-                            <div class="service-icon"><i class="fal fa-robot"></i></div>
-                            <div class="service-text">
-                                <h3>AI AGENTS</h3>
-                                <p>Autonomous task and customer workflow agents.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/custom-dashboards.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-2 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-chart-pie card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 08 )</span>
-                            <div class="service-icon"><i class="fal fa-chart-pie"></i></div>
-                            <div class="service-text">
-                                <h3>CUSTOM DASHBOARDS</h3>
-                                <p>Real-time operational data visualization.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/calling-agents.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-3 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-headset card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 09 )</span>
-                            <div class="service-icon"><i class="fal fa-headset"></i></div>
-                            <div class="service-text">
-                                <h3>CALLING AGENTS</h3>
-                                <p>AI-powered voice outreach and inbound calling.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/api-system-integration.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-4 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-plug card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 10 )</span>
-                            <div class="service-icon"><i class="fal fa-plug"></i></div>
-                            <div class="service-text">
-                                <h3>API & INTEGRATION</h3>
-                                <p>Seamless multi-platform data syncing.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/gohighlevel.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-5 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-funnel-dollar card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 11 )</span>
-                            <div class="service-icon"><i class="fal fa-funnel-dollar"></i></div>
-                            <div class="service-text">
-                                <h3>GOHIGHLEVEL (GHL)</h3>
-                                <p>Complete CRM automation and funnel setup.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
+           <!-- Card -->
+           <a href="services/web-applications.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="shadcn-img-block"><i class="fal fa-browser"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Web Applications</h3>
+                  <p class="shadcn-card-desc">Custom scalable web applications.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/web-based-games.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.2s">
+              <div class="shadcn-img-block"><i class="fal fa-gamepad"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Web-Based Games</h3>
+                  <p class="shadcn-card-desc">Interactive browser gaming experiences.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/wordpress-solutions.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.30000000000000004s">
+              <div class="shadcn-img-block"><i class="fab fa-wordpress"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Wordpress Solutions</h3>
+                  <p class="shadcn-card-desc">Custom themes, plugins, and CMS buildouts.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/shopify-stores.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.4s">
+              <div class="shadcn-img-block"><i class="fab fa-shopify"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Shopify Stores</h3>
+                  <p class="shadcn-card-desc">E-commerce store design and optimization.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/wix-development.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.5s">
+              <div class="shadcn-img-block"><i class="fab fa-wix"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Wix Development</h3>
+                  <p class="shadcn-card-desc">Fast, modern low-code web solutions.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/desktop-applications.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.6s">
+              <div class="shadcn-img-block"><i class="fal fa-desktop"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Desktop Applications</h3>
+                  <p class="shadcn-card-desc">Cross-platform desktop software.</p>
+              </div>
+           </a>
+
         </div>
+      </div>
+    </div>
 
-        <!-- Dept 3: Creative -->
-        <div class="mb-5 pb-5">
-            <div class="sec-header text-left mb-5">
-               <h2 class="wow fadeInUp" style="color: #ffffff; font-size: 42px; font-weight: 600;">Creative <span style="color: #fb383b;">Development</span></h2>
-               <p class="wow fadeInUp" data-wow-delay="0.1s" style="color: rgba(255,255,255,0.7); font-size: 18px; max-width: 600px;">High-impact visual identity and design.</p>
+    <div class="w-full py-5 lg:py-5" style="border-bottom: 1px solid #f3f4f6; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container mx-auto">
+        
+        <!-- Dept Header -->
+        <div class="mb-5 d-flex flex-column align-items-start wow fadeInUp" style="gap: 12px; margin-bottom: 50px !important;">
+            <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 600; font-family: 'Rubik', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+              Phase 02
             </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/graphic-design.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-1 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-pen-nib card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 12 )</span>
-                            <div class="service-icon"><i class="fal fa-pen-nib"></i></div>
-                            <div class="service-text">
-                                <h3>GRAPHIC DESIGN</h3>
-                                <p>Brand identity, social assets, and collateral.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/video-editing.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-2 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-video card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 13 )</span>
-                            <div class="service-icon"><i class="fal fa-video"></i></div>
-                            <div class="service-text">
-                                <h3>VIDEO EDITING</h3>
-                                <p>High-impact promotional and social media videos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/social-media-design.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-3 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-share-alt card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 14 )</span>
-                            <div class="service-icon"><i class="fal fa-share-alt"></i></div>
-                            <div class="service-text">
-                                <h3>SOCIAL MEDIA DESIGN</h3>
-                                <p>Engaging feed graphics and ad creatives.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/3d-vfx.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-4 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-cubes card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 15 )</span>
-                            <div class="service-icon"><i class="fal fa-cubes"></i></div>
-                            <div class="service-text">
-                                <h3>3D & VFX</h3>
-                                <p>3D modeling, rendering, and visual effects.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/ui-ux-design.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-5 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-mobile-alt card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 16 )</span>
-                            <div class="service-icon"><i class="fal fa-mobile-alt"></i></div>
-                            <div class="service-text">
-                                <h3>UI/UX DESIGN</h3>
-                                <p>Modern web and mobile interface prototyping.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
+              Automation
+            </h2>
+            <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; margin: 0; max-width: 600px; line-height: 1.6;">
+              Eliminating bottlenecks with intelligent systems.
+            </p>
         </div>
+        
+        <div class="shadcn-service-grid">
 
-        <!-- Dept 4: Sales & Marketing -->
-        <div class="mb-5 pb-5">
-            <div class="sec-header text-left mb-5">
-               <h2 class="wow fadeInUp" style="color: #ffffff; font-size: 42px; font-weight: 600;">Sales & <span style="color: #fb383b;">Marketing</span></h2>
-               <p class="wow fadeInUp" data-wow-delay="0.1s" style="color: rgba(255,255,255,0.7); font-size: 18px; max-width: 600px;">Data-driven growth and outbound strategies.</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/email-marketing.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-1 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-envelope-open-text card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 17 )</span>
-                            <div class="service-icon"><i class="fal fa-envelope-open-text"></i></div>
-                            <div class="service-text">
-                                <h3>EMAIL MARKETING</h3>
-                                <p>Targeted drip campaigns and lead nurturing.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/digital-marketing.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-2 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-bullhorn card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 18 )</span>
-                            <div class="service-icon"><i class="fal fa-bullhorn"></i></div>
-                            <div class="service-text">
-                                <h3>DIGITAL MARKETING</h3>
-                                <p>Omnichannel PPC, SEO, and paid growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/freelancing-platform-management.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-3 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fal fa-briefcase card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 19 )</span>
-                            <div class="service-icon"><i class="fal fa-briefcase"></i></div>
-                            <div class="service-text">
-                                <h3>PLATFORM MANAGEMENT</h3>
-                                <p>Upwork & Fiverr agency optimization.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="services/linkedin-growth.html" class="d-block" style="text-decoration: none;">
-                    <div class="service-slide-card card-grad-4 h-100" style="margin: 0; min-height: 280px;">
-                        <i class="fab fa-linkedin-in card-watermark"></i>
-                        <div class="card-content">
-                            <span class="service-number">( 20 )</span>
-                            <div class="service-icon"><i class="fab fa-linkedin-in"></i></div>
-                            <div class="service-text">
-                                <h3>LINKEDIN GROWTH</h3>
-                                <p>B2B lead generation and personal branding.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
+           <!-- Card -->
+           <a href="services/ai-agents.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="shadcn-img-block"><i class="fal fa-robot"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Ai Agents</h3>
+                  <p class="shadcn-card-desc">Autonomous task and customer workflow agents.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/custom-dashboards.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.2s">
+              <div class="shadcn-img-block"><i class="fal fa-chart-pie"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Custom Dashboards</h3>
+                  <p class="shadcn-card-desc">Real-time operational data visualization.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/calling-agents.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.30000000000000004s">
+              <div class="shadcn-img-block"><i class="fal fa-headset"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Calling Agents</h3>
+                  <p class="shadcn-card-desc">AI-powered voice outreach and inbound calling.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/api-system-integration.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.4s">
+              <div class="shadcn-img-block"><i class="fal fa-plug"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Api & Integration</h3>
+                  <p class="shadcn-card-desc">Seamless multi-platform data syncing.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/gohighlevel.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.5s">
+              <div class="shadcn-img-block"><i class="fal fa-funnel-dollar"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Gohighlevel (Ghl)</h3>
+                  <p class="shadcn-card-desc">Complete CRM automation and funnel setup.</p>
+              </div>
+           </a>
+
         </div>
+      </div>
+    </div>
 
+    <div class="w-full py-5 lg:py-5" style="border-bottom: 1px solid #f3f4f6; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container mx-auto">
+        
+        <!-- Dept Header -->
+        <div class="mb-5 d-flex flex-column align-items-start wow fadeInUp" style="gap: 12px; margin-bottom: 50px !important;">
+            <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 600; font-family: 'Rubik', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+              Phase 03
+            </div>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
+              Creative
+            </h2>
+            <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; margin: 0; max-width: 600px; line-height: 1.6;">
+              High-impact visual identity and design.
+            </p>
+        </div>
+        
+        <div class="shadcn-service-grid">
+
+           <!-- Card -->
+           <a href="services/graphic-design.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="shadcn-img-block"><i class="fal fa-pen-nib"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Graphic Design</h3>
+                  <p class="shadcn-card-desc">Brand identity, social assets, and collateral.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/video-editing.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.2s">
+              <div class="shadcn-img-block"><i class="fal fa-video"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Video Editing</h3>
+                  <p class="shadcn-card-desc">High-impact promotional and social media videos.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/social-media-design.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.30000000000000004s">
+              <div class="shadcn-img-block"><i class="fal fa-share-alt"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Social Media Design</h3>
+                  <p class="shadcn-card-desc">Engaging feed graphics and ad creatives.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/3d-vfx.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.4s">
+              <div class="shadcn-img-block"><i class="fal fa-cubes"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">3D & Vfx</h3>
+                  <p class="shadcn-card-desc">3D modeling, rendering, and visual effects.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/ui-ux-design.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.5s">
+              <div class="shadcn-img-block"><i class="fal fa-mobile-alt"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Ui/Ux Design</h3>
+                  <p class="shadcn-card-desc">Modern web and mobile interface prototyping.</p>
+              </div>
+           </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full py-5 lg:py-5" style="border-bottom: 1px solid #f3f4f6; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container mx-auto">
+        
+        <!-- Dept Header -->
+        <div class="mb-5 d-flex flex-column align-items-start wow fadeInUp" style="gap: 12px; margin-bottom: 50px !important;">
+            <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 600; font-family: 'Rubik', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+              Phase 04
+            </div>
+            <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
+              Sales &Marketing
+            </h2>
+            <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; margin: 0; max-width: 600px; line-height: 1.6;">
+              Data-driven growth and outbound strategies.
+            </p>
+        </div>
+        
+        <div class="shadcn-service-grid">
+
+           <!-- Card -->
+           <a href="services/email-marketing.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.1s">
+              <div class="shadcn-img-block"><i class="fal fa-envelope-open-text"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Email Marketing</h3>
+                  <p class="shadcn-card-desc">Targeted drip campaigns and lead nurturing.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/digital-marketing.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.2s">
+              <div class="shadcn-img-block"><i class="fal fa-bullhorn"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Digital Marketing</h3>
+                  <p class="shadcn-card-desc">Omnichannel PPC, SEO, and paid growth.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/freelancing-platform-management.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.30000000000000004s">
+              <div class="shadcn-img-block"><i class="fal fa-briefcase"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Platform Management</h3>
+                  <p class="shadcn-card-desc">Upwork & Fiverr agency optimization.</p>
+              </div>
+           </a>
+
+           <!-- Card -->
+           <a href="services/linkedin-growth.html" class="shadcn-service-card wow fadeInUp" data-wow-delay="0.4s">
+              <div class="shadcn-img-block"><i class="fab fa-linkedin-in"></i></div>
+              <div class="d-flex flex-column" style="gap: 8px;">
+                  <h3 class="shadcn-card-title">Linkedin Growth</h3>
+                  <p class="shadcn-card-desc">B2B lead generation and personal branding.</p>
+              </div>
+           </a>
+
+        </div>
+      </div>
     </div>
 </section>
 <!-- CLOSING CTA (SPLIT) -->
