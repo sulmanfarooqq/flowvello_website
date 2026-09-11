@@ -91,10 +91,11 @@
                <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.webp" alt="Close menu"></a>
             </div>
              <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item dropdown">
                    <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
                                                          
+
 
 
 
@@ -186,7 +187,8 @@
 </div>
 
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
                 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
              </ul>
@@ -215,84 +217,116 @@
         </div>
    </section>
 
-   <!-- PIPELINE EXPLANATION -->
-   <section class="py-5" style="background-color: #ffffff; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
+      <!-- PIPELINE EXPLANATION -->
+   <section class="py-5 position-relative" style="background-color: #ffffff; padding-top: 120px !important; padding-bottom: 120px !important; overflow: hidden;">
+        <!-- Dot Pattern Background -->
+        <div style="position: absolute; inset: 0; background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 24px 24px; z-index: 0; opacity: 0.6;"></div>
+        
+        <div class="container position-relative" style="z-index: 1;">
             <div class="row align-items-center">
+                <!-- IMAGE ON LEFT -->
                 <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft">
-                    <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE FLOW VELLO PIPELINE</span>
-                    <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin-bottom: 24px; line-height: 1.1;">
+                    <img src="img/minimal_workspace.webp" alt="Flow Vello Pipeline" class="img-fluid" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); width: 100%; object-fit: cover; aspect-ratio: 4/3; border: 1px solid #e5e7eb; background: #f8fafc;">
+                </div>
+                
+                <!-- TEXT ON RIGHT -->
+                <div class="col-lg-5 offset-lg-1 wow fadeInRight">
+                    <div style="display: inline-flex; align-items: center; border-radius: 9999px; background-color: #111827; color: #ffffff; padding: 6px 16px; font-size: 13px; font-weight: 500; font-family: 'Rubik', sans-serif; letter-spacing: 0.5px; margin-bottom: 24px;">
+                        Pipeline
+                    </div>
+                    <h2 style="font-family:'Rubik', sans-serif; font-size: 48px; font-weight: 500; color: #111827; letter-spacing: -2px; margin-bottom: 24px; line-height: 1.05;">
                         Stop hiring disconnected teams.
                     </h2>
-                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 20px;">
+                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 16px;">
                         Most companies scale by hiring a design agency for their brand, a dev shop for their app, a marketing firm for their traffic, and a consultant for their operations. The result is bloated costs, broken communication, and systems that refuse to talk to each other.
                     </p>
-                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6;">
-                        We built Flow Vello to be the single source of truth for your digital growth. A specialized pipeline where Creative, Development, Marketing, and Automation departments operate under one roof, sharing the same data, the same codebase, and the same aggressive revenue goals.
+                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin: 0;">
+                        We built Flow Vello to be the single source of truth for your digital growth. A specialized pipeline where Creative, Development, Marketing, and Automation departments operate under one roof.
                     </p>
-                </div>
-                <div class="col-lg-5 offset-lg-1 wow fadeInRight">
-                    <img src="img/minimal_workspace.webp" alt="Flow Vello Pipeline" class="img-fluid rounded" style="border: 1px solid #e5e7eb; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
                 </div>
             </div>
         </div>
    </section>
 
-   <!-- 4 PILLARS GRID -->
-   <section class="py-5" style="background-color: #f9fafb; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
-            <div class="text-center mb-5 pb-3">
-                <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
-                    Four Specialized Departments.
-                </h2>
-                <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; max-width: 600px; margin: 15px auto 0; line-height: 1.6;">
-                    Operating sequentially to build, launch, and scale your infrastructure.
-                </p>
-            </div>
-            
-            <style>
-                .feature-light-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
-                @media (min-width: 768px) { .feature-light-grid { grid-template-columns: repeat(2, 1fr); } }
-                .feature-light-card { background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease, transform 0.2s ease; display: flex; flex-direction: column; height: 100%; }
-                .feature-light-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
-                .fl-icon { font-size: 24px; color: #fb383b; margin-bottom: 20px; }
-                .fl-title { font-family: 'Rubik', sans-serif; font-size: 24px; font-weight: 600; color: #111827; margin: 0 0 12px 0; letter-spacing: -0.5px; }
-                .fl-desc { font-family: 'Rubik', sans-serif; color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0; flex-grow: 1; }
-                .fl-link { font-family: 'Rubik', sans-serif; font-size: 14px; font-weight: 600; color: #111827; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s; }
-                .fl-link:hover { color: #fb383b; text-decoration: none; }
-            </style>
+      <!-- 4 PILLARS GRID (REBUILT FEATURE 72) -->
+   <section class="py-5" style="background-color: #ffffff; padding-top: 100px !important; padding-bottom: 100px !important;">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column" style="gap: 60px;">
+                <!-- Header Block -->
+                <div style="max-width: 500px;">
+                    <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 600; color: #111827; letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.1;">
+                        Four Specialized Departments.
+                    </h2>
+                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 30px;">
+                        Operating sequentially to build, launch, and scale your infrastructure. We don't rely on fragmented contractors; every department works under one unified standard.
+                    </p>
+                    <a href="contact.html" class="fv-dual-btn" style="display: inline-flex;">
+                        <span class="fv-btn-pill">BOOK A DEMO</span>
+                        <div class="fv-btn-circle">
+                            <i class="fal fa-arrow-right arrow-main"></i>
+                            <i class="fal fa-arrow-right arrow-hover"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Grid Block -->
+                <style>
+                    .f72-grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
+                    @media (min-width: 768px) { .f72-grid { grid-template-columns: repeat(2, 1fr); } }
+                    .f72-card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; border: 1px solid #e5e7eb; background: #ffffff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+                    .f72-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+                    .f72-img-container { width: 100%; aspect-ratio: 16/9; background: #f8fafc; border-bottom: 1px solid #e5e7eb; overflow: hidden; }
+                    .f72-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+                    .f72-card:hover .f72-img-container img { transform: scale(1.05); }
+                    .f72-content { padding: 32px; flex-grow: 1; }
+                    .f72-title { font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0 0 12px 0; letter-spacing: -0.5px; }
+                    .f72-desc { font-family: 'Rubik', sans-serif; color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0; }
+                </style>
 
-            <div class="feature-light-grid">
-                <!-- CREATIVE -->
-                <div class="feature-light-card wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fl-icon"><i class="fal fa-palette"></i></div>
-                    <h3 class="fl-title">01. Creative</h3>
-                    <p class="fl-desc">We establish market dominance through elite UI/UX prototyping, cinematic video editing, and cohesive brand identity systems designed for high conversion.</p>
-                    <a href="services.html" class="fl-link">View Creative Services <i class="fal fa-arrow-right"></i></a>
-                </div>
-                
-                <!-- DEVELOPMENT -->
-                <div class="feature-light-card wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="fl-icon"><i class="fal fa-code-branch"></i></div>
-                    <h3 class="fl-title">02. Development</h3>
-                    <p class="fl-desc">We build sub-second, enterprise-grade architecture spanning headless e-commerce, custom web applications, and seamless system integrations.</p>
-                    <a href="services.html" class="fl-link">View Development Services <i class="fal fa-arrow-right"></i></a>
-                </div>
-                
-                <!-- MARKETING -->
-                <div class="feature-light-card wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="fl-icon"><i class="fal fa-bullseye-pointer"></i></div>
-                    <h3 class="fl-title">03. Marketing</h3>
-                    <p class="fl-desc">We drive aggressive revenue acquisition through omnichannel paid media, technical SEO, and data-driven outbound LinkedIn outreach.</p>
-                    <a href="services.html" class="fl-link">View Marketing Services <i class="fal fa-arrow-right"></i></a>
-                </div>
-                
-                <!-- AUTOMATION -->
-                <div class="feature-light-card wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="fl-icon"><i class="fal fa-robot"></i></div>
-                    <h3 class="fl-title">04. Automation</h3>
-                    <p class="fl-desc">We scale your operations autonomously using proprietary AI agents, complex workflow automation, and real-time executive data dashboards.</p>
-                    <a href="services.html" class="fl-link">View Automation Services <i class="fal fa-arrow-right"></i></a>
+                <div class="f72-grid">
+                    <!-- CREATIVE -->
+                    <a href="services.html" class="f72-card" style="text-decoration: none;">
+                        <div class="f72-img-container">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="Creative Department" loading="lazy">
+                        </div>
+                        <div class="f72-content">
+                            <h3 class="f72-title">01. Creative</h3>
+                            <p class="f72-desc">We establish market dominance through elite UI/UX prototyping, cinematic video editing, and cohesive brand identity systems designed for high conversion.</p>
+                        </div>
+                    </a>
+                    
+                    <!-- DEVELOPMENT -->
+                    <a href="services.html" class="f72-card" style="text-decoration: none;">
+                        <div class="f72-img-container">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Development Department" loading="lazy">
+                        </div>
+                        <div class="f72-content">
+                            <h3 class="f72-title">02. Development</h3>
+                            <p class="f72-desc">We build sub-second, enterprise-grade architecture spanning headless e-commerce, custom web applications, and seamless system integrations.</p>
+                        </div>
+                    </a>
+                    
+                    <!-- MARKETING -->
+                    <a href="services.html" class="f72-card" style="text-decoration: none;">
+                        <div class="f72-img-container">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Marketing Department" loading="lazy">
+                        </div>
+                        <div class="f72-content">
+                            <h3 class="f72-title">03. Marketing</h3>
+                            <p class="f72-desc">We drive aggressive revenue acquisition through omnichannel paid media, technical SEO, and data-driven outbound LinkedIn outreach.</p>
+                        </div>
+                    </a>
+                    
+                    <!-- AUTOMATION -->
+                    <a href="services.html" class="f72-card" style="text-decoration: none;">
+                        <div class="f72-img-container">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Automation Department" loading="lazy">
+                        </div>
+                        <div class="f72-content">
+                            <h3 class="f72-title">04. Automation</h3>
+                            <p class="f72-desc">We scale your operations autonomously using proprietary AI agents, complex workflow automation, and real-time executive data dashboards.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
