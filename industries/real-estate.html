@@ -214,103 +214,131 @@
    <!-- LANDING -->
    
    <!-- HERO SECTION -->
-   <section class="fv-page-hero" style="background: linear-gradient(rgba(17,24,39,0.8), rgba(17,24,39,0.9)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; padding: 160px 0 100px 0;">
+   <section class="fv-page-hero" style="background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.95)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #1f2937;">
         <div class="container text-center">
-           <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s" style="color:#fb383b; letter-spacing:2px; font-weight: 700;">INDUSTRY SOLUTIONS</span>
-           <h1 class="wow fadeInUp" data-wow-delay="0.2s" style="font-family:'Rubik', sans-serif; font-weight:600; font-size: 56px; letter-spacing:-1.5px; color: #ffffff; max-width: 900px; margin: 15px auto;">
-              Real Estate & PropTech
-           </h1>
-           <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s" style="font-family: 'Rubik', sans-serif; font-size: 20px; color: #d1d5db; max-width: 700px; margin: 20px auto 0;">
-              Automated lead routing, MLS integrations, and high-conversion funnels for top-producing brokerages.
-           </p>
+           <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">INDUSTRY SOLUTIONS</span>
+           <h1 class="wow fadeInUp" data-wow-delay="0.2s">Real Estate & PropTech</h1>
+           <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Automated lead routing, MLS integrations, and high-conversion funnels for top-producing brokerages.</p>
         </div>
    </section>
 
-   <!-- THE PROBLEM SECTION -->
-   <section class="py-5" style="background-color: #ffffff; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft">
-                    <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE PROBLEM</span>
-                    <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin-bottom: 24px; line-height: 1.1;">
-                        Real estate moves fast. Manual data entry doesn't.
-                    </h2>
-                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 20px;">
-                        If it takes your agents more than 5 minutes to respond to a Zillow lead, that lead is already talking to your competitor. You are losing millions in GCI because your team is manually copy-pasting data between your CRM, your inbox, and your phone.
-                    </p>
-                </div>
-                <div class="col-lg-5 offset-lg-1 wow fadeInRight">
-                    <div style="background: #f8fafc; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
-                        <h4 style="font-family:'Rubik', sans-serif; font-size: 20px; font-weight: 600; color: #111827; margin-bottom: 20px;">The Cost of Inaction:</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="margin-bottom: 12px; color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Lost revenue to faster competitors</li>
-                            <li style="margin-bottom: 12px; color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Burned out staff doing manual entry</li>
-                            <li style="color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Unscalable infrastructure</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <!-- PROBLEM SECTION: EXACT COPY OF "ABOUT PAGE" F72 FEATURE GRID -->
+   <section class="py-5" style="background-color: #fafafa; padding-top: 100px !important; padding-bottom: 100px !important;">
+      <div class="container" style="max-width: 1200px;">
+          <div class="d-flex flex-column" style="gap: 60px;">
+              <!-- Header Block -->
+              <div style="max-width: 800px;" class="wow fadeInUp" data-wow-delay="0.1s">
+                  <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE PROBLEM</span>
+                  <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 600; color: #111827; letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.1;">
+                      Real estate moves fast. Manual data entry doesn't.
+                  </h2>
+                  <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 30px;">
+                      If it takes your agents more than 5 minutes to respond to a Zillow lead, that lead is already talking to your competitor. You are losing millions in GCI because your team is manually copy-pasting data between your CRM, your inbox, and your phone.
+                  </p>
+              </div>
+              
+              <!-- Grid Block -->
+              <style>
+                  .f72-grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
+                  @media (min-width: 768px) { .f72-grid { grid-template-columns: repeat(2, 1fr); } }
+                  .f72-card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; border: 1px solid #e5e7eb; background: #ffffff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+                  .f72-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+                  .f72-img-container { width: 100%; aspect-ratio: 16/9; background: #f8fafc; border-bottom: 1px solid #e5e7eb; overflow: hidden; }
+                  .f72-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+                  .f72-card:hover .f72-img-container img { transform: scale(1.05); }
+                  .f72-content { padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+              </style>
+              <div class="f72-grid">
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Automated Lead Routing" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Automated Lead Routing</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Instantly capture leads from Zillow, Realtor.com, and Facebook, and route them to the right agent via SMS in under 2 seconds.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Custom MLS Integrations" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Custom MLS Integrations</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">We build direct API connections to your local MLS so your website and internal databases update properties in real-time.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.4s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="AI Appointment Setters" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">AI Appointment Setters</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Custom-trained AI agents that text and qualify buyers 24/7, booking highly qualified tours directly into your agents' Calendly.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.5s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80" alt="Transaction Automation" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Transaction Automation</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated document generation and compliance routing using Dotloop, DocuSign, and your internal CRM.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
    </section>
 
-   <!-- THE SOLUTION GRID -->
-   <section class="py-5" style="background-color: #f9fafb; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
-            <div class="text-center mb-5 pb-3">
-                <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE SOLUTION</span>
-                <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
-                    How we engineer scale.
-                </h2>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Automated Lead Routing</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Instantly capture leads from Zillow, Realtor.com, and Facebook, and route them to the right agent via SMS in under 2 seconds.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Custom MLS Integrations</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">We build direct API connections to your local MLS so your website and internal databases update properties in real-time.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">AI Appointment Setters</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Custom-trained AI agents that text and qualify buyers 24/7, booking highly qualified tours directly into your agents' Calendly.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Transaction Automation</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated document generation and compliance routing using Dotloop, DocuSign, and your internal CRM.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-
-   <!-- DELIVERABLES LIST -->
-   <section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important;">
-        <div class="container text-center">
-            <h3 style="font-family:'Rubik', sans-serif; font-size: 32px; font-weight: 500; color: #111827; letter-spacing: -1px; margin-bottom: 40px;">Technical Deliverables</h3>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="d-flex flex-wrap justify-content-center" style="gap: 12px;">
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">HubSpot / Follow Up Boss Setup</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Zillow API Integration</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Automated SMS Nurture Sequences</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">AI Buyer Qualification Bot</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Real-time Dashboard Analytics</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Automated Review Generation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-<section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
+  <!-- SHADCN LIGHT BENTO GRID (DELIVERABLES) FROM SERVICES PAGE -->
+  <section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container" style="max-width: 1100px;">
+          <div class="text-center mb-5 pb-2 mx-auto" style="max-width: 700px;">
+              <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">INCLUDED IN SCOPE</span>
+              <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1px; margin-bottom: 20px; line-height: 1.15;">
+                  Technical Deliverables
+              </h2>
+          </div>
+  
+          <style>
+              .feature-light-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
+              @media (min-width: 768px) { .feature-light-grid { grid-template-columns: repeat(2, 1fr); } }
+              @media (min-width: 1024px) { .feature-light-grid { grid-template-columns: repeat(3, 1fr); } }
+              .feature-light-card { background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease, transform 0.2s ease; }
+              .feature-light-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+              .fl-icon { font-size: 24px; color: #fb383b; margin-bottom: 20px; }
+              .fl-title { font-family: 'Rubik', sans-serif; font-size: 18px; font-weight: 600; color: #111827; margin: 0 0 12px 0; letter-spacing: -0.5px; }
+              .fl-desc { font-family: 'Rubik', sans-serif; color: #6b7280; font-size: 15px; line-height: 1.6; margin: 0; }
+          </style>
+  
+          <div class="feature-light-grid">
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="fl-icon"><i class="fal fa-layer-group"></i></div>
+                  <h3 class="fl-title">HubSpot / Follow Up Boss Setup</h3>
+                  <p class="fl-desc">Complete CRM architecture.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="fl-icon"><i class="fal fa-database"></i></div>
+                  <h3 class="fl-title">Zillow API Integration</h3>
+                  <p class="fl-desc">Instant lead capture workflows.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="fl-icon"><i class="fal fa-plug"></i></div>
+                  <h3 class="fl-title">Automated SMS Nurture</h3>
+                  <p class="fl-desc">Long-term drip campaigns.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="fl-icon"><i class="fal fa-shield-check"></i></div>
+                  <h3 class="fl-title">AI Buyer Qualification Bot</h3>
+                  <p class="fl-desc">24/7 web chat support.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="fl-icon"><i class="fal fa-rocket"></i></div>
+                  <h3 class="fl-title">Dashboard Analytics</h3>
+                  <p class="fl-desc">Real-time GCI reporting.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="fl-icon"><i class="fal fa-box-open"></i></div>
+                  <h3 class="fl-title">Automated Review Generation</h3>
+                  <p class="fl-desc">Google & Zillow 5-star workflows.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+<!-- CLOSING CTA (SPLIT) -->
+   <section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
       <!-- Lazy Loaded WebP Background Image -->
       <img src="../img/cta_bg_2.webp" alt="Abstract Background" loading="lazy" class="wow fadeIn" data-wow-duration="1.5s" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
       <!-- Dark overlay for text readability -->

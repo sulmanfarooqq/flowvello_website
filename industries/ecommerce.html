@@ -214,103 +214,131 @@
    <!-- LANDING -->
    
    <!-- HERO SECTION -->
-   <section class="fv-page-hero" style="background: linear-gradient(rgba(17,24,39,0.8), rgba(17,24,39,0.9)), url('https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; padding: 160px 0 100px 0;">
+   <section class="fv-page-hero" style="background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.95)), url('https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #1f2937;">
         <div class="container text-center">
-           <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s" style="color:#fb383b; letter-spacing:2px; font-weight: 700;">INDUSTRY SOLUTIONS</span>
-           <h1 class="wow fadeInUp" data-wow-delay="0.2s" style="font-family:'Rubik', sans-serif; font-weight:600; font-size: 56px; letter-spacing:-1.5px; color: #ffffff; max-width: 900px; margin: 15px auto;">
-              High-Volume E-Commerce
-           </h1>
-           <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s" style="font-family: 'Rubik', sans-serif; font-size: 20px; color: #d1d5db; max-width: 700px; margin: 20px auto 0;">
-              Headless architecture, inventory automation, and retention systems for 7-figure and 8-figure brands.
-           </p>
+           <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">INDUSTRY SOLUTIONS</span>
+           <h1 class="wow fadeInUp" data-wow-delay="0.2s">High-Volume E-Commerce</h1>
+           <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Headless architecture, inventory automation, and retention systems for 7-figure and 8-figure brands.</p>
         </div>
    </section>
 
-   <!-- THE PROBLEM SECTION -->
-   <section class="py-5" style="background-color: #ffffff; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft">
-                    <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE PROBLEM</span>
-                    <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin-bottom: 24px; line-height: 1.1;">
-                        Shopify templates are killing your conversion rate.
-                    </h2>
-                    <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 20px;">
-                        When your store takes 4 seconds to load on mobile, you lose 40% of your traffic instantly. When your abandoned cart emails are generic, you leave millions on the table. Standard out-of-the-box setups cannot scale to 8 figures.
-                    </p>
-                </div>
-                <div class="col-lg-5 offset-lg-1 wow fadeInRight">
-                    <div style="background: #f8fafc; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
-                        <h4 style="font-family:'Rubik', sans-serif; font-size: 20px; font-weight: 600; color: #111827; margin-bottom: 20px;">The Cost of Inaction:</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="margin-bottom: 12px; color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Lost revenue to faster competitors</li>
-                            <li style="margin-bottom: 12px; color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Burned out staff doing manual entry</li>
-                            <li style="color: #ef4444; font-weight: 500;"><i class="fal fa-times-circle mr-2"></i> Unscalable infrastructure</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <!-- PROBLEM SECTION: EXACT COPY OF "ABOUT PAGE" F72 FEATURE GRID -->
+   <section class="py-5" style="background-color: #fafafa; padding-top: 100px !important; padding-bottom: 100px !important;">
+      <div class="container" style="max-width: 1200px;">
+          <div class="d-flex flex-column" style="gap: 60px;">
+              <!-- Header Block -->
+              <div style="max-width: 800px;" class="wow fadeInUp" data-wow-delay="0.1s">
+                  <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE PROBLEM</span>
+                  <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 600; color: #111827; letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.1;">
+                      Shopify templates are killing your conversion rate.
+                  </h2>
+                  <p style="color: #6b7280; font-size: 18px; font-family:'Rubik', sans-serif; line-height: 1.6; margin-bottom: 30px;">
+                      When your store takes 4 seconds to load on mobile, you lose 40% of your traffic instantly. When your abandoned cart emails are generic, you leave millions on the table. Standard out-of-the-box setups cannot scale to 8 figures.
+                  </p>
+              </div>
+              
+              <!-- Grid Block -->
+              <style>
+                  .f72-grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
+                  @media (min-width: 768px) { .f72-grid { grid-template-columns: repeat(2, 1fr); } }
+                  .f72-card { display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; border: 1px solid #e5e7eb; background: #ffffff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+                  .f72-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+                  .f72-img-container { width: 100%; aspect-ratio: 16/9; background: #f8fafc; border-bottom: 1px solid #e5e7eb; overflow: hidden; }
+                  .f72-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+                  .f72-card:hover .f72-img-container img { transform: scale(1.05); }
+                  .f72-content { padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+              </style>
+              <div class="f72-grid">
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&q=80" alt="Headless Shopify Builds" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Headless Shopify Builds</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">We decouple your frontend using Next.js or React, delivering sub-second load times.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Advanced Klaviyo Flows" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Advanced Klaviyo Flows</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Hyper-segmented email and SMS automation sequences based on purchase history and browsing behavior.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.4s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Inventory Syncing" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Inventory Syncing</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated API integrations between Shopify, your 3PL warehouse, and your ERP to prevent overselling.</p>
+                      </div>
+                  </div>
+                  <div class="f72-card wow fadeInUp" data-wow-delay="0.5s">
+                      <div class="f72-img-container"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Post-Purchase Automation" loading="lazy"></div>
+                      <div class="f72-content">
+                          <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin: 0; letter-spacing: -0.5px;">Post-Purchase Automation</h3>
+                          <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated review requests, upsell offers, and shipping notifications that build loyalty.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
    </section>
 
-   <!-- THE SOLUTION GRID -->
-   <section class="py-5" style="background-color: #f9fafb; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; padding-top: 100px !important; padding-bottom: 100px !important;">
-        <div class="container">
-            <div class="text-center mb-5 pb-3">
-                <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">THE SOLUTION</span>
-                <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1.5px; margin: 0; line-height: 1.1;">
-                    How we engineer scale.
-                </h2>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Headless Shopify Builds</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">We decouple your frontend using Next.js or React, delivering sub-second load times that drastically increase conversion rates.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Advanced Klaviyo Flows</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Hyper-segmented email and SMS automation sequences based on purchase history, browsing behavior, and LTV.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Inventory Syncing</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated API integrations between Shopify, your 3PL warehouse, and your ERP to prevent overselling and manual stock updates.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; height: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h3 style="font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 600; color: #111827; margin-bottom: 12px;">Post-Purchase Automation</h3>
-                        <p style="color: #6b7280; font-size: 16px; line-height: 1.6; margin: 0;">Automated review requests, upsell offers, and shipping notifications that turn one-time buyers into loyal subscribers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-
-   <!-- DELIVERABLES LIST -->
-   <section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important;">
-        <div class="container text-center">
-            <h3 style="font-family:'Rubik', sans-serif; font-size: 32px; font-weight: 500; color: #111827; letter-spacing: -1px; margin-bottom: 40px;">Technical Deliverables</h3>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="d-flex flex-wrap justify-content-center" style="gap: 12px;">
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Headless Frontend Development</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Klaviyo Advanced Segmentation</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">3PL / ERP API Integrations</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Subscription Model Engineering</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Automated Upsell Funnels</span>
-                        <span style="background: #f1f5f9; color: #334155; padding: 10px 20px; border-radius: 9999px; font-weight: 500; font-size: 15px; border: 1px solid #e2e8f0;">Sub-second Lighthouse Scores</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-<section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
+  <!-- SHADCN LIGHT BENTO GRID (DELIVERABLES) FROM SERVICES PAGE -->
+  <section class="py-5" style="background-color: #ffffff; padding-top: 80px !important; padding-bottom: 80px !important;">
+      <div class="container" style="max-width: 1100px;">
+          <div class="text-center mb-5 pb-2 mx-auto" style="max-width: 700px;">
+              <span style="color: #fb383b; font-family: 'Rubik', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">INCLUDED IN SCOPE</span>
+              <h2 style="font-family:'Rubik', sans-serif; font-size: 42px; font-weight: 500; color: #111827; letter-spacing: -1px; margin-bottom: 20px; line-height: 1.15;">
+                  Technical Deliverables
+              </h2>
+          </div>
+  
+          <style>
+              .feature-light-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
+              @media (min-width: 768px) { .feature-light-grid { grid-template-columns: repeat(2, 1fr); } }
+              @media (min-width: 1024px) { .feature-light-grid { grid-template-columns: repeat(3, 1fr); } }
+              .feature-light-card { background: #ffffff; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease, transform 0.2s ease; }
+              .feature-light-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+              .fl-icon { font-size: 24px; color: #fb383b; margin-bottom: 20px; }
+              .fl-title { font-family: 'Rubik', sans-serif; font-size: 18px; font-weight: 600; color: #111827; margin: 0 0 12px 0; letter-spacing: -0.5px; }
+              .fl-desc { font-family: 'Rubik', sans-serif; color: #6b7280; font-size: 15px; line-height: 1.6; margin: 0; }
+          </style>
+  
+          <div class="feature-light-grid">
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="fl-icon"><i class="fal fa-layer-group"></i></div>
+                  <h3 class="fl-title">Headless Frontend Development</h3>
+                  <p class="fl-desc">Next.js/React architecture.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="fl-icon"><i class="fal fa-database"></i></div>
+                  <h3 class="fl-title">Klaviyo Advanced Segmentation</h3>
+                  <p class="fl-desc">Predictive LTV modeling flows.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="fl-icon"><i class="fal fa-plug"></i></div>
+                  <h3 class="fl-title">3PL / ERP API Integrations</h3>
+                  <p class="fl-desc">Automated fulfillment routing.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="fl-icon"><i class="fal fa-shield-check"></i></div>
+                  <h3 class="fl-title">Subscription Model Engineering</h3>
+                  <p class="fl-desc">ReCharge API custom builds.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="fl-icon"><i class="fal fa-rocket"></i></div>
+                  <h3 class="fl-title">Automated Upsell Funnels</h3>
+                  <p class="fl-desc">Post-purchase 1-click offers.</p>
+              </div>
+              <div class="feature-light-card wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="fl-icon"><i class="fal fa-box-open"></i></div>
+                  <h3 class="fl-title">Sub-second Lighthouse Scores</h3>
+                  <p class="fl-desc">Maximum SEO & CVR optimization.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+<!-- CLOSING CTA (SPLIT) -->
+   <section class="fv-cta-split py-5" id="contactArea" style="position: relative; overflow: hidden;">
       <!-- Lazy Loaded WebP Background Image -->
       <img src="../img/cta_bg_2.webp" alt="Abstract Background" loading="lazy" class="wow fadeIn" data-wow-duration="1.5s" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
       <!-- Dark overlay for text readability -->
