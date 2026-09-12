@@ -80,18 +80,23 @@
 </head>
 <body>
 <!-- NAVIGATION -->
-<nav class="navbar fixed-top p-0" id="navigration">
-<div class="container">
-<a class="logo" href="index.html">Flow Vello</a>
-<div class="sidenav">
-<div class="header">
-<a class="logo d-lg-none" href="index.html">Flow Vello</a>
-<a class="d-lg-none" href="#" id="showsidenav"><img alt="Close menu" src="img/icon/letter-x.webp"/></a>
-</div>
-<ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item dropdown active">
-<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown">Services <i class="fal fa-angle-down"></i></a>
+<nav id="navigration" class="navbar fixed-top p-0">
+      <div class="container">
+         <a class="logo" href="index.html">Flow Vello</a>
+         <div class="sidenav">
+            <div class="header">
+               <a class="logo d-lg-none" href="index.html">Flow Vello</a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.webp" alt="Close menu"></a>
+            </div>
+             <ul class="mb-0 position-relative d-lg-flex align-items-center" id="main-nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown active">
+                   <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#servicesDropdown" aria-expanded="false" aria-haspopup="true">Services <i class="fal fa-angle-down"></i></a>
+                                                         
+
+
+
+
 <style>
 .nested-services-menu {
     padding: 10px; 
@@ -231,28 +236,40 @@
        </li>
    </ul>
 </div>
-</li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-<a aria-label="Let's Connect" class="fv-nav-circle d-none d-md-flex" href="contact.html">
-<i class="fal fa-arrow-right arrow-main"></i>
-<i class="fal fa-arrow-right arrow-hover"></i>
-</a>
-<div class="d-lg-none" id="hamburger"><img alt="Open menu" class="img01" src="img/icon/menu.webp"/></div>
-</div>
-</nav>
+                  </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#industriesDropdown" aria-expanded="false" aria-haspopup="true">Industries <i class="fal fa-angle-down"></i></a>
+                   <div id="industriesDropdown" class="dropdown-menus collapse" style="padding: 15px; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid #e5e7eb; min-width: 260px; background: #ffffff;">
+                       <a class="dropdown-item" href="industries/real-estate.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-building" style="width:20px; color:#fb383b; margin-right:8px;"></i> Real Estate</a>
+                       <a class="dropdown-item" href="industries/b2b-saas.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-cloud" style="width:20px; color:#fb383b; margin-right:8px;"></i> B2B SaaS</a>
+                       <a class="dropdown-item" href="industries/ecommerce.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-shopping-cart" style="width:20px; color:#fb383b; margin-right:8px;"></i> E-Commerce</a>
+                       <a class="dropdown-item" href="industries/legal.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-balance-scale" style="width:20px; color:#fb383b; margin-right:8px;"></i> Legal Practices</a>
+                       <a class="dropdown-item" href="industries/healthcare.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-heartbeat" style="width:20px; color:#fb383b; margin-right:8px;"></i> Healthcare</a>
+                       <a class="dropdown-item" href="industries/financial.html" style="padding: 10px; font-weight: 500; font-size: 15px;"><i class="fal fa-chart-line" style="width:20px; color:#fb383b; margin-right:8px;"></i> Financial Services</a>
+                   </div>
+                </li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+             </ul>
+         </div>
+         <a href="contact.html" class="fv-nav-circle d-none d-md-flex" aria-label="Let's Connect">
+            <i class="fal fa-arrow-right arrow-main"></i>
+            <i class="fal fa-arrow-right arrow-hover"></i>
+         </a>
+         <div id="hamburger" class="d-lg-none"><img src="img/icon/menu.webp" class="img01" alt="Open menu"></div>
+      </div>
+   </nav>
 <!-- LANDING -->
-<section class="fv-page-hero">
-<div class="container text-center">
-<span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">FAQ</span>
-<h1 class="wow fadeInUp" data-wow-delay="0.2s">Frequently Asked Questions.</h1>
-<p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Find answers to common questions about our products and processes.</p>
-</div>
-</section>
+<section class="fv-page-hero" style="background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.95)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #1f2937;">
+  <div class="container text-center">
+  <span class="fv-eyebrow wow fadeInUp" data-wow-delay="0.1s">DIRECTORY</span>
+  <h1 class="wow fadeInUp" data-wow-delay="0.2s">Master Services Directory.</h1>
+  <p class="fv-lead wow fadeInUp" data-wow-delay="0.3s">Every technical, automated, and creative solution we provide.</p>
+  </div>
+  </section>
 <!-- MASTER SERVICES DIRECTORY -->
 <!-- MASTER SERVICES DIRECTORY (SHADCN GRID UI) -->
 
