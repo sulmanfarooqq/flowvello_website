@@ -233,3 +233,68 @@
         height: 75vh;
     }
 }
+/* Shimmer Text Typing Indicator */
+.fv-chat-typing-shimmer {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: transparent;
+    background: linear-gradient(90deg, #d1d5db 20%, #111827 50%, #d1d5db 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer 1.5s linear infinite;
+    padding: 8px 16px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+@keyframes shimmer {
+    to {
+        background-position: -200% center;
+    }
+}
+/* Quick Action Buttons */
+.fv-chat-quick-actions {
+    display: flex;
+    gap: 8px;
+    padding: 0 15px 10px;
+    overflow-x: auto;
+    background: #ffffff;
+}
+.fv-chat-quick-actions::-webkit-scrollbar {
+    display: none;
+}
+.fv-chat-quick-btn {
+    white-space: nowrap;
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.fv-chat-quick-btn:hover {
+    background: #111827;
+    color: #ffffff;
+    border-color: #111827;
+}
+
+/* Word-by-Word Fade In */
+.fv-word-reveal {
+    opacity: 0;
+    display: inline-block;
+    animation: fv-fade-word 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes fv-fade-word {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,10 +1,25 @@
 ﻿(function(){
    var GEMINI_API_KEY = "AIzaSyAIUJJtjM9jFVXdfcz5Bh03LRhFTUaJY1k";
-   var SYSTEM_PROMPT = "You are the Flow Vello AI Assistant. You are a brutally honest, highly technical Sales Development Rep for an enterprise digital agency. Your job is to qualify leads and convince them to book a consultation. You ask about their bottlenecks (inefficient workflows, outdated software, poor conversion). If they want to book a call, reply exactly with the string: [BOOK_CALL_TRIGGER]";
+   var SYSTEM_PROMPT = 
+"You are the Flow Vello AI Assistant. You are a brutally honest, highly technical Sales Development Rep for an enterprise digital agency. Keep all responses EXTREMELY SHORT (1-2 sentences max). Be punchy, professional, and authoritative. Your job is to qualify leads and convince them to book a consultation. If they want to book a call, reply exactly with the string: [BOOK_CALL_TRIGGER]
+
+AGENCY CONTEXT:
+Flow Vello (also known as Proto IT Consultants) is an elite AI, automation, and software development agency.
+Services:
+1. Workflow Automation (cutting manual work, API syncs, complex CRM/ERP integrations)
+2. AI Agents & Customer Support (autonomous agents trained on business data)
+3. Executive Dashboards (custom real-time metrics across all systems)
+4. Software Development (Web Apps, Mobile Apps, scalable cloud infrastructure)
+5. Digital Operations (HubSpot, Monday.com, Pipedrive, Odoo setups)
+
+Industries served: Real Estate, B2B SaaS, E-Commerce, Legal, Healthcare, Financial, and more.
+Core Value Proposition: We don't do plug-and-play gimmicks. We build autonomous AI agents, decouple frontends, deploy scalable cloud databases, and build unified systems that replace legacy tools and cut manual data entry so enterprise companies can scale revenue.
+
+If someone asks what we do, give a very brief 1-sentence punchy summary of our relevant service and ask what their current bottleneck is. DO NOT list all services. DO NOT write paragraphs. Always push them toward booking a call if they have a real problem.";
 
    var conversationHistory = [
       { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
-      { role: "model", parts: [{ text: "Understood. I will act as the Flow Vello AI Assistant and qualify leads." }] }
+      { role: "model", parts: [{ text: "Understood. I will act as the Flow Vello AI Assistant, keep responses brutally short, and qualify leads." }] }
    ];
    
    function el(tag, cls, html){
@@ -27,6 +42,11 @@
             '<p>How can I help you today?</p>'+
          '</div>'+
          '<div class="fv-chatbot-messages"></div>'+
+         '<div class="fv-chat-quick-actions">'+
+            '<button class="fv-chat-quick-btn" data-query="I want to book a meeting">🗓️ Book Meeting</button>'+
+            '<button class="fv-chat-quick-btn" data-query="What services do you offer?">⚙️ Services</button>'+
+            '<button class="fv-chat-quick-btn" data-query="How much does it cost?">💰 Pricing</button>'+
+         '</div>'+
          '<div class="fv-chatbot-input-container">'+
             '<div class="fv-chatbot-input-wrapper">'+
                 '<button class="fv-chatbot-plus-btn"><i class="fal fa-plus"></i></button>'+
@@ -40,6 +60,7 @@
           trigger: trigger, 
           win: win, 
           messages: win.querySelector('.fv-chatbot-messages'), 
+          quickActions: win.querySelectorAll('.fv-chat-quick-btn'),
           inputField: win.querySelector('#fv-chat-input-field'),
           sendBtn: win.querySelector('#fv-chat-send-btn')
       };
@@ -51,9 +72,26 @@
       container.scrollTop = container.scrollHeight;
       return msg;
    }
+   
+   function addWordByWordMessage(container, text) {
+       var msg = el('div', 'fv-chat-msg bot', '');
+       container.appendChild(msg);
+       
+       var words = text.split(' ');
+       words.forEach(function(word, index) {
+           var span = document.createElement('span');
+           span.className = 'fv-word-reveal';
+           span.style.animationDelay = (index * 0.03) + 's';
+           span.innerHTML = word + '&nbsp;';
+           msg.appendChild(span);
+       });
+       
+       container.scrollTop = container.scrollHeight;
+       return msg;
+   }
 
    function showTyping(container){
-      var t = el('div','fv-chat-typing','<span></span><span></span><span></span>');
+      var t = el('div','fv-chat-typing-shimmer','System Architect AI is thinking...');
       container.appendChild(t);
       container.scrollTop = container.scrollHeight;
       return t;
@@ -111,11 +149,13 @@
 
           if(botReply.includes("[BOOK_CALL_TRIGGER]")) {
               var cleanReply = botReply.replace("[BOOK_CALL_TRIGGER]", "").trim();
-              if(cleanReply) addMessage(w.messages, 'bot', cleanReply.replace(/\\n/g, '<br>'));
-              addMessage(w.messages, 'bot', 'Please select a time below that works for your team:');
-              injectCalendly(w.messages);
+              if(cleanReply) addWordByWordMessage(w.messages, cleanReply);
+              setTimeout(function() {
+                  addWordByWordMessage(w.messages, "Please select a time below that works for your team:");
+                  injectCalendly(w.messages);
+              }, (cleanReply.split(' ').length * 30) + 400); // Wait for first sentence to finish animating
           } else {
-              addMessage(w.messages, 'bot', botReply.replace(/\\n/g, '<br>'));
+              addWordByWordMessage(w.messages, botReply);
           }
 
       } catch (error) {
@@ -136,21 +176,29 @@
          
          if(isOpen && !hasInitialized){
             hasInitialized = true;
-            addMessage(w.messages, 'bot', 'Hi, I am the Flow Vello AI. What brings you here today?');
+            addWordByWordMessage(w.messages, 'Hi, I am the Flow Vello AI. What brings you here today?');
          }
       });
 
-      function handleSend() {
-          var val = w.inputField.value.trim();
-          if(!val) return;
-          addMessage(w.messages, 'user', val);
-          w.inputField.value = '';
-          sendMessageToGemini(val, w);
+      function handleSend(val) {
+          var text = val || w.inputField.value.trim();
+          if(!text) return;
+          addMessage(w.messages, 'user', text);
+          if(!val) w.inputField.value = ''; // Only clear if it came from input field
+          sendMessageToGemini(text, w);
       }
 
-      w.sendBtn.addEventListener('click', handleSend);
+      w.sendBtn.addEventListener('click', function() { handleSend(); });
       w.inputField.addEventListener('keydown', function(e){
           if(e.key === 'Enter') handleSend();
+      });
+      
+      // Quick Action Buttons
+      w.quickActions.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+              var query = this.getAttribute('data-query');
+              handleSend(query);
+          });
       });
    }
 
@@ -160,3 +208,4 @@
       init();
    }
 })();
+
