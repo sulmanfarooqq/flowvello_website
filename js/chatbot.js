@@ -1,9 +1,9 @@
 ﻿(function(){
    var GEMINI_API_KEY = "AIzaSyAIUJJtjM9jFVXdfcz5Bh03LRhFTUaJY1k";
-   var SYSTEM_PROMPT = `You are the Flow Vello AI Assistant. You are a brutally honest, highly technical Sales Development Rep for an enterprise digital agency. Keep all responses EXTREMELY SHORT (1-2 sentences max). Be punchy, professional, and authoritative. Your job is to qualify leads and convince them to book a consultation. If they want to book a call, reply exactly with the string: [BOOK_CALL_TRIGGER]
+   var SYSTEM_PROMPT = `You are the Techtox AI Assistant. You are a brutally honest, highly technical Sales Development Rep for an enterprise digital agency. Keep all responses EXTREMELY SHORT (1-2 sentences max). Be punchy, professional, and authoritative. Your job is to qualify leads and convince them to book a consultation. If they want to book a call, reply exactly with the string: [BOOK_CALL_TRIGGER]
 
 AGENCY CONTEXT:
-Flow Vello (also known as Proto IT Consultants) is an elite AI, automation, and software development agency.
+Techtox (also known as Proto IT Consultants) is an elite AI, automation, and software development agency.
 Services:
 1. Workflow Automation (cutting manual work, API syncs, complex CRM/ERP integrations)
 2. AI Agents & Customer Support (autonomous agents trained on business data)
@@ -18,7 +18,7 @@ If someone asks what we do, give a very brief 1-sentence punchy summary of our r
 
    var conversationHistory = [
       { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
-      { role: "model", parts: [{ text: "Understood. I will act as the Flow Vello AI Assistant, keep responses brutally short, and qualify leads." }] }
+      { role: "model", parts: [{ text: "Understood. I will act as the Techtox AI Assistant, keep responses brutally short, and qualify leads." }] }
    ];
    
    function el(tag, cls, html){
@@ -175,7 +175,7 @@ If someone asks what we do, give a very brief 1-sentence punchy summary of our r
          
          if(isOpen && !hasInitialized){
             hasInitialized = true;
-            addWordByWordMessage(w.messages, 'Hi, I am the Flow Vello AI. What brings you here today?');
+            addWordByWordMessage(w.messages, 'Hi, I am the Techtox AI. What brings you here today?');
          }
       });
 

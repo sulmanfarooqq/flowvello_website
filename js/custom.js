@@ -93,9 +93,9 @@ $(document).ready(function() {
    wow.init();
 
 
-   // Keep the new homepage sections visually consistent with the existing Flow Vello theme.
+   // Keep the new homepage sections visually consistent with the existing Techtox theme.
    var themeStyle = document.createElement('style');
-   themeStyle.setAttribute('data-flowvello-theme','true');
+   themeStyle.setAttribute('data-Techtox-theme','true');
    themeStyle.textContent = `
       .fv-section,.fv-partner,.fv-industries,.fv-trust,.fv-why,.fv-process,.fv-faq,.fv-cta{position:relative;overflow:hidden}
       .fv-section{padding:100px 0}.fv-partner{padding:60px 0;background:#f5f5f3;border-top:1px solid #e5e5e3;border-bottom:1px solid #e5e5e3}
@@ -119,24 +119,24 @@ $(document).ready(function() {
    document.head.appendChild(themeStyle);
 
    // SEO structured data for the homepage.
-   if (!document.querySelector('script[data-flowvello-schema]')) {
+   if (!document.querySelector('script[data-Techtox-schema]')) {
       var schema = {"@context":"https://schema.org","@graph":[
-         {"@type":"Organization","@id":"https://flowvello.com/#organization","name":"Flow Vello","url":"https://flowvello.com/","logo":"https://flowvello.com/img/softoweb.webp","description":"Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses."},
-         {"@type":"WebSite","@id":"https://flowvello.com/#website","url":"https://flowvello.com/","name":"Flow Vello","publisher":{"@id":"https://flowvello.com/#organization"},"inLanguage":"en"},
-         {"@type":"WebPage","@id":"https://flowvello.com/#webpage","url":"https://flowvello.com/","name":"Flow Vello | AI Automation, Agents & Software","description":"Flow Vello builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.","isPartOf":{"@id":"https://flowvello.com/#website"},"about":{"@id":"https://flowvello.com/#organization"},"inLanguage":"en"},
-         {"@type":"Service","name":"Workflow Automation","serviceType":"Workflow Automation","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},
-         {"@type":"Service","name":"Custom AI Agents","serviceType":"AI Agent Development","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},
-         {"@type":"Service","name":"WhatsApp & Messaging Automation","serviceType":"WhatsApp Automation","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},
-         {"@type":"Service","name":"AI Customer Support","serviceType":"AI Customer Support Automation","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},
-         {"@type":"Service","name":"Sales Automation","serviceType":"Sales Automation","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"},
-         {"@type":"Service","name":"Executive Dashboards","serviceType":"Business Intelligence Dashboards","provider":{"@id":"https://flowvello.com/#organization"},"areaServed":"Worldwide"}
+         {"@type":"Organization","@id":"https://techtox.com/#organization","name":"Techtox","url":"https://techtox.com/","logo":"https://techtox.com/img/softoweb.webp","description":"Techtox builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses."},
+         {"@type":"WebSite","@id":"https://techtox.com/#website","url":"https://techtox.com/","name":"Techtox","publisher":{"@id":"https://techtox.com/#organization"},"inLanguage":"en"},
+         {"@type":"WebPage","@id":"https://techtox.com/#webpage","url":"https://techtox.com/","name":"Techtox | AI Automation, Agents & Software","description":"Techtox builds workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.","isPartOf":{"@id":"https://techtox.com/#website"},"about":{"@id":"https://techtox.com/#organization"},"inLanguage":"en"},
+         {"@type":"Service","name":"Workflow Automation","serviceType":"Workflow Automation","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"},
+         {"@type":"Service","name":"Custom AI Agents","serviceType":"AI Agent Development","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"},
+         {"@type":"Service","name":"WhatsApp & Messaging Automation","serviceType":"WhatsApp Automation","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"},
+         {"@type":"Service","name":"AI Customer Support","serviceType":"AI Customer Support Automation","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"},
+         {"@type":"Service","name":"Sales Automation","serviceType":"Sales Automation","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"},
+         {"@type":"Service","name":"Executive Dashboards","serviceType":"Business Intelligence Dashboards","provider":{"@id":"https://techtox.com/#organization"},"areaServed":"Worldwide"}
       ]};
-      var schemaScript=document.createElement('script');schemaScript.type='application/ld+json';schemaScript.setAttribute('data-flowvello-schema','true');schemaScript.text=JSON.stringify(schema);document.head.appendChild(schemaScript);
+      var schemaScript=document.createElement('script');schemaScript.type='application/ld+json';schemaScript.setAttribute('data-Techtox-schema','true');schemaScript.text=JSON.stringify(schema);document.head.appendChild(schemaScript);
    }
 
-   if (!document.querySelector('link[rel="canonical"]')) { var canonical=document.createElement('link');canonical.rel='canonical';canonical.href='https://flowvello.com/';document.head.appendChild(canonical); }
+   if (!document.querySelector('link[rel="canonical"]')) { var canonical=document.createElement('link');canonical.rel='canonical';canonical.href='https://techtox.com/';document.head.appendChild(canonical); }
 
-   var socialMeta={'og:type':'website','og:url':'https://flowvello.com/','og:title':'Flow Vello | AI Automation, Agents & Software','og:description':'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.','twitter:card':'summary_large_image','twitter:title':'Flow Vello | AI Automation, Agents & Software','twitter:description':'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.'};
+   var socialMeta={'og:type':'website','og:url':'https://techtox.com/','og:title':'Techtox | AI Automation, Agents & Software','og:description':'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.','twitter:card':'summary_large_image','twitter:title':'Techtox | AI Automation, Agents & Software','twitter:description':'Workflow automation, AI agents, WhatsApp automation, executive dashboards and custom software for growing businesses.'};
    Object.keys(socialMeta).forEach(function(key){var attr=key.indexOf('twitter:')===0?'name':'property';if(!document.querySelector('meta['+attr+'="'+key+'"]')){var meta=document.createElement('meta');meta.setAttribute(attr,key);meta.content=socialMeta[key];document.head.appendChild(meta);}});
 
    $('.popup-with-zoom-anim').magnificPopup({type:'inline',fixedContentPos:false,fixedBgPos:true,overflowY:'auto',closeBtnInside:true,preloader:false,midClick:true,removalDelay:300,mainClass:'my-mfp-zoom-in'});
