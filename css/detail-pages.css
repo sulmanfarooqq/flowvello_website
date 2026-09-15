@@ -6,7 +6,7 @@
 .fv-detail-hero {
     position: relative;
     padding: 180px 0 120px;
-    background: #111827;
+    background: #000000;
     overflow: hidden;
 }
 .fv-detail-hero .bg-image {
@@ -45,7 +45,7 @@
     background: #f8f8f6;
     padding: 40px;
     border-radius: 12px;
-    border-left: 4px solid #fb383b;
+    border-left: 4px solid #FF2E3E;
     height: 100%;
 }
 .fv-detail-content .problem-box p {
@@ -67,7 +67,7 @@
     align-items: flex-start;
 }
 .fv-detail-content .solution-list li i {
-    color: #fb383b;
+    color: #FF2E3E;
     font-size: 22px;
     margin-right: 15px;
     margin-top: 3px;

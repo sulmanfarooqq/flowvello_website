@@ -5,10 +5,10 @@
 .custom-select:focus,
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #fb383b; }
+  border: 1px solid #FF2E3E; }
 
 #contactSection .icon-box .icon {
-      background: #fb383b;
+      background: #FF2E3E;
       height: 60px;
       width: 60px;
       border-radius: 100px;
@@ -25,7 +25,7 @@
 
 #contactSection form .form-group .form-control:focus {
     box-shadow: none;
-    border: 1px solid #fb383b; }
+    border: 1px solid #FF2E3E; }
 
 /* Extracted from global.css */
 

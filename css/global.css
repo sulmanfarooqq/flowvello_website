@@ -52,14 +52,14 @@ i {
 
 .font-btn span {
     font-weight: 500;
-    color: #fb383b;
+    color: #FF2E3E;
     font-size: 20px;
     position: relative;
     top: -16px
     }
 
 .font-btn .fal {
-    background: #fb383b;
+    background: #FF2E3E;
     position: relative;
     overflow: hidden;
     font-weight: 500;
@@ -121,7 +121,7 @@ i {
     left: 0;
     width: 100%;
     height: 99.9%;
-    background: #fb383b;
+    background: #FF2E3E;
     z-index: -2
     }
 
@@ -130,9 +130,9 @@ i {
     position: absolute;
     top: -5px;
     left: 0;
-    background: #222429;
+    background: #000000;
     opacity: 0.5;
-    border: 1px solid #222429;
+    border: 1px solid #000000;
     width: 105%;
     height: 185%;
     transform: translatex(90%) rotate(25deg);
@@ -157,13 +157,13 @@ i {
 /* Nav link focus states for accessibility */
 
 #navigration .nav-link:focus-visible {
-    outline: 2px solid var(--fv-red, #fb383b);
+    outline: 2px solid var(--fv-red, #FF2E3E);
     outline-offset: 2px;
-    color: var(--fv-red, #fb383b)
+    color: var(--fv-red, #FF2E3E)
     }
 
 #navigration .dropdown-toggle:focus-visible {
-    outline: 2px solid var(--fv-red, #fb383b);
+    outline: 2px solid var(--fv-red, #FF2E3E);
     outline-offset: 2px
     }
 
@@ -215,11 +215,11 @@ i {
     }
 
 #navigration .nav-item:hover .nav-link {
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #navigration .nav-item:hover .fa-angle-down {
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #navigration .dropdown {
@@ -241,7 +241,7 @@ i {
 
 #navigration .dropdown .dropdown-menus .dropdown-item {
     padding: 8px 25px;
-    color: #222429;
+    color: #000000;
     font-weight: 500;
     background: none;
     position: relative;
@@ -302,12 +302,12 @@ i {
     }
 
 #navigration .dropdown-2:hover > .dropdown-item .fal {
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #navigration .dropdown-2:hover > .dropdown-item span {
     margin-left: 15px;
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #navigration .dropdown-2:hover > .dropdown-item:before {
@@ -356,7 +356,7 @@ i {
 .portfolio-preview .description h4 {
     font-size: 45px;
     margin-bottom: 15px;
-    color: #222429
+    color: #000000
     }
 
 .portfolio-preview .description p {
@@ -373,11 +373,11 @@ i {
 .portfolio-preview .description ul li {
     list-style: none;
     margin-bottom: 10px;
-    color: #222429
+    color: #000000
     }
 
 .portfolio-preview .description ul li i {
-    color: #fb383b;
+    color: #FF2E3E;
     width: 24px
     }
 
@@ -388,7 +388,7 @@ i {
 
 .portfolio-preview .description ul li a {
     margin-left: 15px;
-    color: #fb383b
+    color: #FF2E3E
     }
 
 .specialFeature2 {
@@ -400,7 +400,7 @@ i {
     }
 
 #contactArea .contact-box {
-    background: #fb383b;
+    background: #FF2E3E;
     border-radius: 10px;
     padding: 80px;
     position: relative;
@@ -417,11 +417,11 @@ i {
     }
 
 #contactArea .layer-btn:hover {
-    color: #222429
+    color: #000000
     }
 
 #contactArea .layer-btn::after {
-    background: #222429
+    background: #000000
     }
 
 #contactArea .layer-btn::before {
@@ -554,7 +554,7 @@ i {
     }
 
 .scroll-up .fal {
-    background: #fb383b;
+    background: #FF2E3E;
     position: relative;
     overflow: hidden;
     font-weight: 500;
@@ -598,7 +598,7 @@ i {
         }
     #navigration .sidenav {
         position: absolute;
-        background: #222429;
+        background: #000000;
         top: 0;
         left: -305px;
         width: 280px;
@@ -633,7 +633,7 @@ i {
         }
     #navigration .nav-item .nav-link .fal {
         float: right;
-        background: #fb383b;
+        background: #FF2E3E;
         position: relative;
         top: -3px;
         color: #fff;
@@ -656,7 +656,7 @@ i {
         }
     #navigration .nav-item .dropdown-menus .dropdown-item .fal {
         float: right;
-        background: #fb383b;
+        background: #FF2E3E;
         position: relative;
         top: 0;
         color: #fff;
@@ -774,7 +774,7 @@ i {
     }
 
 #navigration .nav-item:hover .nav-link {
-    color: #fb383b !important
+    color: #FF2E3E !important
     }
 
 #navigration .dropdown .dropdown-menus {
@@ -790,7 +790,7 @@ i {
     font-size: 14px !important;
     font-weight: 500;
     font-family: "Rubik", sans-serif;
-    color: #222429 !important;
+    color: #000000 !important;
     transition: all 0.2s ease !important
     }
 
@@ -801,7 +801,7 @@ i {
 
 
 #navigration .premium-nav-btn {
-    background: #fb383b;
+    background: #FF2E3E;
     color: #fff;
     border-radius: 8px;
     font-size: 15px;
@@ -810,7 +810,7 @@ i {
     padding: 12px 28px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(251, 56, 59, 0.3)
+    box-shadow: 0 4px 15px rgba(255, 46, 62, 0.3)
     }
 
 #navigration .premium-nav-btn:hover {
@@ -912,7 +912,7 @@ i {
 .nav-active-line {
     position: absolute;
     height: 2px;
-    background: #fb383b;
+    background: #FF2E3E;
     bottom: 0;
     transition: all 0.3s ease-out;
     pointer-events: none;
@@ -958,7 +958,7 @@ i {
     margin-top: 60px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 100px rgba(251, 56, 59, 0.15);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 100px rgba(255, 46, 62, 0.15);
     background: #111;
     padding: 10px;
     transform: perspective(1000px) rotatex(2deg);
@@ -982,7 +982,7 @@ i {
     width: 80%;
     height: 80%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(251, 56, 59, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 46, 62, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
     filter: blur(60px);
     z-index: -1;
     pointer-events: none
@@ -1005,9 +1005,9 @@ i {
     }
 
 .fv-service-card:hover {
-    border-color: rgba(251, 56, 59, 0.4) !important;
-    background: #222429 !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 56, 59, 0.1) !important;
+    border-color: rgba(255, 46, 62, 0.4) !important;
+    background: #000000 !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 46, 62, 0.1) !important;
     transform: translatey(-8px) !important
     }
 
@@ -1099,7 +1099,7 @@ i {
     margin-top: 60px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 100px rgba(251, 56, 59, 0.15);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 100px rgba(255, 46, 62, 0.15);
     background: #111;
     padding: 10px;
     transform: perspective(1000px) rotatex(2deg);
@@ -1123,7 +1123,7 @@ i {
     width: 80%;
     height: 80%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(251, 56, 59, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 46, 62, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
     filter: blur(60px);
     z-index: -1;
     pointer-events: none
@@ -1146,9 +1146,9 @@ i {
     }
 
 .fv-service-card:hover {
-    border-color: rgba(251, 56, 59, 0.4) !important;
-    background: #222429 !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 56, 59, 0.1) !important;
+    border-color: rgba(255, 46, 62, 0.4) !important;
+    background: #000000 !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 46, 62, 0.1) !important;
     transform: translatey(-8px) !important
     }
 
@@ -1227,7 +1227,7 @@ i {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #222429
+    background-color: #000000
     }
 
 .service-slide-card:hover {
@@ -1281,7 +1281,7 @@ i {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(34, 36, 41, 0.9) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 60%);
     z-index: 1
     }
 
@@ -1322,7 +1322,7 @@ i {
     display: inline-flex;
     align-items: center;
     border-radius: 9999px;
-    background-color: #111827;
+    background-color: #000000;
     color: #fff;
     padding: 4px 12px;
     font-size: 12px;
@@ -1339,7 +1339,7 @@ i {
 /* --- HOW WE WORK (DARK) --- */
 
 .fv-process-dark {
-    background: linear-gradient(135deg, #111827 0%, #1d1e22 100%);
+    background: linear-gradient(135deg, #000000 0%, #1d1e22 100%);
     position: relative;
     overflow: hidden
     }
@@ -1362,7 +1362,7 @@ i {
     font-family: "Rubik", sans-serif;
     font-size: 32px;
     font-weight: 700;
-    color: #fb383b;
+    color: #FF2E3E;
     margin-right: 20px;
     line-height: 1.2
     }
@@ -1403,7 +1403,7 @@ i {
     display: inline-flex;
     align-items: center;
     border-radius: 9999px;
-    background-color: #111827;
+    background-color: #000000;
     color: #fff;
     padding: 6px 16px;
     font-size: 13px;
@@ -1412,7 +1412,7 @@ i {
     }
 
 .cta-heading {
-    color: #111827;
+    color: #000000;
     font-family: "Rubik", sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -1438,7 +1438,7 @@ i {
 
 .cta-btn-outline {
     border: 1px solid #d1d5db;
-    color: #111827;
+    color: #000000;
     background: transparent;
     padding: 12px 24px;
     border-radius: 8px;
@@ -1451,11 +1451,11 @@ i {
 
 .cta-btn-outline:hover {
     background: #e5e7eb;
-    color: #111827
+    color: #000000
     }
 
 .cta-btn-solid {
-    background-color: #111827;
+    background-color: #000000;
     color: #fff;
     padding: 12px 24px;
     border-radius: 8px;
@@ -1463,7 +1463,7 @@ i {
     font-family: "Rubik", sans-serif;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #111827;
+    border: 1px solid #000000;
     transition: all 0.2s
     }
 
@@ -1525,11 +1525,11 @@ i {
 .fv-why-card:hover {
     transform: translatey(-5px) !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06) !important;
-    border-color: rgba(251, 56, 59, 0.2) !important
+    border-color: rgba(255, 46, 62, 0.2) !important
     }
 
 .fv-why-card:hover:before {
-    background: #fb383b
+    background: #FF2E3E
     }
 
 /* Industries Cards */
@@ -1541,9 +1541,9 @@ i {
     }
 
 .fv-industry:hover {
-    border-color: rgba(251, 56, 59, 0.4) !important;
+    border-color: rgba(255, 46, 62, 0.4) !important;
     background: #1d1e22 !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 56, 59, 0.1) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 46, 62, 0.1) !important;
     transform: translatey(-8px) !important
     }
 
@@ -1560,7 +1560,7 @@ i {
     }
 
 .fv-step:hover {
-    border-color: rgba(251, 56, 59, 0.2) !important;
+    border-color: rgba(255, 46, 62, 0.2) !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06) !important
     }
 
@@ -1607,7 +1607,7 @@ i {
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background-color: #fb383b;
+    background-color: #FF2E3E;
     color: #fff;
     padding: 12px 28px;
     font-size: 14px;
@@ -1624,7 +1624,7 @@ i {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background-color: #fb383b;
+    background-color: #FF2E3E;
     color: #fff;
     overflow: hidden;
     transition: all 0.5s ease-in-out
@@ -1632,7 +1632,7 @@ i {
 
 .fv-dual-btn:hover .fv-btn-pill, .fv-dual-btn:hover .fv-btn-circle {
     background-color: #fff;
-    color: #fb383b
+    color: #FF2E3E
     }
 
 .fv-btn-circle i {
@@ -1673,7 +1673,7 @@ i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fb383b;
+    background-color: #FF2E3E;
     color: #fff;
     overflow: hidden;
     transition: all 0.5s ease-in-out
@@ -1681,7 +1681,7 @@ i {
 
 .fv-nav-circle:hover {
     background-color: #fff;
-    color: #fb383b
+    color: #FF2E3E
     }
 
 .fv-nav-circle i {

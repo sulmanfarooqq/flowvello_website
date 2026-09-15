@@ -3,7 +3,7 @@
 
 /* ── HEADING & LEAD ─────────────────────────────────── */
 .fv-cs-h2 {
-  color: #111827 !important;
+  color: #000000 !important;
   font-family: 'Rubik', sans-serif !important;
   font-size: 48px;
   font-weight: 600;
@@ -65,12 +65,12 @@
 }
 
 .fv-cs-type-icon i {
-  color: #fb383b;
+  color: #FF2E3E;
   font-size: 20px;
 }
 
 .fv-cs-type-card h3 {
-  color: #111827 !important;
+  color: #000000 !important;
   font-family: 'Rubik', sans-serif !important;
   font-size: 18px !important;
   font-weight: 600;
@@ -91,7 +91,7 @@
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #fb383b;
+  color: #FF2E3E;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -108,7 +108,7 @@
 
 /* ── NOTIFY BANNER ──────────────────────────────────── */
 .fv-cs-notify {
-  background: #111827;
+  background: #000000;
   border-radius: 4px;
   padding: 2px;
 }
@@ -125,8 +125,8 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(251, 56, 59, 0.15);
-  border: 1px solid rgba(251, 56, 59, 0.3);
+  background: rgba(255, 46, 62, 0.15);
+  border: 1px solid rgba(255, 46, 62, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +134,7 @@
 }
 
 .fv-cs-notify-icon i {
-  color: #fb383b;
+  color: #FF2E3E;
   font-size: 20px;
 }
 
@@ -165,7 +165,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #fb383b;
+  background: #FF2E3E;
   color: #ffffff !important;
   font-family: 'Rubik', sans-serif;
   font-size: 14px;

@@ -1,17 +1,17 @@
-# Flow Vello — Agent Operating Contract
+# Techtox — Agent Operating Contract
 
 ## Project
-Flow Vello is a production marketing website for an AI automation and software agency. Preserve the existing visual identity and improve structure, accessibility, SEO, performance, and maintainability.
+Techtox is a production marketing website for an AI automation and software agency. Preserve the existing visual identity and improve structure, accessibility, SEO, performance, and maintainability.
 
 ## Source of truth
 - Existing HTML/CSS/JS is the current implementation.
 - `docs/` contains product, content, architecture, and implementation decisions.
 - `.agents/skills/` contains reusable design/engineering skills.
-- Do not invent clients, testimonials, awards, certifications, revenue, employee counts, performance percentages, case studies, addresses, phone numbers, or integrations that Flow Vello cannot substantiate.
+- Do not invent clients, testimonials, awards, certifications, revenue, employee counts, performance percentages, case studies, addresses, phone numbers, or integrations that Techtox cannot substantiate.
 
 ## Architecture rules
 - Keep the site static-first and dependency-light.
-- Reuse the existing visual system: Teko display typography, Rubik body typography, Flow Vello red `#fb383b`, dark `#222429`, generous spacing, sharp editorial hierarchy, subtle borders, and restrained motion.
+- Reuse the existing visual system: Teko display typography, Rubik body typography, Techtox red `#FF2E3E`, dark `#000000`, generous spacing, sharp editorial hierarchy, subtle borders, and restrained motion.
 - Existing pages should retain their visual language. New pages must use the same shell, navigation, footer, buttons, animations, spacing, and responsive behavior.
 - Use semantic HTML5 landmarks and exactly one meaningful H1 per page.
 - Use descriptive, human-readable URLs and page-specific metadata.

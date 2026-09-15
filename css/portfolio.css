@@ -20,16 +20,16 @@
     }
 
 #portfolioSection .indicator span:hover {
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #portfolioSection .indicator span.active {
-    color: #fb383b
+    color: #FF2E3E
     }
 
 #portfolioSection .indicator span::after {
     content: "";
-    background: #fb383b;
+    background: #FF2E3E;
     display: block;
     width: 0;
     height: 2px;
@@ -75,7 +75,7 @@
     content: "";
     height: 2px;
     width: 50px;
-    background: #fb383b;
+    background: #FF2E3E;
     position: absolute;
     border-radius: 3px;
     bottom: 9px;
