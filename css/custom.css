@@ -45,7 +45,7 @@ i {
     font-size: 20px;
     position: relative;
     top: -16px; }
-  .font-btn .fal {
+  .font-btn .fa {
     background: #FF2E3E;
     position: relative;
     overflow: hidden;
@@ -57,14 +57,14 @@ i {
     padding-top: 16px;
     font-size: 16px;
     margin-right: 5px; }
-  .font-btn .fal:before {
+  .font-btn .fa:before {
     content: "\f054";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
     position: absolute;
     left: -100%;
     transition: .4s; }
-  .font-btn .fal:after {
+  .font-btn .fa:after {
     content: "\f054";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -72,10 +72,10 @@ i {
     left: 43%;
     transition: .4s; }
 
-.font-btn:hover .fal:before {
+.font-btn:hover .fa:before {
   left: 43%; }
 
-.font-btn:hover .fal:after {
+.font-btn:hover .fa:after {
   left: 157%; }
 
 .layer-btn {
@@ -250,7 +250,7 @@ i {
 
 #navigration .dropdown-2:hover > .dropdown-item {
   background: #f5f5f5; }
-  #navigration .dropdown-2:hover > .dropdown-item .fal {
+  #navigration .dropdown-2:hover > .dropdown-item .fa {
     color: #FF2E3E; }
   #navigration .dropdown-2:hover > .dropdown-item span {
     margin-left: 15px;
@@ -424,7 +424,7 @@ i {
         color: #666;
         font-family: 'Sora', sans-serif;
         font-size: 16px; }
-        #featureSection .part2 ul li .fal {
+        #featureSection .part2 ul li .fa {
           margin-right: 10px;
           font-weight: 500;
           color: #FF2E3E; }
@@ -670,7 +670,7 @@ i {
       margin-top: 10px;
       padding: 0;
       transition: .4s; }
-      #pricingSection .pricing-box .btn .fal {
+      #pricingSection .pricing-box .btn .fa {
         transition: 0s; }
   #pricingSection .pricing-box:hover {
     background: #FF2E3E; }
@@ -680,7 +680,7 @@ i {
       color: #1d1e22; }
     #pricingSection .pricing-box:hover ul li {
       color: #333; }
-    #pricingSection .pricing-box:hover .font-btn .fal {
+    #pricingSection .pricing-box:hover .font-btn .fa {
       background: #1d1e22;
       color: #FF2E3E; }
     #pricingSection .pricing-box:hover .font-btn span {
@@ -823,7 +823,7 @@ i {
     color: #666;
     font-family: 'Sora', sans-serif;
     font-size: 16px; }
-    #featureDetails .txt-box ul li .fal {
+    #featureDetails .txt-box ul li .fa {
       margin-right: 10px;
       font-weight: 500;
       color: #FF2E3E; }
@@ -957,7 +957,7 @@ i {
       border-radius: 100px;
       text-align: center;
       margin-right: 15px; }
-      #contactSection .icon-box .icon .fal {
+      #contactSection .icon-box .icon .fa {
         font-size: 20px;
         padding-top: 20px;
         color: #000; }
@@ -1142,7 +1142,7 @@ i {
   transition: .4s;
   text-align: center;
   z-index: 1; }
-  .scroll-up .fal {
+  .scroll-up .fa {
     background: #FF2E3E;
     position: relative;
     overflow: hidden;
@@ -1153,14 +1153,14 @@ i {
     border-radius: 50%;
     padding-right: 13px;
     font-size: 16px; }
-  .scroll-up .fal:before {
+  .scroll-up .fa:before {
     content: "\f077";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
     position: absolute;
     top: 100%;
     transition: .4s; }
-  .scroll-up .fal:after {
+  .scroll-up .fa:after {
     content: "\f077";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -1168,10 +1168,10 @@ i {
     top: 36%;
     transition: .4s; }
 
-.scroll-up:hover .fal:before {
+.scroll-up:hover .fa:before {
   top: 36%; }
 
-.scroll-up:hover .fal:after {
+.scroll-up:hover .fa:after {
   top: -157%; }
 
 @media (max-width: 991px) {
@@ -1209,7 +1209,7 @@ i {
         padding: 15px;
         color: #9ca3a9;
         border-top: 1px solid #ffffff1a; }
-        #navigration .nav-item .nav-link .fal {
+        #navigration .nav-item .nav-link .fa {
           float: right;
           background: #FF2E3E;
           position: relative;
@@ -1230,7 +1230,7 @@ i {
           padding: 10px 15px 5px 30px;
           border-top: 1px solid #ffffff1a;
           color: #9ca3a9; }
-          #navigration .nav-item .dropdown-menus .dropdown-item .fal {
+          #navigration .nav-item .dropdown-menus .dropdown-item .fa {
             float: right;
             background: #FF2E3E;
             position: relative;
@@ -2256,17 +2256,17 @@ i {
 .fv-faq-modern-header {
   cursor: pointer;
 }
-.fv-faq-modern-header .fal {
+.fv-faq-modern-header .fa {
   color: #000000 !important;
   font-size: 16px !important;
   transition: transform 0.3s ease !important;
 }
 .fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header h3,
-.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fa {
   color: #000000 !important;
   opacity: 1 !important;
 }
-.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fa {
   transform: rotate(180deg) !important;
 }
 .fv-faq-modern-content p {
@@ -2728,12 +2728,12 @@ i {
 .fv-faq-item:last-child { border-bottom:1px solid #dcdcd9; }
 .fv-faq-header { display:flex; align-items:center; justify-content:space-between; }
 .fv-faq-header h3 { font-size:18px; line-height:1.3; margin:0; color:#1d1e22; transition:color .3s; font-weight:500; font-family: 'Sora', sans-serif; }
-.fv-faq-header .fal { font-size:18px; color:#1d1e22; transition:transform .4s ease; }
+.fv-faq-header .fa { font-size:18px; color:#1d1e22; transition:transform .4s ease; }
 .fv-faq-content { max-height:0; opacity:0; overflow:hidden; transition:all .4s ease; transform:translateY(-10px); }
 .fv-faq-content p { color:#666; line-height:1.7; margin:0; font-size:15px; padding-top:15px; font-family: 'Sora', sans-serif; }
 .fv-faq-item.active .fv-faq-content { max-height:300px; opacity:1; transform:translateY(0); }
-.fv-faq-item.active .fv-faq-header h3, .fv-faq-item.active .fv-faq-header .fal { color:var(--fv-red); }
-.fv-faq-item.active .fv-faq-header .fal { transform:rotate(180deg); }
+.fv-faq-item.active .fv-faq-header h3, .fv-faq-item.active .fv-faq-header .fa { color:var(--fv-red); }
+.fv-faq-item.active .fv-faq-header .fa { transform:rotate(180deg); }
 .fv-faq-contact { padding:80px 0; background:#f7f7f5; text-align:center; }
 .fv-faq-contact h2 { font-family: 'Sora', sans-serif; font-size:36px; font-weight:600; color:#000000; letter-spacing:-0.5px; margin-bottom:16px; }
 .fv-faq-contact p { font-family: 'Sora', sans-serif; font-size:17px; line-height:1.7; color:var(--fv-muted); max-width:550px; margin:0 auto 30px; }
@@ -3116,7 +3116,7 @@ i {
         font-size: 16px !important;
         font-weight: 400 !important;
     }
-    #navigration .sidenav .nav-item .nav-link .fal {
+    #navigration .sidenav .nav-item .nav-link .fa {
         background: transparent !important;
         color: #9ca3af !important;
         font-size: 16px !important;

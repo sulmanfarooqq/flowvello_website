@@ -264,17 +264,17 @@
   cursor: pointer;
 }
 
-.fv-faq-modern-header .fal {
+.fv-faq-modern-header .fa {
   color: #000000 !important;
   font-size: 16px !important;
   transition: transform 0.3s ease !important;
 }
 .fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header h3,
-.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fa {
   color: #000000 !important;
   opacity: 1 !important;
 }
-.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fal {
+.fv-faq-modern-accordion .fv-faq-item.active .fv-faq-header .fa {
   transform: rotate(180deg) !important;
 }
 .fv-faq-modern-content p {
@@ -577,7 +577,7 @@
     font-size: 16px
     }
 
-#featureSection .part2 ul li .fal {
+#featureSection .part2 ul li .fa {
     margin-right: 10px;
     font-weight: 500;
     color: #FF2E3E

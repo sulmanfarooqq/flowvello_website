@@ -48,7 +48,7 @@
     transition: 0.4s
     }
 
-#pricingSection .pricing-box .btn .fal {
+#pricingSection .pricing-box .btn .fa {
     transition: 0s
     }
 
@@ -68,7 +68,7 @@
     color: #333
     }
 
-#pricingSection .pricing-box:hover .font-btn .fal {
+#pricingSection .pricing-box:hover .font-btn .fa {
     background: #1d1e22;
     color: #FF2E3E
     }

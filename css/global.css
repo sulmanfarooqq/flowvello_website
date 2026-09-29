@@ -58,7 +58,7 @@ i {
     top: -16px
     }
 
-.font-btn .fal {
+.font-btn .fa {
     background: #FF2E3E;
     position: relative;
     overflow: hidden;
@@ -72,7 +72,7 @@ i {
     margin-right: 5px
     }
 
-.font-btn .fal:before {
+.font-btn .fa:before {
     content: "";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -81,7 +81,7 @@ i {
     transition: 0.4s
     }
 
-.font-btn .fal:after {
+.font-btn .fa:after {
     content: "";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -90,11 +90,11 @@ i {
     transition: 0.4s
     }
 
-.font-btn:hover .fal:before {
+.font-btn:hover .fa:before {
     left: 43%
     }
 
-.font-btn:hover .fal:after {
+.font-btn:hover .fa:after {
     left: 157%
     }
 
@@ -301,7 +301,7 @@ i {
     background: #f5f5f5
     }
 
-#navigration .dropdown-2:hover > .dropdown-item .fal {
+#navigration .dropdown-2:hover > .dropdown-item .fa {
     color: #FF2E3E
     }
 
@@ -553,7 +553,7 @@ i {
     z-index: 1
     }
 
-.scroll-up .fal {
+.scroll-up .fa {
     background: #FF2E3E;
     position: relative;
     overflow: hidden;
@@ -566,7 +566,7 @@ i {
     font-size: 16px
     }
 
-.scroll-up .fal:before {
+.scroll-up .fa:before {
     content: "";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -575,7 +575,7 @@ i {
     transition: 0.4s
     }
 
-.scroll-up .fal:after {
+.scroll-up .fa:after {
     content: "";
     font-family: "Font Awesome 5 Pro";
     font-size: 16px;
@@ -584,11 +584,11 @@ i {
     transition: 0.4s
     }
 
-.scroll-up:hover .fal:before {
+.scroll-up:hover .fa:before {
     top: 36%
     }
 
-.scroll-up:hover .fal:after {
+.scroll-up:hover .fa:after {
     top: -157%
     }
 
@@ -631,7 +631,7 @@ i {
         padding: 15px;
         color: #9ca3a9
         }
-    #navigration .nav-item .nav-link .fal {
+    #navigration .nav-item .nav-link .fa {
         float: right;
         background: #FF2E3E;
         position: relative;
@@ -654,7 +654,7 @@ i {
         padding: 10px 15px 5px 30px;
         color: #9ca3a9
         }
-    #navigration .nav-item .dropdown-menus .dropdown-item .fal {
+    #navigration .nav-item .dropdown-menus .dropdown-item .fa {
         float: right;
         background: #FF2E3E;
         position: relative;
