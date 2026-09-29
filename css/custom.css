@@ -3152,3 +3152,10 @@ i {
     z-index: 99 !important;
     display: block !important;
 }
+
+#navigration .dropdown-item {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    z-index: 100 !important;
+    position: relative !important;
+}
