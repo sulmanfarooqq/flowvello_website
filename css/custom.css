@@ -3144,3 +3144,11 @@ i {
         justify-content: center;
     }
 }
+
+#navigration .collapse.show,
+#navigration .dropdown-menus.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 99 !important;
+    display: block !important;
+}
